@@ -1,0 +1,13 @@
+div.tableContainer {
+	padding:0px 28px 0px 0px;
+}
+#ScrollSlider {
+	scrollbar-face-color: #FFFFFF;
+	scrollbar-highlight-color: White;
+	scrollbar-shadow-color: #000000;
+	scrollbar-arrow-color: Black;
+	scrollbar-track-color: #ffffff;
+	scrollbar-3d-light-color: Black;
+	scrollbar-base-color: Black;
+	scrollbar-dark-shadow-color: Black;
+}

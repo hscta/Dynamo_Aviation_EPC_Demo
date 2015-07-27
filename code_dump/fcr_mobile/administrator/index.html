@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <title>Login - DSS Administrator</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"> 
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/docs.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+<div class="site_container">
+<div class="wrapper div_center">
+
+
+  <div class="wrapper_segment div_left talignl" id="header">
+    <!-- <div id="header"  class="width-48-950 last nofloat clearfix"> -->
+
+    <div class="logo div_left">
+      <a id="logo" rel="home" title="Home" href="index.php?page=dashboard">
+       <img alt="Home" src="img/logo.png"> 
+     </a>
+    </div>
+
+    <div id="site-name">
+      <strong>
+        <a rel="home" title="Home" href="/"><span></span></a>
+      </strong>
+    </div>
+
+    <div class="pull-right header_welcome">
+        </div>
+
+
+  </div>
+
+
+  <div class="wrapper_segment menu_segment div_left talignl" id="main-navigation">
+    <!-- <div id="" class="width-45-890"> -->
+    
+    <h4 class="text-header">Welcome to DSS</h4>
+    <ul class="menu_1" id="main-menu">
+
+
+   
+
+
+    
+
+
+
+       </ul>
+
+      </div>
+<link href="css/pages/signin.css" rel="stylesheet" type="text/css">
+
+<div class="account-container">	
+	<div class="content clearfix">		
+		<form action="#" method="post" onsubmit="return validator()" id="loginForm">
+			<input type="hidden" name="action" value="loginCheck"/>
+			<div class="login-fields">
+				<p class="info">Please provide your details</p>
+				
+				<div class="field">
+					<label for="username">Email ID</label>
+					<input type="text" id="txtUsername" name="txtUsername" value="" placeholder="Email ID" class="login username-field form-control" />
+				</div> <!-- /field -->
+				
+				<div class="field">
+					<label for="password">Password:</label>
+					<input type="password" id="txtPassword" name="txtPassword" value="" placeholder="Password" class="login password-field form-control"/>
+				</div> <!-- /password -->
+
+<!-- 				<div class="field">
+					<label for="password">User:</label>
+					<select name="userType" id="userType" class="form-control">
+						<option value="0">Select Role</option>
+									<option value="1">Super Admin</option>
+			<option value="2">Admin</option>
+			<option value="3">Staff</option>
+					</select>
+
+				</div> -->
+				
+
+				
+			</div> <!-- /login-fields -->
+			
+			<div class="login-actions">
+				
+				<span class="login-checkbox">
+					<input id="Field" name="sign_remember" type="checkbox" class="field login-checkbox" value="1" tabindex="4" />
+					<label class="choice" for="Field">Keep me signed in</label>
+				</span>
+									
+				<button class="button btn btn-success btn-large">Sign In</button>
+				
+			</div> <!-- .actions -->
+		</form>		
+	</div> <!-- /content -->	
+	<p class="alert"></p>
+</div> <!-- /account-container -->
+
+
+
+<div class="footer">
+  <div class="footer-inner">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="col-md-6 col-sm-6"> &copy; 2014. All rights reserved by <a href="http://www.bajajauto.com/" target="_blank">Bajaj Auto</a>. </div>
+        <div class="col-md-6 col-sm-6 provision"> Provisioned on <a href="http://www.gladminds.co/" target="_blank">GladMinds Connect Platform</a>. <span class="ver noselect">V 0.0.1</span></div>
+        <!-- /span12 --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /footer-inner --> 
+</div>
+
+</div>
+</div>
+
+<div id="loading">
+  <div class="txt"></div>
+  <div class="bg"></div>
+</div>
+
+
+ 
+
+<script>
+
+function f1(){
+
+      window.location.href="dashboard.html";
+}
+
+function validator(){
+    if($("#txtUsername").val()=="admin@gladminds.co" && $("#txtPassword").val()=="nimda"){
+      
+      $(".alert").removeClass("alert-danger").addClass("alert-success").html("Login Successful. Redirecting...").css("display","block");
+
+      //alert("ub")
+      setTimeout(f1,1500);
+      return false
+      
+    }
+    else{
+      $(".alert").removeClass("alert-success").addClass("alert-danger").html("Wrong username or password.").css("display","block");
+      return false;
+    }
+}
+
+</script>
+</body>
+
+</html>

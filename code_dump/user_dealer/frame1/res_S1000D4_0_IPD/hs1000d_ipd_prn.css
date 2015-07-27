@@ -1,0 +1,308 @@
+html, body, object, p, blockquote, pre, address, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, div {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width:100%;
+	height:100%;
+	color:#000000;	
+	background-color:#FFFFFF;
+}
+a {
+	color:#000000;
+	background-color:#FFFFFF;
+	text-decoration:none;
+}
+table.ipc {
+	width:100%;
+	border-collapse: collapse;
+	border:0;
+	color:#000000;	
+	background-color:#FFFFFF;
+}
+.hideOnPrint{
+	display:none;
+	overflow: hidden;
+	visibility: hidden;
+	width:1px;
+	height:1px;
+}
+table.ipc th {
+	font-family: sans-serif;
+	font-size:11px;
+	text-align: left;
+	vertical-align: top;
+	padding:1px 1px 1px 1px;
+	border:1px solid #000000;
+	border-style :solid none solid none;
+	font-weight : bolder;
+	color:#000000;
+	background-color:#FFFFFF;
+	empty-cells:show;
+}
+table.ipc th.flt {
+	border-style : none solid solid none;
+}
+table.ipc td {
+	font-family: "Courier New", Courier, monospace;
+	font-size:11px;
+	padding:2mm 2mm 0 0;
+	border: 0 none;
+	vertical-align: top;
+	font-weight: bolder;
+	color:#000000;
+	background-color:#FFFFFF;
+}
+table.ipc tr.bottomtr td{
+	height: 12px;
+	border:0 none;
+	border-top: 1px solid #000000;
+	padding:0 0 0 0; 
+	margin: 0 0 0 0;
+	font-size:1px;
+}
+table.ipc tr.bottomtr td:first-child{
+	height: 1px;
+	border: 0 none;
+	padding:0 0 0 0; 
+	margin: 0 0 0 0;
+	font-size:1px;
+}
+
+table.ipc th.f {
+	border:0 none;
+}
+
+table.ipc td.f {
+	border:0 none;
+	vertical-align: bottom;
+	background-color:#FFFFFF;
+}
+table.ipc input.filter{
+	font-family: "Courier New", Courier, monospace;
+	border:1px solid #909090;
+	font-size:12px;
+	width:100%;
+	text-transform : uppercase;
+	color:#000000;	
+	background-color:#ffffff;
+}	
+table.ipc span.fig0 {
+	font-family: "Courier New", Courier, monospace;
+	font-size:13px;
+	border:0 none;
+	position:relative; 
+	font-weight: bolder;
+	top: 20px;
+	left: -29px;
+	background-color: transparent;
+}
+div#metaheader1 {
+	font-size:15px; 
+	font-weight: bold; 
+	font-family: sans-serif;
+	text-align: left;
+}
+div#metaheader2 {
+	font-size:13px; 
+	font-weight: bold; 
+	text-align: left;
+}	
+div#metaheader3 {
+	font-size:13px; 
+	font-weight: bold; 
+	text-align: left;
+}
+table#screenHeader td#metaheader4{
+	width:150px; 
+	text-align:right;
+	vertical-align: top;
+}
+div#metaPublishedDate{
+	white-space : nowrap;
+}
+/*
+#meta_model, #meta_date{
+	line-height: 1.6;
+}
+*/
+div.tableContainer {
+	display:inline;
+	width: 100%;
+	margin: 0 auto;
+	overflow: visible;
+	text-align: left;
+	border:0 none;
+}
+
+table.ipc thead{
+	display:table-header-group;
+}
+table.ipc tbody {  
+  	display:table-row-group;  
+} 
+
+tfoot	{display: table-footer-group;	}	
+
+span.chkbox{
+margin: 0px;
+height:13px; width:11px;
+display:inline-block;
+}
+
+.metatitle{
+font-family:tahoma, sans-serif;
+font-size:16px; 
+}
+#metaCSN{
+font-family:tahoma, sans-serif;
+font-size:13pt; 
+font-weight:bold;
+}
+#metafig{
+font-family: "Courier New", Courier, monospace;
+padding:0px 0px 0px 0px;
+}
+#metasheet{
+	font-family: "Courier New", Courier, monospace;
+	padding:0px 0px 0px 0px;
+}
+table#screenHeader{
+width: 100%;
+border-collapse:collapse;
+border:0 none;
+margin-bottom:1mm;
+}
+table#screenHeader td {
+	padding:0px 0px 0px 0px;
+	text-align: left;
+	border:0 none;
+	white-space : normal;
+}
+#meta_currentdate{
+	font-family: "Courier New", Courier, monospace;
+	font-size:11px;
+	font-weight: bolder;
+	color:#000000;
+	background-color:#FFFFFF;
+	margin:1mm;
+	float:right;
+}
+#meta_proprietary{
+	font-family: "Courier New", Courier, monospace;
+	font-size:11px;
+	font-weight: bolder;
+	color:#000000;
+	background-color:#FFFFFF;
+	margin:1mm;
+	float:left;
+}
+
+col.col0 {width:16px;}
+.revcol{width:16px;}
+col.col01 {width:1px;}
+col#colChckboxesB{width:1px;}
+
+svg{
+	padding:0;
+	border: 0 none;
+}
+
+.divCSC{
+	text-align: center;
+	width:100%;
+	height:100%;
+}
+table.crvTable{
+	table-layout:fixed;
+	border-collapse: collapse;
+	margin:0;
+	padding:0;
+	page-break-after: always;
+	width:100%;
+	height:100%;
+}
+
+table.crvTable td{
+	margin:0;
+	padding:0;
+	font-family: "Courier New", Courier, monospace;
+	font-size:11px;	
+	font-weight: bolder;
+	color:#000000;
+	background-color:#FFFFFF;
+	vertical-align: top;
+}
+td.tdCRV{
+	border:0 none;
+	border-bottom: 1px solid #000000;
+	border-top: 1px solid #000000;
+	vertical-align : middle;
+}
+.grHeader{
+	border-bottom: 1px solid #000000;
+	margin:0;
+	padding:0;
+	font-family: "Courier New", Courier, monospace;
+	font-size:11px;	
+	font-weight: bolder;
+	color:#000000;
+	background-color:#FFFFFF;
+}
+.grFooter{
+	border-top: 1px solid #000000;
+	margin:0;
+	padding:0;
+	font-family: "Courier New", Courier, monospace;
+	font-size:11px;	
+	font-weight: bolder;
+	color:#000000;
+	background-color:#FFFFFF;
+}
+
+.sidebarLeft {
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	width:1px;
+	height:1px;
+}
+div.sidebarRight {
+}
+
+
+table.ipc td.ccl,
+table.ipc th.ccl{
+/*	display:none; */
+width:1mm;
+overflow: hidden;
+}
+td.ccl *,
+th.ccl *{
+	display:none; 
+}
+
+#THeader, 
+#TFooter {
+	display:none;
+}
+.img_logo{
+	display:block;
+}
+
+tr#pageHeader td{
+	padding:0;
+	margin: 0;
+}
+
+div.extgr{
+	margin-left:18px;
+}
+div.extgr .grHeader{
+	margin-right:2px;
+}
+
+table.ipc td#tbHeaderContainer{
+	padding:0;
+}

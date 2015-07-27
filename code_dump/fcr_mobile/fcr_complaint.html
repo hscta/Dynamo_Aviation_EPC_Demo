@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bajaj Complaint Complaint Reporting</title>
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/jquery.datetimepicker.css" />	
+	<link rel="stylesheet" href="css/bootstrap-fileupload.css" />
+	<link href="assets/css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+	<script src="js/jquery.datetimepicker.js"></script>
+	<script src="js/inc.js"></script>
+	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="fcrDashboard">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		    <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+	     	<a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+		 </div>
+
+		<div class="miniHeader minitext">All Complaints <span class="selDealer"></span>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+		<a href="#" id="addComplaint" data-role="button" data-icon="plus" data-mini="true" class="fright">Add</a>
+		<a href="#fcrDashboardClosed" data-role="button" data-mini="true" class="fright">Closed Issues</a>
+		<h2 class="pageHeading">Complaint - Open Issues</h2>
+		<table data-role="table" id="fcr_compaintTable" data-mode="columntoggle" class="ui-responsive table-stroke table-stripe" data-column-btn-text="Cols...">
+
+
+
+		  <thead>
+		    <tr>
+		      <th>Complaint ID</th>
+		      <th>Customer Name</th>
+		      <th>Phone number</th>
+		      <th>VIN Number</th>
+		      <th data-priority="5">Registation Number</th>
+		      <th data-priority="5">Location</th>
+		      <th data-priority="5">Engine Number</th>
+		      <th>&nbsp;</th>
+		    </tr>
+		  </thead>
+		  <tbody id="fcr_complaintList">
+		   
+		  </tbody>
+		</table>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+<div data-role="page" id="fcrDashboardClosed">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		    <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+	     	<a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+		 </div>
+
+		<div class="miniHeader minitext">All Complaints <span class="selDealer"></span>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+		<a href="#" id="addComplaint1" data-role="button" data-icon="plus" data-mini="true" class="fright">Add</a>
+		<a href="#fcrDashboard" data-role="button" data-mini="true" class="fright">Open Issues</a>
+		<h2 class="pageHeading">Complaint - Closed Issues</h2>
+		<table data-role="table" id="compaintTableClosed" data-mode="columntoggle" class="ui-responsive table-stroke table-stripe">
+		  <thead>
+		    <tr>
+		      <th>Complaint ID</th>
+		      <th>Customer Name</th>
+		      <th>Phone number</th>
+		      <th>VIN Number</th>
+		      <th data-priority="5">Registation Number</th>
+		      <th data-priority="5">Location</th>
+		      <th data-priority="5">Engine Number</th>
+		      <th>&nbsp;</th>
+		    </tr>
+		  </thead>
+		  <tbody id="complaintListClosed">
+		   
+		  </tbody>
+		</table>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+
+
+<!--*************************************************************************************-->
+<!--CR stands for Complaint Registration -->
+
+
+<div data-role="page" id="cr_add_default" data-add-back-btn="true">
+	<div data-role="header" class="header">
+		<h1>Complaint Registration Form</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+	     	<a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+		 </div>
+
+		<div class="miniHeader minitext">New Complaint Registration
+			<div class="step">1/5</div>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+		<form id="add_defaultCustomer" class="ui-body ui-body-a ui-corner-all" data-ajax="true" method="post">
+			<input type="hidden" name="action" value="addDefaultComplaint">
+		<div class="ui-field-contain">
+		    <label for="textinput-fc">Employee Code:</label>
+		    <input type="text" id="cr_txtEmpCode" name="cr_txtEmpCode" value="" readonly />
+		</div>
+
+		<div class="ui-field-contain">
+		    <label for="textinput-fc">Complaint Number:</label>
+		    <input name="cr_txtComplaintNumber" id="cr_txtComplaintNumber" readonly type="text">
+		</div>
+
+		<div class="ui-field-contain">
+		    <label for="textinput-fc">Location <span class="red">*</span>:</label>
+		    <select name="cr_txtLocation" id="cr_txtLocation">
+		    
+		    </select>
+		</div>
+
+		<div class="ui-grid-solo">
+		    <div class="ui-block-a"><a href="#" id="addDefaultComplaint" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >Add Customer Details</a></div>
+		</div>
+	</form>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+<div data-role="page" id="cr_add_customer" data-add-back-btn="true">
+	<div data-role="header" class="header">
+		<h1>Complaint Registration Form</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+	     	<a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+		 </div>
+
+		<div class="miniHeader minitext">Customer Details
+			<div class="step">2/5</div>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+		<form id="add_customer" class="ui-body ui-body-a ui-corner-all" data-ajax="true" method="post">
+			<input type="hidden" name="action" value="addCustomerComplaint">
+			<input type="hidden" name="complaintNumber" class="complaintNumber" value="">
+
+			<div class="ui-field-contain">
+			    <label for="textinput-fc">Name:</label>
+			    <input name="cr_txtName" id="cr_txtName" placeholder="Enter Customer Name" value="" type="text">
+			</div>
+
+			<div class="ui-field-contain">
+			    <label for="textinput-fc">Email:</label>
+			    <input name="cr_txtEmail" id="cr_txtEmail" placeholder="Enter Customer Email" value="" type="text">
+			</div>
+
+			<div class="ui-field-contain">
+			    <label for="textinput-fc">Phone <span class="red">*</span>:</label>
+			    <input name="cr_txtPhone" id="cr_txtPhone" placeholder="Enter Customer Phone" value="" type="text" maxlength="15">
+			</div>
+
+			<div class="ui-field-contain">
+			    <label for="textinput-fc">Address:</label>
+			    <textarea name="cr_txtAddress" id="cr_txtAddress" placeholder="Enter Customer Address" rows="3"></textarea>
+			</div>
+
+			<div class="ui-grid-solo">
+			    <div class="ui-block-a"><a href="#" id="addCustomerComplaint"  data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >Add Vehicle Details</a></div>
+			</div>
+		</form>
+
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+<div data-role="page" id="cr_add_vehicle" data-add-back-btn="true">
+	<div data-role="header" class="header">
+		<h1>Complaint Registration Form</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+	     	<a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+		 </div>
+
+		<div class="miniHeader minitext">Vehicle Details
+			<div class="step">3/5</div>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+			<form id="add_vehicleComplaint" class="ui-body ui-body-a ui-corner-all" data-ajax="true" method="post">
+				<input type="hidden" name="action" value="addVehicleComplaint">
+				<input type="hidden" name="complaintNumber" class="complaintNumber" value="">
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Model:</label>
+				    <select name="cr_txtModel" id="cr_txtModel">
+				    	<option value="">Select Vehicle Model</option>
+				    </select>
+				</div>
+
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Registration Number:</label>
+				    <input name="cr_txtregno" id="cr_txtregno" placeholder="Enter Vehicle Registration Number" value="" type="text">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Frame No. / VIN No. <span class="red">*</span>:</label>
+				    <input name="cr_txtVinno" id="cr_txtVinno" placeholder="Enter Vehicle Frame No. / VIN No." value="" type="text" maxlength="17">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Engine No. <span class="red">*</span>:</label>
+				    <input name="cr_txtEngno" id="cr_txtEngno" placeholder="Enter Vehicle Engine No." value="" type="text" maxlength="11">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Date of Purchase:</label>
+				    <input name="cr_txtDOP" id="cr_txtDOP" placeholder="Enter Vehicle Date of Purchase" value="" type="text" readonly>
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Kilometer Reading:</label>
+				    <input name="cr_txtKMR" id="cr_txtKMR" placeholder="Enter Vehicle Kilometer Reading" value="" type="text">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Repair Type:</label>
+
+				<div class="ui-grid-a ui-responsive">
+				    <div class="ui-block-a"><input name="cr_txtrtype" id="cr_txtrtype1" value="0" type="radio" checked><label for="cr_txtrtype1">Under Warranty</label></div>
+				    <div class="ui-block-b"><input name="cr_txtrtype" id="cr_txtrtype2" value="1" type="radio"><label for="cr_txtrtype2">Paid</label></div>
+				</div>
+
+				</div>
+
+				<div class="ui-grid-solo">
+				    <div class="ui-block-a"><a href="#" id="addVehicleComplaint" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >Add Complaints</a></div>
+				</div>
+
+			</form>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+<div data-role="page" id="cr_add_complaint" data-add-back-btn="true">
+	<div data-role="header" class="header">
+		<h1>Complaint Registration Form</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+	     	<a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+		 </div>
+
+		<div class="miniHeader minitext">Complaint Details
+			<div class="step">4/5</div>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+		<form id="add_vehicleForm" data-ajax="true" method="post" onsubmit="return addComplaintSubmit()">
+			<input type="hidden" name="action" value="addComplaintDetails">
+			<input type="hidden" name="complaintNumber" class="complaintNumber" value="">
+			<table data-role="table" class="ui-responsive">
+				<thead><tr>
+					<th width="45%">Complaint Category</th>
+					<th width="45%">Customer Voice</th>
+					<th width="10%">&nbsp;</th>
+				</tr></thead>
+				<tbody id="complaintCategoryBody">
+
+				</tbody>
+
+			</table>
+			<br/>
+
+			<div class="ui-grid-a ui-responsive">
+				<div class="ui-block-a"><a href="#" id="addComplaintRow" data-role="button" data-icon="plus" data-iconpos="left" data-theme="b" data-mini="true">Add</a></div>
+				<div class="ui-block-b">
+					<input type="submit" value="Upload Picture" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-mini="true">
+	   			</div>
+			</div>
+		</form>
+	</div>  
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+<div data-role="page" id="cr_uploadPic" data-add-back-btn="true">
+	<div data-role="header" class="header">
+		<h1>Complaint Registration Form</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+	     	<a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+		 </div>
+
+		<div class="miniHeader minitext">Complaint Details
+			<div class="step">5/5</div>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+
+    <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+    <img style="display:none;" id="largeImage" src="" /> 
+			<form id="upload" method="post" action="http://www.gladminds.co/bajaj/fcr_mobile/uploadComplaint.php" enctype="multipart/form-data">
+				<input type="hidden" name="complaintNumber" class="complaintNumber" value="">
+				<ul></ul>
+				<button onclick="capturePhoto();">Capture Editable Photossss</button>
+				<div id="drop">Drop Here<a href="#">Browse</a><input type="file" name="upl" id="accred_pic_input" accept="image/*" ></div>
+			</form>
+			<br/>
+
+		<div class="ui-grid-solo">
+		    <div class="ui-block-a"><a href="#cr_finish" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >Finish</a></div>
+		</div>
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+<div data-role="page" id="cr_finish" data-add-back-btn="true">
+	<div data-role="header" class="header">
+		<h1>Complaint Registration Form</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+	     	<a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+		 </div>
+
+		<div class="miniHeader minitext">Complaint Details
+			
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+
+		
+
+		<div class="ui-grid-solo">
+		    <div class="ui-block-a"><h3 class="aCenter">Thankyou. Your Complaint ID is: <a href="#cr_action"><span class="red"  id="complaintNumber"></span></a></h3></div>
+		</div>
+
+		<br/><br/>
+
+		<div class="ui-grid-solo">
+		    <div class="ui-block-a"><a href="#fcrDashboard" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >OK</a></div>
+		</div>
+
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+<div data-role="page" id="cr_action" data-add-back-btn="true">
+	<div data-role="header" class="header">
+		<h1>Complaint Action Form</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+	     	<a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+		 </div>
+
+		<div class="miniHeader minitext">Complaint Details for <b class="complaintID">12345</b>
+			
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+		<form name="complaintAction" id="complaintAction" method="post">
+			<input type="hidden" name="action" id="taskAction" value="addComplaintActions">
+			<input type="hidden" name="complaintNumber" class="complaintNumber" value="">
+
+		<table data-role="table" class="ui-responsive table-stroke vaBottom">
+	     <thead>
+	       <tr>
+	         <th width="32%">Customer Voice</th>
+	         <th width="33%">Actions Taken</th>
+	         <th width="33%">Responsibility</th>
+	         <th width="2%"><a href="javascript:addActionsToTable()" style="background:#138E5F" data-role="button" data-icon="plus" data-iconpos="notext"  data-mini="true" class="fright">Add Actions</a></th>
+	       </tr>
+	     </thead>
+	     <tbody id="actionsTakenBody">
+			
+
+	     </tbody>
+	   	</table>
+	   </form>
+
+	   	<hr style="color:#fff;"/>
+	   	<p class="aCenter">
+		   	<a href="#" id="draftActionsBtn" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b">Draft</a>
+			<a href="#" id="closeActionsBtn" class="ui-btn ui-btn-inline ui-shadow ui-corner-all">Close</a>
+			<a href="#fcrDashboard" class="ui-btn ui-btn-inline ui-shadow ui-corner-all">Cancel</a>
+		</p>
+
+
+
+	   	<hr style="color:#fff;"/>
+	   	<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-action" style="font-size:1.2em;" id="convert2Failure">Convert to Failure</button>
+
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+<!-- *****************************************Edit Page ************************************ -->
+
+<div data-role="page" id="cr_edit_default" data-add-back-btn="true">
+	<div data-role="header" class="header">
+		<h1>Complaint Registration Form</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+	     	<a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+		 </div>
+
+		<div class="miniHeader minitext">Edit Complaint Registration
+			<div class="step">1/5</div>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+		<form id="edit_defaultCustomer" class="ui-body ui-body-a ui-corner-all" data-ajax="true" method="post">
+			<input type="hidden" name="action" value="editDefaultComplaint">
+
+		<div class="ui-field-contain">
+		    <label for="textinput-fc">Employee Code:</label>
+		    <input type="text" id="cr_txtEmpCode_edit" name="cr_txtEmpCode_edit" value="" readonly />
+		</div>
+
+		<div class="ui-field-contain">
+		    <label for="textinput-fc">Complaint Number:</label>
+		    <input name="cr_txtComplaintNumber_edit" id="cr_txtComplaintNumber_edit" readonly type="text">
+		</div>
+
+		<div class="ui-field-contain">
+		    <label for="textinput-fc">Location <span class="red">*</span>:</label>
+		    <select name="cr_txtLocation_edit" id="cr_txtLocation_edit">
+		    
+		    </select>
+		</div>
+
+		<div class="ui-grid-solo">
+		    <div class="ui-block-a"><a href="#" id="editDefaultComplaint" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >Edit Customer Details</a></div>
+		</div>
+	</form>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+<div data-role="page" id="cr_edit_customer" data-add-back-btn="true">
+	<div data-role="header" class="header">
+		<h1>Complaint Registration Form</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+	     	<a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+		 </div>
+
+		<div class="miniHeader minitext">Edit Customer Details
+			<div class="step">2/5</div>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+		<form id="edit_customer" class="ui-body ui-body-a ui-corner-all" data-ajax="true" method="post">
+			<input type="hidden" name="action" value="editCustomer1">
+			<input type="hidden" name="complaintNumber" class="complaintNumber" value="">
+
+			<div class="ui-field-contain">
+			    <label for="textinput-fc">Name:</label>
+			    <input name="cr_txtName_edit" id="cr_txtName_edit" placeholder="Enter Customer Name" value="" type="text">
+			</div>
+
+			<div class="ui-field-contain">
+			    <label for="textinput-fc">Email:</label>
+			    <input name="cr_txtEmail_edit" id="cr_txtEmail_edit" placeholder="Enter Customer Name" value="" type="text">
+			</div>
+
+			<div class="ui-field-contain">
+			    <label for="textinput-fc">Phone <span class="red">*</span>:</label>
+			    <input name="cr_txtPhone_edit" id="cr_txtPhone_edit" placeholder="Enter Customer Name" value="" type="text" maxlength="15">
+			</div>
+
+			<div class="ui-field-contain">
+			    <label for="textinput-fc">Address:</label>
+			    <textarea name="cr_txtAddress_edit" id="cr_txtAddress_edit" placeholder="Enter Customer Address" rows="3"></textarea>
+			</div>
+
+			<div class="ui-grid-solo">
+			    <div class="ui-block-a"><a href="#" id="editCustomerComplaint"  data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >Edit Vehicle Details</a></div>
+			</div>
+		</form>
+
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+<div data-role="page" id="cr_edit_vehicle" data-add-back-btn="true">
+	<div data-role="header" class="header">
+		<h1>Complaint Registration Form</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+	     	<a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+		 </div>
+
+		<div class="miniHeader minitext">Edit Vehicle Details
+			<div class="step">3/5</div>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+			<form id="edit_vehicleComplaint" class="ui-body ui-body-a ui-corner-all" data-ajax="true" method="post">
+				<input type="hidden" name="action" value="editVehicleComplaint">
+				<input type="hidden" name="complaintNumber" class="complaintNumber" value="">
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Model:</label>
+				    <select name="cr_txtModel_edit" id="cr_txtModel_edit">
+				    	<option value="">Select Vehicle Model</option>
+				    </select>
+				</div>
+
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Registration Number:</label>
+				    <input name="cr_txtregno_edit" id="cr_txtregno_edit" placeholder="Enter Vehicle Registration Number" value="" type="text">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Frame No. / VIN No. <span class="red">*</span>:</label>
+				    <input name="cr_txtVinno_edit" id="cr_txtVinno_edit" placeholder="Enter Vehicle Frame No. / VIN No." value="" type="text" maxlength="17">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Engine No. <span class="red">*</span>:</label>
+				    <input name="cr_txtEngno_edit" id="cr_txtEngno_edit" placeholder="Enter Vehicle Engine No." value="" type="text" maxlength="11">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Date of Purchase:</label>
+				    <input name="cr_txtDOP_edit" id="cr_txtDOP_edit" placeholder="Enter Vehicle Date of Purchase" value="" type="text" readonly>
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Kilometer Reading:</label>
+				    <input name="cr_txtKMR_edit" id="cr_txtKMR_edit" placeholder="Enter Vehicle Kilometer Reading" value="" type="text">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Repair Type:</label>
+
+				<div class="ui-grid-a ui-responsive">
+				    <div class="ui-block-a"><input name="cr_txtrtype_edit" id="cr_txtrtype1_edit" value="0" type="radio" checked><label for="cr_txtrtype1_edit">Under Warranty</label></div>
+				    <div class="ui-block-b"><input name="cr_txtrtype_edit" id="cr_txtrtype2_edit" value="1" type="radio"><label for="cr_txtrtype2_edit">Paid</label></div>
+				</div>
+
+				</div>
+
+				<div class="ui-grid-solo">
+				    <div class="ui-block-a"><a href="#" id="editVehicleComplaint" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >Edit Complaints</a></div>
+				</div>
+
+			</form>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+<div data-role="page" id="cr_edit_complaint" data-add-back-btn="true">
+	<div data-role="header" class="header">
+		<h1>Complaint Registration Form</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+	     	<a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+		 </div>
+
+		<div class="miniHeader minitext">Edit Complaint Details
+			<div class="step">4/5</div>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+		<form id="edit_vehicleForm" data-ajax="true" method="post" onsubmit="return editComplaintSubmit()">
+			<input type="hidden" name="action" value="editComplaintDetails">
+			<input type="hidden" name="complaintNumber" class="complaintNumber" value="">
+			<table data-role="table" class="ui-responsive">
+				<thead><tr>
+					<th width="45%">Complaint Category</th>
+					<th width="45%">Customer Voice</th>
+					<th width="10%">&nbsp;</th>
+				</tr></thead>
+				<tbody id="complaintCategoryBody1">
+
+				</tbody>
+
+			</table>
+			<br/>
+
+			<div class="ui-grid-a ui-responsive">
+				<div class="ui-block-a"><a href="#" id="editComplaintRow" data-role="button" data-icon="plus" data-iconpos="left" data-theme="b" data-mini="true">Add</a></div>
+				<div class="ui-block-b">
+					<input type="submit" value="Upload Picture" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-mini="true">
+	   			</div>
+			</div>
+		</form>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+<!-- *****************************************Edit Page ************************************ -->
+
+
+
+
+
+<script src="js/fcr_complaint.js"></script>
+<script src="assets/js/jquery.knob.js"></script>
+
+<!-- jQuery File Upload Dependencies -->
+<script src="assets/js/jquery.ui.widget.js"></script>
+<script src="assets/js/jquery.iframe-transport.js"></script>
+<script src="assets/js/jquery.fileupload.js"></script>
+
+<!-- Our main JS file -->
+<script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>

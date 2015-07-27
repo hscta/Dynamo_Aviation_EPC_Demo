@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created by VME v.7, 1, 3, 0 (build 7.1.3.444)-->
+<SimulationInteractivity xmlns="http://services.parallelgraphics.com/vm/mmr/vm-interactivity-xml/all">
+	<SimulationInformation>
+		<ExporterVersionNumber>7.1.3.444</ExporterVersionNumber>
+		<ModificationDate>10/16/14</ModificationDate>
+		<SpecID>GENERIC_TRN</SpecID>
+		<SpecVersion>1.11</SpecVersion>
+		<XMLFileName>MLG with training scenario</XMLFileName>
+		<FileName>MLG with training scenario</FileName>
+		<Options>
+			<Value name="EnableDemoMode">Yes</Value>
+			<Value name="EnableStudyMode">Yes</Value>
+			<Value name="EnableExamMode">Yes</Value>
+			<Value name="CancelExamAfterFailedStep">No</Value>
+			<Value name="EnableFailIndicator">Yes</Value>
+			<Value name="SCORM">0</Value>
+			<Value name="RemoveSpace">No</Value>
+			<Value name="SimplifyFloats">No</Value>
+			<Value name="CoordinateResolution">0</Value>
+			<Value name="OptionShowAlertBox">Yes</Value>
+			<Value name="OptionFlashPartInDemo">No</Value>
+			<Value name="OptionContinuous">Yes</Value>
+			<Value name="OptionShowExpectedOperations">Yes</Value>
+			<Value name="OptionUnrollNavigation">Yes</Value>
+			<Value name="VRMLProfile">1</Value>
+			<Value name="MuteAudioInExam">No</Value>
+			<Value name="ForceDirectX">Yes</Value>
+		</Options>
+		<metadata/>
+	</SimulationInformation>
+	<Simulation id="09175525-88DF-4273-A017-BAC94FFC6DC4">
+		<Description>00-PG-32-10-02-00A-401A-T-004</Description>
+		<Comment>
+			<![CDATA[<p>MAIN LANDING GEAR BRAKE REMOVAL procedure (Ref. 00-PG-32-40-03-00A-401A-A)</p>]]>
+		</Comment>
+		<Step id="1668C9EE-243E-43D8-BCA6-122792531631">
+			<Description>S0001</Description>
+			<Comment>
+				<![CDATA[<p>Remove the wheel assy.</p>]]>
+			</Comment>
+			<Substep id="F6A52224-3668-44A3-84A4-3179296831B2">
+				<Description>Remove the wheel assy</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the wheel assy.</i></p>]]>
+				</Comment>
+			</Substep>
+		</Step>
+		<Step id="4610B846-5CB0-406F-84EA-CD1AAFB3F6C9">
+			<Description>S0002</Description>
+			<Comment>
+				<![CDATA[<p>Remove the screw (13), clamp (14) and nut (21) from the torque link standoff bracket (18) (Ref. Fig. 401).</p>]]>
+			</Comment>
+			<Substep id="6B39B2CA-A77A-4601-A690-3EED6FA20F90">
+				<Description>Remove screw and nut</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the screw (13) and nut (21).</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="F61A29BA-BB72-4970-9FDD-BA9D1CA7A4C8">
+				<Description>Remove the clamp (14)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the clamp (14)</i></p>]]>
+				</Comment>
+			</Substep>
+		</Step>
+		<Step id="FF486A98-11CA-4B6C-8A80-569A39134A9C">
+			<Description>S0003</Description>
+			<Comment>
+				<![CDATA[<p>Remove the cotter pin (16), nuts (15), washers (17), bolts (20), standoff bracket (18) and switch bracket (19) from the upper torque link (2).</p>]]>
+			</Comment>
+			<Substep id="EB2A4226-DC5C-4A08-AF43-A7E6425F1BD1">
+				<Description>Remove  the cotter pin (16)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove  the cotter pin (16)</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="D21FFE38-687D-412C-8B49-61CDD41C3189">
+				<Description>Remove the nuts (15)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the nuts (15)</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="4C126B77-2829-4722-8084-57268A86FF98">
+				<Description>Remove the washers (17)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the washers (17)</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="B15F3BC6-F653-498A-B9AC-DB0A205A36C7">
+				<Description>Remove the bolts (20)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the bolts (20)</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="E78594D4-928E-4921-9FB5-E0DFD5E3BB40">
+				<Description>Remove the standoff bracket (18)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the standoff bracket (18)</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="F23267A2-3598-49BB-8F2D-FD0ED992BD64">
+				<Description>Remove the switch bracket (19)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the switch bracket (19)</i></p>]]>
+				</Comment>
+			</Substep>
+		</Step>
+		<Step id="DF78DA6F-AA63-41B0-B7DD-E09263218F6A">
+			<Description>S0004</Description>
+			<Comment>
+				<![CDATA[<p>Remove the nuts (12), washers (11), bolts (8) and the switch terminal bracket (9) from the lower torque link (7).</p>]]>
+			</Comment>
+			<Substep id="AA4C60A7-825F-4D04-B223-CFD8B97A1128">
+				<Description>Remove the nuts (12)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the nuts (12)</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="B3110BB2-15AD-49C2-B067-4396310EC024">
+				<Description>Remove the washers (11)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the washers (11)</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="23123F1F-8856-4AAD-B0B8-682B906CC981">
+				<Description>Remove the bolts (8)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the bolts (8)</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="1FD8B91D-FEB4-47B5-B778-CA3ED3852EE5">
+				<Description>Remove the switch terminal bracket (9)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the switch terminal bracket (9)</i></p>]]>
+				</Comment>
+			</Substep>
+		</Step>
+		<Step id="55FBC517-8945-4193-8316-C6D056EB3E3B">
+			<Description>S0005</Description>
+			<Comment>
+				<![CDATA[<p>Remove the cotter pin (5), nut (4), washer (6) and bolt (10) from the torque links (2 and 7).</p>]]>
+			</Comment>
+			<Substep id="9E78410B-61D4-4D4E-A462-4CBAD26874BA">
+				<Description>Remove the cotter pin (5)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the cotter pin (5) </i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="83D200F2-E256-420A-97AF-97767DB346FA">
+				<Description>Remove the nut (4)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the nut (4)</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="957D9829-34EB-4059-B551-6AA505F8174F">
+				<Description>Remove the washer (6)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the washer (6)</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="8D0B02E2-5758-4B60-A1D4-1A5CA9B26CBE">
+				<Description>Remove the bolt (10)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the bolt (10)</i></p>]]>
+				</Comment>
+			</Substep>
+		</Step>
+		<Step id="EDD9865D-D0D6-4BAE-8E93-B74AC2A22EC1">
+			<Description>S0006</Description>
+			<Comment>
+				<![CDATA[<p>Remove the safety wire from each slotted spring pin (3).</p>]]>
+			</Comment>
+			<Substep id="3BF3A72F-2A77-4F9F-91FD-DF1F1B2363DC">
+				<Description>Remove the safety wire</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the upper safety wire</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="1D5AE681-C9CF-4D9A-A8C1-44166329E225">
+				<Description>Remove the safety wire</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the lower safety wire</i></p>]]>
+				</Comment>
+			</Substep>
+		</Step>
+		<Step id="00F88CF7-807C-4FDD-8596-ED3FA70172CA">
+			<Description>S0007</Description>
+			<Comment>
+				<![CDATA[<p>Remove the spring pin (3) and link pin (1) from the upper (2) and lower (7) torque links.</p>]]>
+			</Comment>
+			<Substep id="D231B70B-5DCF-48F8-BFAB-9F7CF7E0026F">
+				<Description>Remove the spring pin (3)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the spring pin (3)</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="5B4CFA61-2419-4A92-B98A-06C3EA981688">
+				<Description>Detach the link pin (1)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the link pin (1)</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="8C01C874-1F17-4216-9CEA-4A89E78A5351">
+				<Description>Remove the spring pin (3)</Description>
+				<Comment>
+					<![CDATA[<p><i>Remove the spring pin (3) </i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="012076B2-A71C-4B86-8DEE-1453665707D9">
+				<Description>Detach the link pin (1)</Description>
+				<Comment>
+					<![CDATA[<p><i>Detach the link pin (1) </i></p>]]>
+				</Comment>
+			</Substep>
+		</Step>
+		<Step id="944057C5-389E-459A-BAF2-81E53B5080B1">
+			<Description>S0008</Description>
+			<Comment>
+				<![CDATA[<p>Remove the upper torque link (2) and lower torque link (7) from the strut and axle.</p>]]>
+			</Comment>
+			<Substep id="3551D854-45BA-4957-B5C8-CDC46D066E10">
+				<Description>Detach the upper torque link (2)</Description>
+				<Comment>
+					<![CDATA[<p><i>Detach the upper torque link (2) </i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="F1B02A24-F823-49D6-BC8C-3820918462BA">
+				<Description>Detach the lower torque link (7)</Description>
+				<Comment>
+					<![CDATA[<p><i>Detach the lower torque link (7) </i></p>]]>
+				</Comment>
+			</Substep>
+		</Step>
+		<Step id="8C91ED79-F994-40B1-AC6D-DD3370FEF668">
+			<Description>S0009</Description>
+			<Comment>
+				<![CDATA[<p>Inspect the strut, pins and torque link bushings for damage.</p>]]>
+			</Comment>
+			<Substep id="F71CED76-14BD-4C15-B567-0FD1DBE9134C">
+				<Description>Inspect the strut</Description>
+				<Comment>
+					<![CDATA[<p><i>Inspect the strut</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="6857B0E7-E351-454D-9389-88688ED0AE72">
+				<Description>Inspect the pins</Description>
+				<Comment>
+					<![CDATA[<p><i>Inspect the pins</i></p>]]>
+				</Comment>
+			</Substep>
+			<Substep id="FA4F4464-1C68-4AA8-B0B2-CEAA35844474">
+				<Description>Inspect the torque link bushings</Description>
+				<Comment>
+					<![CDATA[<p><i>Inspect the torque link bushings</i></p>]]>
+				</Comment>
+			</Substep>
+		</Step>
+	</Simulation>
+	<Procedure id="09175525-88DF-4273-A017-BAC94FFC6DC4">
+		<Item id="1668C9EE-243E-43D8-BCA6-122792531631">
+			<Action id="F6A52224-3668-44A3-84A4-3179296831B2">
+				<Comment>
+					<![CDATA[<p><i>Remove the wheel assy.</i></p>]]>
+				</Comment>
+			</Action>
+			<Comment>
+				<![CDATA[<p>Remove the wheel assy.</p>]]>
+			</Comment>
+		</Item>
+		<Item id="4610B846-5CB0-406F-84EA-CD1AAFB3F6C9">
+			<Action id="6B39B2CA-A77A-4601-A690-3EED6FA20F90">
+				<Comment>
+					<![CDATA[<p><i>Remove the screw (13) and nut (21).</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="F61A29BA-BB72-4970-9FDD-BA9D1CA7A4C8">
+				<Comment>
+					<![CDATA[<p><i>Remove the clamp (14)</i></p>]]>
+				</Comment>
+			</Action>
+			<Comment>
+				<![CDATA[<p>Remove the screw (13), clamp (14) and nut (21) from the torque link standoff bracket (18) (Ref. Fig. 401).</p>]]>
+			</Comment>
+		</Item>
+		<Item id="FF486A98-11CA-4B6C-8A80-569A39134A9C">
+			<Action id="EB2A4226-DC5C-4A08-AF43-A7E6425F1BD1">
+				<Comment>
+					<![CDATA[<p><i>Remove  the cotter pin (16)</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="D21FFE38-687D-412C-8B49-61CDD41C3189">
+				<Comment>
+					<![CDATA[<p><i>Remove the nuts (15)</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="4C126B77-2829-4722-8084-57268A86FF98">
+				<Comment>
+					<![CDATA[<p><i>Remove the washers (17)</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="B15F3BC6-F653-498A-B9AC-DB0A205A36C7">
+				<Comment>
+					<![CDATA[<p><i>Remove the bolts (20)</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="E78594D4-928E-4921-9FB5-E0DFD5E3BB40">
+				<Comment>
+					<![CDATA[<p><i>Remove the standoff bracket (18)</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="F23267A2-3598-49BB-8F2D-FD0ED992BD64">
+				<Comment>
+					<![CDATA[<p><i>Remove the switch bracket (19)</i></p>]]>
+				</Comment>
+			</Action>
+			<Comment>
+				<![CDATA[<p>Remove the cotter pin (16), nuts (15), washers (17), bolts (20), standoff bracket (18) and switch bracket (19) from the upper torque link (2).</p>]]>
+			</Comment>
+		</Item>
+		<Item id="DF78DA6F-AA63-41B0-B7DD-E09263218F6A">
+			<Action id="AA4C60A7-825F-4D04-B223-CFD8B97A1128">
+				<Comment>
+					<![CDATA[<p><i>Remove the nuts (12)</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="B3110BB2-15AD-49C2-B067-4396310EC024">
+				<Comment>
+					<![CDATA[<p><i>Remove the washers (11)</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="23123F1F-8856-4AAD-B0B8-682B906CC981">
+				<Comment>
+					<![CDATA[<p><i>Remove the bolts (8)</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="1FD8B91D-FEB4-47B5-B778-CA3ED3852EE5">
+				<Comment>
+					<![CDATA[<p><i>Remove the switch terminal bracket (9)</i></p>]]>
+				</Comment>
+			</Action>
+			<Comment>
+				<![CDATA[<p>Remove the nuts (12), washers (11), bolts (8) and the switch terminal bracket (9) from the lower torque link (7).</p>]]>
+			</Comment>
+		</Item>
+		<Item id="55FBC517-8945-4193-8316-C6D056EB3E3B">
+			<Action id="9E78410B-61D4-4D4E-A462-4CBAD26874BA">
+				<Comment>
+					<![CDATA[<p><i>Remove the cotter pin (5) </i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="83D200F2-E256-420A-97AF-97767DB346FA">
+				<Comment>
+					<![CDATA[<p><i>Remove the nut (4)</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="957D9829-34EB-4059-B551-6AA505F8174F">
+				<Comment>
+					<![CDATA[<p><i>Remove the washer (6)</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="8D0B02E2-5758-4B60-A1D4-1A5CA9B26CBE">
+				<Comment>
+					<![CDATA[<p><i>Remove the bolt (10)</i></p>]]>
+				</Comment>
+			</Action>
+			<Comment>
+				<![CDATA[<p>Remove the cotter pin (5), nut (4), washer (6) and bolt (10) from the torque links (2 and 7).</p>]]>
+			</Comment>
+		</Item>
+		<Item id="EDD9865D-D0D6-4BAE-8E93-B74AC2A22EC1">
+			<Action id="3BF3A72F-2A77-4F9F-91FD-DF1F1B2363DC">
+				<Comment>
+					<![CDATA[<p><i>Remove the upper safety wire</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="1D5AE681-C9CF-4D9A-A8C1-44166329E225">
+				<Comment>
+					<![CDATA[<p><i>Remove the lower safety wire</i></p>]]>
+				</Comment>
+			</Action>
+			<Comment>
+				<![CDATA[<p>Remove the safety wire from each slotted spring pin (3).</p>]]>
+			</Comment>
+		</Item>
+		<Item id="00F88CF7-807C-4FDD-8596-ED3FA70172CA">
+			<Action id="D231B70B-5DCF-48F8-BFAB-9F7CF7E0026F">
+				<Comment>
+					<![CDATA[<p><i>Remove the spring pin (3)</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="5B4CFA61-2419-4A92-B98A-06C3EA981688">
+				<Comment>
+					<![CDATA[<p><i>Remove the link pin (1)</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="8C01C874-1F17-4216-9CEA-4A89E78A5351">
+				<Comment>
+					<![CDATA[<p><i>Remove the spring pin (3) </i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="012076B2-A71C-4B86-8DEE-1453665707D9">
+				<Comment>
+					<![CDATA[<p><i>Detach the link pin (1) </i></p>]]>
+				</Comment>
+			</Action>
+			<Comment>
+				<![CDATA[<p>Remove the spring pin (3) and link pin (1) from the upper (2) and lower (7) torque links.</p>]]>
+			</Comment>
+		</Item>
+		<Item id="944057C5-389E-459A-BAF2-81E53B5080B1">
+			<Action id="3551D854-45BA-4957-B5C8-CDC46D066E10">
+				<Comment>
+					<![CDATA[<p><i>Detach the upper torque link (2) </i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="F1B02A24-F823-49D6-BC8C-3820918462BA">
+				<Comment>
+					<![CDATA[<p><i>Detach the lower torque link (7) </i></p>]]>
+				</Comment>
+			</Action>
+			<Comment>
+				<![CDATA[<p>Remove the upper torque link (2) and lower torque link (7) from the strut and axle.</p>]]>
+			</Comment>
+		</Item>
+		<Item id="8C91ED79-F994-40B1-AC6D-DD3370FEF668">
+			<Action id="F71CED76-14BD-4C15-B567-0FD1DBE9134C">
+				<Comment>
+					<![CDATA[<p><i>Inspect the strut</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="6857B0E7-E351-454D-9389-88688ED0AE72">
+				<Comment>
+					<![CDATA[<p><i>Inspect the pins</i></p>]]>
+				</Comment>
+			</Action>
+			<Action id="FA4F4464-1C68-4AA8-B0B2-CEAA35844474">
+				<Comment>
+					<![CDATA[<p><i>Inspect the torque link bushings</i></p>]]>
+				</Comment>
+			</Action>
+			<Comment>
+				<![CDATA[<p>Inspect the strut, pins and torque link bushings for damage.</p>]]>
+			</Comment>
+		</Item>
+	</Procedure>
+	<DocItems/>
+	<Resources/>
+</SimulationInteractivity>

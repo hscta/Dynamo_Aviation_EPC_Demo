@@ -1,0 +1,1880 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<![if !IE]>
+<meta http-equiv="Cache-Control" content="no-store">
+<meta http-equiv="Expires" content="-1">
+<![endif]>
+<title>00-PG-32-10-02-00A-401A-T-004</title><script language="javascript" src="res_GENERIC_TRN/trn_base.js"></script><script language="javascript" src="res_GENERIC_TRN/trn_common.js"></script><script language="javascript" src="res_GENERIC_TRN/trn_scenario.js"></script><script language="javascript" src="res_GENERIC_TRN/procedure_api.js"></script><script language="javascript" src="res_GENERIC_TRN/ipc_api.js"></script><script language="javascript" src="res_GENERIC_TRN/trn_sco.js"></script><script language="javascript" src="res_GENERIC_TRN/rts_api_stub.js"></script><script language="javascript" src="res_GENERIC_TRN/rts_api_wrapper.js"></script><link rel="stylesheet" href="res_GENERIC_TRN/trn_common.css" type="text/css"><script language="javascript">
+var _transform_version = 2;
+var resFolder = "res_GENERIC_TRN/";
+var forceDirectX = true;
+
+function docloaded(){
+	on_doc_load();
+}
+
+var optPublisherVersion = "7.1.3.444";
+var odfProcedureUrl="MLG with training scenario.training.description.html";
+var optEnableDemoMode = true;
+var optEnableStudyMode = true;
+var optEnableExamMode = true;
+var optCancelExamAfterFailedStep = false;
+var optMuteAudioInExam = false;
+var optEnableFailIndicator = true;
+var iLoadingMessage = "Loading...";
+var iCaptionCortonaNotFound = "Cortona3D Viewer cannot be loaded.<br>Please check Microsoft Internet Explorer security options or install <a href=\"http://www.cortona3d.com/install/\">Cortona3D Viewer</a>.";
+var iCaptionEmbedCortonaNotFound = "Cortona3D Viewer cannot be loaded.<br>Please install <a href=\"http://www.cortona3d.com/install/\">Cortona3D Viewer</a>.";
+var iWarningCortonaOldVersion = "Outdated version of the Cortona3D Viewer is found on your computer. This cannot render 3D scenes. Update Cortona3D Viewer to the latest version.";
+var uiPackage={APP_TITLE: ["Virtual Training Viewer"],
+MSG_ON_START_HTA: ["To open a training scenario, click <b>Browse</b>. In the dialog that opens, in <b>Look in</b>, navigate to the drive/folder where the .XML file is located and double-click to select it."],
+MSG_ACTIVATED_DEMO: ["In the <b>Demo</b> mode the procedure will be displayed automatically. You can play separate steps several times at various speeds and examine the procedure from different angles.<br>Click <b>Activate mode</b> to make the Demo mode active."],
+MSG_ACTIVATED_STUDY: ["In the <b>Study</b> you learn to perform actions, which are required for the procedure.<br>Click the <b>Activate mode</b> button to start the training. Follow the instructions that are displayed in this pane. The playback starts only as the outcome of your correct actions.<br>See the <b>Log tabbed page</b> for information about your actions.<br>To exit the Study mode, click <b>Switch off mode</b>."],
+MSG_ACTIVATED_EXAM: ["In the <b>Exam</b> mode you need to repeat actions you've learnt in the Study mode.<br>Click the <b>Activate mode</b> button to start the test. Follow the instructions that are displayed in this pane. The playback will be started in the case of correct actions.<br>The <b>Fail Level</b> visually indicates a mistake depending on its seriousness.<br>See the <b>Log tabbed page</b> for information about your actions.<br>Click the <b>Switch off mode</b> button to stop the test."],
+MSG_STARTED_DEMO: ["The <b>Demo</b> mode is now active.<br>Click the <b>Play</b> button to start the playback.<br>To temporarily stop playing, click <b>Pause</b>.<br>To display the description of the whole procedure, click <b>Document</b>.<br>To exit the Demo mode, click <b>Switch off mode</b>.<br>For more information about interface elements, see the <b>Help</b> document. See the <b>Log tabbed page</b> for information about your actions."],
+MSG_PARAM_ACTIVITY: ["In the Parameter box, type the requested parameter or value, and then click <b>Submit</b>."],
+MSG_OBJECT_ACTIVITY_EXAM: ["Locate required part(s), which are involved in the current procedure step, and select (click on) it in 3D or on the Parts tabbed page."],
+MSG_OBJECT_ACTIVITY_STUDY: ["Locate required part(s) using the Locate Part buttons and select (click on) it in 3D or on the Parts tabbed page."],
+MSG_OPTION_ACTIVITY_EXAM: ["Choose the correct answer in the Choice list(s)."],
+MSG_OPTION_ACTIVITY_STUDY: ["Note the correct answer in the Choice list(s) you should select in the Exam mode."],
+MSG_ACTIVITY_CONFIRMATION_OBJECT: ["Click <b>Submit</b> to confirm. Click <b>Cancel</b> to refuse."],
+MSG_ACTIVITY_CONFIRMATION_NOOBJECT: ["Click <b>Submit</b> to confirm when you are ready to continue."],
+MSG_ON_FINISH_SCENARIO_STUDY_DEMO: ["The current stage of training is over. Do you want to cancel the current mode?"],
+MSG_ON_FINISH_SCENARIO_EXAM: ["The test is completed."],
+MSG_ON_FINISH_SCENARIO_SCORM_STUDY_DEMO: ["The current stage of training is over."],
+MSG_ON_FINISH_SCENARIO_SCORM_EXAM: ["The test is completed."],
+MSG_ON_CANCEL_SCENARIO: ["Do you want to cancel the current mode?"],
+MSG_ON_BLOCK_POPUP_WINDOW: ["Please disable blocking popup windows in your web browser settings."],
+STATUS_READY: ["Ready"],
+STATUS_ANI_ACTIVATED: ["Animation activated"],
+STATUS_SCENARIO_STARTED: ["Scenario started"],
+STATUS_SCENARIO_FINISHED: ["Scenario finished"],
+STATUS_SCENARIO_CANCELED: ["Scenario canceled"],
+STATUS_SCENARIO_NOTLOADED: ["Scenario not loaded"],
+ERROR_SCENE_NOTLOADED: ["VRML Loading error."],
+ERROR_SCENARIO_NOTLOADED: ["ERROR: Scenario not loaded"],
+ERROR_WRONG_FILE: ["ERROR: Wrong type of scenario file"],
+ERROR_LOG_WRITE: ["ERROR: Can't create log folder"],
+ERROR_HISTORY_WRITE: ["ERROR: History file save error"],
+WARNING_IE_CORTONA_NOT_INSTALLED: ["WARNING: Cortona3D Viewer cannot be loaded. Please check Microsoft Internet Explorer security options or install Cortona3D Viewer."],
+WARNING_CORTONA_NOT_INSTALLED: ["WARNING: Cortona3D Viewer cannot be loaded. Please install Cortona3D Viewer."],
+WARNING_MSXML4_NOT_INSTALLED: ["WARNING: MSXML4 is not installed. Please install it from www.microsoft.com"],
+WARNING_NUMERIC_VALUE: ["WARNING: You must enter numeric value"],
+MODE_DEMO: ["DEMO MODE"],
+MODE_STUDY: ["STUDY MODE"],
+MODE_EXAM: ["EXAM MODE"],
+MSG_WRONG_ACTION: ["Wrong trainee action."],
+MSG_WRONG_ACTION_ATTEMPTS: ["Wrong trainee action. Remaining attempt(s):"],
+UI_VART_NAME: ["Name"],
+UI_VART_TYPE: ["Type"],
+UI_VART_INITV: ["Initial&nbsp;value"],
+UI_VART_VALUE: ["Value"],
+UI_SCENARIO_PARA: ["Scenario parameters"],
+UI_BTN_CLOSE: ["Close"],
+UI_BTN_OK: ["OK"],
+UI_BTN_CANCEL: ["Cancel"],
+UI_BTN_YES: ["Yes"],
+UI_BTN_NO: ["No"],
+UI_BTN_SUBMIT: ["Submit"],
+UI_BTN_SKIP: ["Skip"],
+UI_BTN_LOCATION: ["Location"],
+UI_BTN_CANCEL_TITLE: ["Cancel Operation"],
+UI_BTN_SUBMIT_TITLE: ["Submit Operation"],
+UI_BTN_SKIP_TITLE: ["Skip Operation"],
+UI_BTN_LOCATION_TITLE: ["Set Operations Location"],
+UI_BTN_SUBMIT_PARA_TITLE: ["Submit Parameter"],
+UI_BTN_SKIP_ANIMATION: ["Skip Animation", "btn_skip_animation", "value"],
+UI_BTN_SKIP_ANIMATION_TITLE: ["Skip Current Animation", "btn_skip_animation", "title"],
+UI_TXT_SPEED: ["Speed:", "txt_speed", "innerText"],
+UI_TXT_FREEZE_VIEWPOINT: ["Freeze Viewpoint", "txt_freeze_vp", "innerText"],
+UI_TXT_FAIL_LEVEL: ["Fail&nbsp;level:", "txt_fail_level", "innerHTML"],
+UI_TXT_SPIN: ["Spin", "btnSpin", "title"],
+UI_TXT_ZOOM: ["Zoom", "btnZoom", "title"],
+UI_TXT_PAN: ["Pan", "btnPan", "title"],
+UI_TXT_FIT: ["Fit", "btnFit", "title"],
+UI_TXT_CMENU_CLOSE: ["Close", "proxyElementCMenuClose", "innerText"],
+UI_TXT_CMENU_CORTONA_PROPERTIES: ["Cortona3D Viewer Properties", "proxyElementCortonaProperties", "innerText"],
+UI_TXT_CMENU_ABOUT: ["About", "proxyElementAbout", "innerText"],
+UI_TXT_ABOUT_DOCUMENT: ["Training:", "proxyElementAboutDocument", "innerText"],
+UI_TXT_ABOUT_CORTONA: ["Cortona3D Viewer Version:", "proxyElementAboutCortona", "innerText"],
+UI_OPT_TXT_SHOW_ALERT_BOX: ["Enable alert message box", "txt_show_alert_box", "innerText"],
+UI_OPT_TXT_VISUAL_MISTAKE: ["Enable mistake visualization", "txt_shake_window_after_failt", "innerText"],
+DLG_TITLE_ALERT: ["Alert"],
+UI_TXT_LOCATION: ["Location", "txt_location", "innerText"],
+UI_BTN_LOAD_CFG: ["Select Configuration", "btn_load_cfg", "value"],
+UI_BTN_LOAD_CFG_TITLE: ["Select Predefined Configuration...", "btn_load_cfg", "title"],
+UI_TXT_PUBLISH: ["Publish", "btn_publish", "innerText"],
+UI_BTN_SCORM: ["SCORM 2004", "btn_publish", "value"],
+UI_BTN_SCORM_TITLE: ["Zip SCORM 2004 Content Package...", "btn_publish", "title"],
+UI_BTN_WEB: ["Web-based", "btn_publish_content", "value"],
+UI_BTN_WEB_TITLE: ["Zip Web-based Content Package...", "btn_publish_content", "title"],
+UI_BTN_PRINT: ["Print", "btn_print", "value"],
+UI_BTN_PRINT_TITLE: ["Print 3D Model...", "btn_print", "title"],
+UI_BTN_PRINT_SETUP: ["Page Setup", "btn_print_setup", "value"],
+UI_BTN_PRINT_SETUP_TITLE: ["Page Setup...", "btn_print_setup", "title"],
+UI_BTN_DOCUMENT: ["Document", "btn_odf_procedure", "value"],
+UI_BTN_DOCUMENT_TITLE: ["Show Source Document", "btn_odf_procedure", "title"],
+UI_BTN_BROWSE: ["Browse", "btn_browse", "value"],
+UI_BTN_BROWSE_TITLE: ["Load Training Scenario File", "btn_browse", "title"],
+UI_BTN_START: ["Activate mode", "btn_start", "value"],
+UI_BTN_START_TITLE: ["Activate mode", "btn_start", "title"],
+UI_BTN_CANCELMODE: ["Switch off mode", "btn_cancel", "value"],
+UI_BTN_CANCELMODE_TITLE: ["Switch off mode", "btn_cancel", "title"],
+UI_TXT_SELECT_MODE: ["Select training mode:", "txt_select_mode", "innerText"],
+UI_TXT_MODE_DEMO: ["Demo", "txt_demo", "innerText"],
+UI_TXT_MODE_STUDY: ["Study", "txt_study", "innerText"],
+UI_TXT_MODE_EXAM: ["Exam", "txt_exam", "innerText"],
+UI_BTN_SELECT_MODE_TITLE: ["Set Training Mode", "radio_mode_1", "title"],
+UI_BTN_SELECT_MODE_TITLE2: ["Set Training Mode", "radio_mode_2", "title"],
+UI_BTN_SELECT_MODE_TITLE3: ["Set Training Mode", "radio_mode_3", "title"],
+UI_TXT_TAB_DOC: ["Doc", "tab_doc", "innerText"],
+UI_TXT_TAB_COM: ["Com", "tab_com", "innerText"],
+UI_TXT_TAB_LOG: ["Log", "tab_log", "innerText"],
+UI_TXT_TAB_PAR: ["Parts", "tab_par", "innerText"],
+UI_TXT_TAB_PRM: ["Params", "tab_prm", "innerText"],
+UI_TXT_TAB_OPT: ["Options", "tab_opt", "innerText"],
+UI_TXT_TAB_HLP: ["Help", "tab_hlp", "innerText"],
+UI_TXT_TAB_DOC_TITLE: ["Document", "tab_doc", "title"],
+UI_TXT_TAB_COM_TITLE: ["Comments", "tab_com", "title"],
+UI_TXT_TAB_LOG_TITLE: ["Log", "tab_log", "title"],
+UI_TXT_TAB_PAR_TITLE: ["Parts", "tab_par", "title"],
+UI_TXT_TAB_PRM_TITLE: ["Parameters", "tab_prm", "title"],
+UI_TXT_TAB_OPT_TITLE: ["Options", "tab_opt", "title"],
+UI_TXT_TAB_HLP_TITLE: ["Help", "tab_hlp", "title"],
+UI_OPT_FLASH_PART_IN_DEMO: ["Enable extra-highlighting of parts in the Demo and Study modes", "txt_flash_part_in_demo", "innerText"],
+UI_OPT_PARTSEXTRAHIGHLIGHTING_COLOR: ["Change Extra-Highlighting Color...", "opt_partsextrahighlighting_color", "title"],
+UI_OPT_CONTINUOUS: ["Continuous play in the Demo mode", "txt_continuous", "innerText"],
+UI_OPT_SHOW_EXPECTED_OPERATIONS: ["Enable direct hints in the Study mode", "txt_show_expected_operations", "innerText"],
+UI_OPT_UNROLL_NAVIGATION: ["Keep camera upright", "txt_unroll_navigation", "innerText"],
+UI_TXT_FOLDERS: ["Folders", "txt_folders", "innerText"],
+UI_OPT_USE_DOCUMENT_COMMON_FOLDER: ["Common folder for document files", "txt_use_document_common_folder", "innerText"],
+UI_OPT_USE_LOG_COMMON_FOLDER: ["Common folder for log files", "txt_use_log_common_folder", "innerText"],
+UI_OPT_USE_SCENARIO_COMMON_FOLDER: ["Common folder for scenario files", "txt_use_scenario_common_folder", "innerText"],
+UI_TXT_PRINT: ["Print", "txt_print", "innerText"],
+UI_PART_NAME: ["Part Name"],
+UI_PART_SELECT_PART: ["Select Part"],
+UI_PART_VIEW: ["view"],
+UI_PART_LOCATE: ["locate"],
+UI_PART_META: ["meta"],
+UI_COMMENTS_STEP: ["Step"],
+UI_ALERT_NOTE: ["NOTE"],
+UI_ALERT_CAUTION: ["CAUTION"],
+UI_ALERT_WARNING: ["WARNING"],
+UI_BTN_STEP_PLAY: ["Play Step", "btn_play", "title"],
+UI_BTN_STEP_PAUSE: ["Pause Step", "btn_pause", "title"],
+UI_BTN_STEP_STOP: ["Reset Step", "btn_stop", "title"],
+UI_BTN_STEP_PREV: ["Previous Step", "btn_step_prev", "title"],
+UI_BTN_STEP_NEXT: ["Next Step", "btn_step_next", "title"],
+UI_TXT_LOCATE_PART: ["Locate Part", "txt_locate_part", "title"],
+UI_TXT_SELECT: ["Select"],
+UI_TXT_SELECT_ALL: ["Select All"],
+UI_TXT_SELECT_ANY: ["Select Any"],
+UI_TXT_FINISH_EXAM_STATUS: ["Status"],
+UI_TXT_FINISH_EXAM_PASSED: ["passed"],
+UI_TXT_FINISH_EXAM_FAILED: ["failed"],
+UI_TXT_FINISH_EXAM_UNKNOWN: ["unknown"],
+UI_TXT_FINISH_EXAM_CANCELED: ["cancеled"],
+UI_TXT_FINISH_EXAM_SCORE: ["Score"],
+UI_TXT_FINISH_EXAM_OF_MAXIMUM_POINTS: ["of maximum points"],
+UI_TXT_TRUE: ["TRUE"],
+UI_TXT_FALSE: ["FALSE"],
+UI_TXT_GENERIC_PROCEDURE: [""],
+UI_TXT_NO_TEXT: ["<No text>"],
+SCORM_MENU_DESCRIPTION: ["Description"],
+SCORM_MENU_DOCUMENT: ["Document"],
+SCORM_MENU_PROCEDURE: ["Procedure"],
+SCORM_MENU_DEMO: ["Demo"],
+SCORM_MENU_STUDY: ["Study"],
+SCORM_MENU_EXAMINE: ["Examine"]};
+var xSc = {
+id: "_CC9D0D4CE48B467E8C57BA1DE53E6614",
+odfId: "",
+version: "",
+description: "00-PG-32-10-02-00A-401A-T-004",
+comments: "MAIN LANDING GEAR BRAKE REMOVAL procedure (Ref. 00-PG-32-40-03-00A-401A-A)",
+vrmlUrl: "MLG with training scenario.wrl",
+odfUrl: "",
+steps: [{id: "_3415C5B4965B4D7CB64DC863728816AE",
+odfId: "",
+errorLimits: "1",
+weight: "1",
+description: "",
+comments: "",
+sequence: [{type: "seq-group",
+description: "",
+comments: "",
+sequence: [{type: "operation",
+id: "_9F3167DE29E4487AA759C8A95A35C495",
+odfId: "",
+description: "Procedures for the right and left components are the same. Only the procedures for the left are given.",
+script: "",
+comments: "",
+message: "",
+animation: [],
+animation_fraction: "",
+alert_type: "note",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {},
+assignments: []
+}]
+}],
+nextstep: [{step: "_4A58CC9509A94E728E6DE9F68152F5E0", condition: ""}],
+viewpoints: []
+},
+{id: "_4A58CC9509A94E728E6DE9F68152F5E0",
+odfId: "",
+errorLimits: "3",
+weight: "1",
+description: "S0001",
+comments: "Remove the wheel assy.",
+sequence: [{type: "seq-group",
+description: "",
+comments: "",
+sequence: [{type: "operation",
+id: "_6B857FEF354F4B2987D3FF6296270425",
+odfId: "",
+description: "Remove the wheel assy",
+script: "",
+comments: "Remove the wheel assy.",
+message: "",
+animation: ["F6A52224-3668-44A3-84A4-3179296831B2"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: [],
+questions: [{text: "Perform the procedure", answer: "", list: ["MAIN LANDING GEAR BRAKE REMOVAL", "MAIN LANDING GEAR SHOCK STRUT REMOVAL", "DRAG BRACE ASSY REMOVAL", "MAIN LANDING GEAR BRAKE ROD REMOVAL"]}]
+},
+assignments: []
+}]
+}],
+nextstep: [{step: "_57DC1F369BAD48F3A746F96A1142FABF", condition: ""}],
+viewpoints: []
+},
+{id: "_57DC1F369BAD48F3A746F96A1142FABF",
+odfId: "",
+errorLimits: "3",
+weight: "1",
+description: "S0002",
+comments: "Remove the screw (13), clamp (14) and nut (21) from the torque link standoff bracket (18) (Ref. Fig. 401).",
+sequence: [{type: "seq-group",
+description: "",
+comments: "",
+sequence: [{type: "operation",
+id: "_99FCF3DC74CD482FB8852A71590EDFCD",
+odfId: "",
+description: "Remove screw and nut",
+script: "",
+comments: "Remove the screw (13) and nut (21).",
+message: "",
+animation: ["6B39B2CA-A77A-4601-A690-3EED6FA20F90"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["screw_(13)_b", "nut_(21)_6"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_E94A768289EB45A286C3B1C2052240E0",
+odfId: "",
+description: "Remove the clamp (14)",
+script: "",
+comments: "Remove the clamp (14)",
+message: "",
+animation: ["F61A29BA-BB72-4970-9FDD-BA9D1CA7A4C8"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["clamp_(14)_45"],
+questions: []
+},
+assignments: []
+}]
+}],
+nextstep: [{step: "_5CD071E7C4D54B8A9ADB4E1B50EF1CB3", condition: ""}],
+viewpoints: []
+},
+{id: "_5CD071E7C4D54B8A9ADB4E1B50EF1CB3",
+odfId: "",
+errorLimits: "3",
+weight: "1",
+description: "S0003",
+comments: "Remove the cotter pin (16), nuts (15), washers (17), bolts (20), standoff bracket (18) and switch bracket (19) from the upper torque link (2).",
+sequence: [{type: "seq-group",
+description: "",
+comments: "",
+sequence: [{type: "operation",
+id: "_0490DC23550C4DA192DF853E879241E8",
+odfId: "",
+description: "Remove the cotter pin (16)",
+script: "",
+comments: "Remove the cotter pin (16)",
+message: "",
+animation: ["EB2A4226-DC5C-4A08-AF43-A7E6425F1BD1"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "or",
+description: "",
+comments: "",
+refs: ["cotter_pins_(16)_17", "cotter_pins_(16)_13"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_469217DD956E44C99374660370025B5B",
+odfId: "",
+description: "Remove the nuts (15)",
+script: "",
+comments: "Remove the nuts (15)",
+message: "",
+animation: ["D21FFE38-687D-412C-8B49-61CDD41C3189"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["nuts_(15)_c", "nuts_(15)_d"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_0B51262851254EC4B35F8D393E55C225",
+odfId: "",
+description: "Remove the washers (17)",
+script: "",
+comments: "Remove the washers (17)",
+message: "",
+animation: ["4C126B77-2829-4722-8084-57268A86FF98"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["washers_(17)_f", "washers_(17)_e"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_595CDA3C7F1F4293B65925B05CCC0B47",
+odfId: "",
+description: "Remove the bolts (20)",
+script: "",
+comments: "Remove the bolts (20)",
+message: "",
+animation: ["B15F3BC6-F653-498A-B9AC-DB0A205A36C7"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["bolts_(20)_10", "bolts_(20)_11"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_9E3BDF933DEF4991915CAC00C144AB32",
+odfId: "",
+description: "Remove the standoff bracket (18)",
+script: "",
+comments: "Remove the standoff bracket (18)",
+message: "",
+animation: ["E78594D4-928E-4921-9FB5-E0DFD5E3BB40"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["standoff_bracket_(18)_7"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_E415FEFFA6204A9F8B5FE6B43AFB7320",
+odfId: "",
+description: "Remove the switch bracket (19)",
+script: "",
+comments: "Remove the switch bracket (19)",
+message: "",
+animation: ["F23267A2-3598-49BB-8F2D-FD0ED992BD64"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["switch_bracket_(19)_44"],
+questions: []
+},
+assignments: []
+}]
+}],
+nextstep: [{step: "_B9AC19FB21264B19B1D020F9DB069CCA", condition: ""}],
+viewpoints: []
+},
+{id: "_B9AC19FB21264B19B1D020F9DB069CCA",
+odfId: "",
+errorLimits: "3",
+weight: "1",
+description: "S0004",
+comments: "Remove the nuts (12), washers (11), bolts (8) and the switch terminal bracket (9) from the lower torque link (7).",
+sequence: [{type: "seq-group",
+description: "",
+comments: "",
+sequence: [{type: "operation",
+id: "_CDC172FF84574D5284FFE7A3323B34FF",
+odfId: "",
+description: "Remove the nuts (12)",
+script: "",
+comments: "Remove the nuts (12)",
+message: "",
+animation: ["AA4C60A7-825F-4D04-B223-CFD8B97A1128"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["nuts_(12)_4b", "nuts_(12)_4c"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_99CB80C4EF934C1DA641EEF489F2018E",
+odfId: "",
+description: "Remove the washers (11)",
+script: "",
+comments: "Remove the washers (11)",
+message: "",
+animation: ["B3110BB2-15AD-49C2-B067-4396310EC024"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["washers_(11)_49", "washers_(11)_4a"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_2B839AD884A94BEC9CCF58466169EE75",
+odfId: "",
+description: "Remove the bolts (8)",
+script: "",
+comments: "Remove the bolts (8)",
+message: "",
+animation: ["23123F1F-8856-4AAD-B0B8-682B906CC981"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["bolts_(8)_47", "bolts_(8)_48"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_761F5012BC6A4CD0A2C22F742094114C",
+odfId: "",
+description: "Remove the switch terminal bracket (9)",
+script: "",
+comments: "Remove the switch terminal bracket (9)",
+message: "",
+animation: ["1FD8B91D-FEB4-47B5-B778-CA3ED3852EE5"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["switch_terminal_bracket_(9)_46"],
+questions: []
+},
+assignments: []
+}]
+}],
+nextstep: [{step: "_6953D19045BD4796B1BD14FC0BF99813", condition: ""}],
+viewpoints: []
+},
+{id: "_6953D19045BD4796B1BD14FC0BF99813",
+odfId: "",
+errorLimits: "3",
+weight: "1",
+description: "S0005",
+comments: "Remove the cotter pin (5), nut (4), washer (6) and bolt (10) from the torque links (2 and 7).",
+sequence: [{type: "seq-group",
+description: "",
+comments: "",
+sequence: [{type: "operation",
+id: "_2D8A2837A45F41A0B71F9DE9DB09D75B",
+odfId: "",
+description: "Remove the cotter pin (5)",
+script: "",
+comments: "Remove the cotter pin (5)",
+message: "",
+animation: ["9E78410B-61D4-4D4E-A462-4CBAD26874BA"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["cotter_pin_(5)_1b"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_92738DBB4E474707BD4EFAC351EB5F93",
+odfId: "",
+description: "Remove the nut (4)",
+script: "",
+comments: "Remove the nut (4)",
+message: "",
+animation: ["83D200F2-E256-420A-97AF-97767DB346FA"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["nut_(4)_8"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_F26A678DDE9D4E8A9C2DD68A77263434",
+odfId: "",
+description: "Remove the washer (6)",
+script: "",
+comments: "Remove the washer (6)",
+message: "",
+animation: ["957D9829-34EB-4059-B551-6AA505F8174F"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["washer_(6)_a"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_9944CAB982F34CAC8BF1C958BCDD7953",
+odfId: "",
+description: "Remove the bolt (10)",
+script: "",
+comments: "Remove the bolt (10)",
+message: "",
+animation: ["8D0B02E2-5758-4B60-A1D4-1A5CA9B26CBE"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["bolt_(10)_9"],
+questions: []
+},
+assignments: []
+}]
+}],
+nextstep: [{step: "_D294F31E55164074840F3E27DF1D89B9", condition: ""}],
+viewpoints: []
+},
+{id: "_D294F31E55164074840F3E27DF1D89B9",
+odfId: "",
+errorLimits: "3",
+weight: "1",
+description: "S0006",
+comments: "Remove the safety wire from each slotted spring pin (3).",
+sequence: [{type: "seq-group",
+description: "",
+comments: "",
+sequence: [{type: "operation",
+id: "_65C4069656194C7C9CA6ACC1B08592B9",
+odfId: "",
+description: "Remove the safety wire",
+script: "",
+comments: "Remove the upper safety wire",
+message: "",
+animation: ["3BF3A72F-2A77-4F9F-91FD-DF1F1B2363DC"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["safety_wire_69"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_64BA8D50F1804641A83A8AAD5BB6A096",
+odfId: "",
+description: "Remove the safety wire",
+script: "",
+comments: "Remove the lower safety wire",
+message: "",
+animation: ["1D5AE681-C9CF-4D9A-A8C1-44166329E225"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["safety_wire_6a"],
+questions: []
+},
+assignments: []
+}]
+}],
+nextstep: [{step: "_BCEA35BCF3F14A3AB4B4D72476182227", condition: ""}],
+viewpoints: []
+},
+{id: "_BCEA35BCF3F14A3AB4B4D72476182227",
+odfId: "",
+errorLimits: "3",
+weight: "1",
+description: "S0007",
+comments: "Remove the spring pin (3) and link pin (1) from the upper (2) and lower (7) torque links.",
+sequence: [{type: "seq-group",
+description: "",
+comments: "",
+sequence: [{type: "operation",
+id: "_D9EA7D5CE23A4201ACF51CE3D2C3E082",
+odfId: "",
+description: "Remove the spring pin (3)",
+script: "",
+comments: "Remove the spring pin (3)",
+message: "",
+animation: ["D231B70B-5DCF-48F8-BFAB-9F7CF7E0026F"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["spring_pin_(3)_38"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_3DDA0AC22E6843BF81BE2B0D145E83FD",
+odfId: "",
+description: "Detach the link pin (1)",
+script: "",
+comments: "Remove the link pin (1)",
+message: "",
+animation: ["5B4CFA61-2419-4A92-B98A-06C3EA981688"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["link_pin_(1)_4e"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_7E8CE9FECF7A487CA0C5ECC1A2FE4636",
+odfId: "",
+description: "Remove the spring pin (3)",
+script: "",
+comments: "Remove the spring pin (3)",
+message: "",
+animation: ["8C01C874-1F17-4216-9CEA-4A89E78A5351"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["spring_pin_(3)_39"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_B2AE4B59FC0349BEB16070E1313C1FBB",
+odfId: "",
+description: "Detach the link pin (1)",
+script: "",
+comments: "Detach the link pin (1)",
+message: "",
+animation: ["012076B2-A71C-4B86-8DEE-1453665707D9"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["link_pin_(1)_4f"],
+questions: []
+},
+assignments: []
+}]
+}],
+nextstep: [{step: "_28F1EDDC8EB7434A8C80180E6FB949B2", condition: ""}],
+viewpoints: []
+},
+{id: "_28F1EDDC8EB7434A8C80180E6FB949B2",
+odfId: "",
+errorLimits: "3",
+weight: "1",
+description: "S0008",
+comments: "Remove the upper torque link (2) and lower torque link (7) from the strut and axle.",
+sequence: [{type: "seq-group",
+description: "",
+comments: "",
+sequence: [{type: "operation",
+id: "_FF175BBFA16B4235A318C36398938B84",
+odfId: "",
+description: "Detach the upper torque link (2)",
+script: "",
+comments: "Detach the upper torque link (2)",
+message: "",
+animation: ["3551D854-45BA-4957-B5C8-CDC46D066E10"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["upper_torque_link_(2)_3a"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_FD6C7AD0910F46F3BCD44AC55D8ABC6A",
+odfId: "",
+description: "Detach the lower torque link (7)",
+script: "",
+comments: "Detach the lower torque link (7)",
+message: "",
+animation: ["F1B02A24-F823-49D6-BC8C-3820918462BA"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["lower_torque_link_(7)_2d"],
+questions: []
+},
+assignments: []
+}]
+}],
+nextstep: [{step: "_C0B2759CF8C149729BC1862B67FC4070", condition: ""}],
+viewpoints: []
+},
+{id: "_C0B2759CF8C149729BC1862B67FC4070",
+odfId: "",
+errorLimits: "3",
+weight: "1",
+description: "S0009",
+comments: "Inspect the strut, pins and torque link bushings for damage.",
+sequence: [{type: "seq-group",
+description: "",
+comments: "",
+sequence: [{type: "operation",
+id: "_4F39782E11D94666A951E87F510012C4",
+odfId: "",
+description: "Inspect the strut",
+script: "",
+comments: "Inspect the strut",
+message: "",
+animation: ["F71CED76-14BD-4C15-B567-0FD1DBE9134C"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["strut_1f"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_68F24E1626FE457695957D035CA4218B",
+odfId: "",
+description: "Inspect the pins",
+script: "",
+comments: "Inspect the pins",
+message: "",
+animation: ["6857B0E7-E351-454D-9389-88688ED0AE72"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["pins_4d"],
+questions: []
+},
+assignments: []
+},
+{type: "operation",
+id: "_C23F7482D9AB48C3A468887098399BB3",
+odfId: "",
+description: "Inspect the torque link bushings",
+script: "",
+comments: "Inspect the torque link bushings",
+message: "",
+animation: ["FA4F4464-1C68-4AA8-B0B2-CEAA35844474"],
+animation_fraction: "",
+alert_type: "",
+request_variable_name: "",
+request_default_value: "",
+request_variable_value: "",
+activity: {type: "and",
+description: "",
+comments: "",
+refs: ["torque_link_bushings_3c", "torque_link_bushings_2f"],
+questions: []
+},
+assignments: []
+}]
+}],
+nextstep: [],
+viewpoints: []
+}],
+variables: [],
+parts: [{id: "safety_wire_69", name: "safety wire", metainfo: []},
+{id: "safety_wire_6a", name: "safety wire", metainfo: []},
+{id: "cotter_pins_(16)_13", name: "cotter pins (16)", metainfo: []},
+{id: "bolts_(20)_11", name: "bolts (20)", metainfo: []},
+{id: "bolts_(20)_10", name: "bolts (20)", metainfo: []},
+{id: "washers_(17)_f", name: "washers (17)", metainfo: []},
+{id: "washers_(17)_e", name: "washers (17)", metainfo: []},
+{id: "nuts_(15)_d", name: "nuts (15)", metainfo: []},
+{id: "nuts_(15)_c", name: "nuts (15)", metainfo: []},
+{id: "screw_(13)_b", name: "screw (13)", metainfo: []},
+{id: "washer_(6)_a", name: "washer (6)", metainfo: []},
+{id: "bolt_(10)_9", name: "bolt (10)", metainfo: []},
+{id: "nut_(4)_8", name: "nut (4)", metainfo: []},
+{id: "standoff_bracket_(18)_7", name: "standoff bracket (18)", metainfo: []},
+{id: "nut_(21)_6", name: "nut (21)", metainfo: []},
+{id: "BACP10AD02C09P_15", name: "BACP10AD02C09P", metainfo: []},
+{id: "BACP10AD02C09P_14", name: "BACP10AD02C09P", metainfo: []},
+{id: "cotter_pins_(16)_17", name: "cotter pins (16)", metainfo: []},
+{id: "BACP10AD02C09P_19", name: "BACP10AD02C09P", metainfo: []},
+{id: "BACP10AD02C09P_1a", name: "BACP10AD02C09P", metainfo: []},
+{id: "cotter_pin_(5)_1b", name: "cotter pin (5)", metainfo: []},
+{id: "BACP20BC01D07P_1c", name: "BACP20BC01D07P", metainfo: []},
+{id: "BACP20BC01D07P_1e", name: "BACP20BC01D07P", metainfo: []},
+{id: "strut_1f", name: "strut", metainfo: []},
+{id: "lower_torque_link_(7)_2d", name: "lower torque link (7)", metainfo: []},
+{id: "torque_link_bushings_2f", name: "torque link bushings", metainfo: []},
+{id: "pins_37", name: "pins", metainfo: []},
+{id: "spring_pin_(3)_38", name: "spring pin (3)", metainfo: []},
+{id: "spring_pin_(3)_39", name: "spring pin (3)", metainfo: []},
+{id: "upper_torque_link_(2)_3a", name: "upper torque link (2)", metainfo: []},
+{id: "torque_link_bushings_3c", name: "torque link bushings", metainfo: []},
+{id: "switch_bracket_(19)_44", name: "switch bracket (19)", metainfo: []},
+{id: "clamp_(14)_45", name: "clamp (14)", metainfo: []},
+{id: "switch_terminal_bracket_(9)_46", name: "switch terminal bracket (9)", metainfo: []},
+{id: "bolts_(8)_47", name: "bolts (8)", metainfo: []},
+{id: "bolts_(8)_48", name: "bolts (8)", metainfo: []},
+{id: "washers_(11)_49", name: "washers (11)", metainfo: []},
+{id: "washers_(11)_4a", name: "washers (11)", metainfo: []},
+{id: "nuts_(12)_4b", name: "nuts (12)", metainfo: []},
+{id: "nuts_(12)_4c", name: "nuts (12)", metainfo: []},
+{id: "pins_4d", name: "pins", metainfo: []},
+{id: "link_pin_(1)_4e", name: "link pin (1)", metainfo: []},
+{id: "link_pin_(1)_4f", name: "link pin (1)", metainfo: []},
+{id: "wheel_assy_50", name: "wheel assy", metainfo: []}],
+viewpoints: []};
+var option_show_alert_box = true;
+var option_flash_part_in_demo = false;
+var option_continuous = true;
+var option_show_expected_operations = true;
+var option_unroll_navigation = true;
+</script></head>
+<body scroll="no" onload="docloaded();" onunload="on_doc_unload();" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" rightmargin="0">
+<div id="message_container" style="top:0; left:0; position: absolute;width: 100%; height: 100%; overflow: hidden; display:none;">
+<iframe id="msgBackFrm" src="res_GENERIC_TRN/msgifrm.html" ALLOWTRANSPARENCY="true" framespacing="0" frameborder="0" scrolling="no"></iframe>
+<div id="msgContentDiv" class="msgDiv"></div>
+</div>
+<div id="menu_container" style="top:0; left:0; position: absolute;width: 0px; height: 0px;"></div>
+<div id="meta_container" style="top:0; left:0; position: absolute;width: 0px; height: 0px;"></div>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50%" id="tb_tab">
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="3" style="padding:0 0 0 0;">
+<tr>
+<td height="15" width="50%">
+<div id="title"></div>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="2">
+<tr>
+<td height="60%">
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="24" id="tdpads">
+<div style="width:100%;height:24px;"><span id="tab_doc" class="htab" onclick="on_pad('doc')" title=""></span><span id="tab_com" class="tab" onclick="on_pad('com')" title=""></span><span id="tab_log" class="tab" onclick="on_pad('log')" title="" style="display:none"></span><span id="tab_par" class="tab" onclick="on_pad('par')" title=""></span><span id="tab_prm" class="tab" onclick="on_pad('prm')" title=""></span><span id="tab_opt" class="tab" onclick="on_pad('opt')" title=""></span><span id="tab_hlp" class="tab" onclick="on_pad('hlp')" title=""></span></div>
+</td></tr>
+<tr><td id="tab_container" valign="middle">
+<iframe style="display:inline;" application="yes" id="doc" frameborder="0" scrolling="yes"></iframe>
+<iframe style="display:none;" application="yes" id="com" frameborder="0" scrolling="yes"></iframe>
+<iframe style="display:none;" application="yes" id="log" frameborder="0" scrolling="yes"></iframe>
+<iframe style="display:none;" application="yes" id="par" frameborder="0" scrolling="yes"></iframe>
+<iframe style="display:none;" application="yes" id="prm" frameborder="0" scrolling="yes"></iframe>
+<div style="display:none;" id="opt">
+<div id="div_options"><span class="cell"><input type="checkbox" id="opt_show_alert_box" checked><label id="txt_show_alert_box" for="opt_show_alert_box"></label></span><span class="cell" style="display:none;"><input type="checkbox" id="opt_shake_window_after_failt"><label id="txt_shake_window_after_failt" for="opt_shake_window_after_failt"></label></span><span class="cell"><input type="checkbox" id="opt_flash_part_in_demo" checked><label id="txt_flash_part_in_demo" for="opt_flash_part_in_demo"></label>
+                       <span id="opt_partsextrahighlighting_color" value="20428" title="" style="display:none;">      </span></span><div id="div_demo_opt_only" style="display:block;"><span class="cell"><input type="checkbox" id="opt_continuous" checked><label id="txt_continuous" for="opt_continuous"></label></span></div><span class="cell"><input type="checkbox" id="opt_show_expected_operations" onclick="on_show_expected_operations(this.checked)" checked><label id="txt_show_expected_operations" for="opt_show_expected_operations">Enable direct hints in the Study mode</label></span><span class="cell"><input type="checkbox" id="opt_unroll_navigation" onclick="on_set_vmunroll_skin(this.checked)" checked><label id="txt_unroll_navigation" for="opt_unroll_navigation">Keep camera upright</label></span><div id="div_publish" style="margin-top:3px;display:none;"><span class="cell"><table class="opt_block" width="100%">
+<tr>
+<td width="50" id="txt_folders"></td>
+<td><input type="hidden" name="current_configuration" id="current_configuration" value=""><input type="hidden" name="current_configuration_file" id="current_configuration_file" value=""><input type="hidden" name="last_published_folder" id="last_published_folder" value=""></td>
+</tr>
+<tr style="display: none;">
+<td></td>
+<td><span class="cell"><input type="checkbox" id="opt_use_document_common_folder" checked><label id="txt_use_document_common_folder" for="opt_use_document_common_folder"></label></span><span class="cell"><input type="text" id="document_base_path" style="width:340px;" maxlength="128"></span><span class="cell"><input type="checkbox" id="opt_use_log_common_folder" checked><label id="txt_use_log_common_folder" for="opt_use_log_common_folder"></label></span><span class="cell"><input type="text" id="log_base_path" style="width:340px;" maxlength="128"></span><span class="cell"><input type="checkbox" id="opt_use_scenario_common_folder" checked><label id="txt_use_scenario_common_folder" for="opt_use_scenario_common_folder"></label></span><span class="cell"><input type="text" id="scenario_base_path" style="width:340px;" maxlength="128"></span></td>
+</tr>
+</table></span><span class="cell"><table class="opt_block" width="100%">
+<tr>
+<td width="50" id="txt_publish"></td>
+<td><input id="btn_publish" type="button" class="button" style="" value="" onclick="on_publish(0)" title="" disabled>
+                               
+                              <input id="btn_publish_content" type="button" class="button" style="" value="" onclick="on_publish(1)" title="" disabled></td>
+</tr>
+</table></span><span class="cell"><table class="opt_block" width="100%">
+<tr>
+<td width="50" id="txt_print"></td>
+<td><input id="btn_print" type="button" class="button" style="" value="" onclick="on_print()" title="">
+                               
+                              <input id="btn_print_setup" type="button" class="button" style="" value="" onclick="on_page_setup()" title=""></td>
+</tr>
+</table></span></div>
+</div>
+</div>
+<iframe style="display:none;" src="res_GENERIC_TRN/en/help.html" application="yes" id="hlp" frameborder="0" scrolling="yes"></iframe>
+</td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height="10%"><div id="dmsg"><div id="msg"></div></div></td>
+</tr>
+<tr>
+<td><div id="act"><div id="mode_hlp" style="display:none;"></div><div id="act_hlp"></div><div id="act_txt"></div></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td width="50%" id="tb_f3d">
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td width="50%" id="td50r">
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0" style="border:1px solid white;background-color:#A0A0C0;">
+<tr>
+<td align="left" height="31"><img class="img_logo" src="res_GENERIC_TRN/logo.png" border="0"></td>
+<td align="right" style="vertical-align: middle;">
+<div id="div_mode_display" style="display:none;"></div>
+</td>
+</tr>
+<tr>
+<td colspan="2" height="100%">
+<div id="tooltip" class="tooltip" style="visibility:hidden;"></div><span style="visibility: hidden;position: absolute;"><span id="oContextHTML" style="position: absolute;"></span></span><div style="display:none;"><span id="proxyElementCMenuClose">Close</span><span id="proxyElementCortonaProperties">Cortona Properties</span><span id="proxyElementAbout">About</span><span id="proxyElementAboutDocument">Training:</span><span id="proxyElementAboutCortona">Cortona 3D:</span></div>
+<div id="cortonaContainer" style="width:100%; height:100%;"><div id="cortonaControl" style="display:none;"></div></div><!--[if IE]><script for="cortonaControl" event="OnSceneLoaded(success)" language="javascript">on_cortona_scene_loaded(success);</script><script for="cortonaControl" event="OnSceneUnloaded()" language="javascript">on_cortona_scene_unloaded();</script><script for="cortonaControl" event="MouseDown(Button, Shift, X, Y)" language="javascript">on_cortona_mouse_down(Button, Shift, X, Y);</script><script for="cortonaControl" event="MouseUp(Button, Shift, X, Y)" language="javascript">on_cortona_mouse_up(Button, Shift, X, Y);</script><script for="cortonaControl" event="MouseMove(Button, Shift, X, Y)" language="javascript">if(typeof(on_cortona_mouse_move)=="function")on_cortona_mouse_move(Button, Shift, X, Y);</script><script for="cortonaControl" event="OnKeyDown(key, shift)" language="javascript">on_cortona_key_down(key, shift);</script><script for="cortonaControl" event="OnMouseOut()" language="javascript">if(typeof(on_cortona_mouse_out)=="function")on_cortona_mouse_out();</script><script for="cortonaControl" event="OnMouseEnter()" language="javascript">if(typeof(on_cortona_mouse_enter)=="function")on_cortona_mouse_enter();</script><![endif]--></td>
+</tr>
+<tr id="stTr3_0">
+<td id="stTd3_0" class="navigationBar" colspan="2" nowrap="true" onselectstart="return false;"><span id="btnSpin" class="navigationButton" style="background-image: url(res_GENERIC_TRN/sbtn_spin.gif);"> </span><span id="btnZoom" class="navigationButton" style="background-image: url(res_GENERIC_TRN/sbtn_zoom.gif);"> </span><span id="btnPan" class="navigationButton" style="background-image: url(res_GENERIC_TRN/sbtn_pan.gif);"> </span>
+	       <span id="btnFit" class="navigationButton" style="background-image: url(res_GENERIC_TRN/btn_fit.gif);"> </span></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2" height="10px" id="tb_bar">
+<table id="statusbar" width="100%" height="20" border="0" cellspacing="0" cellpadding="2">
+<tr>
+<td height="20"><div class="status_info" id="status_text"></div></td>
+<td width="100" valign="middle" id="div_progress" style="display:none;"></td>
+<td width="100"><div class="status_info" id="status_options" style="border:1px #808080 solid;"></div></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td id="td1btm" height="24">
+<table class="infotable" width="100%" height="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td>
+<table class="infotable" width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="12" width="100%" align="left">
+<div id="div_radio_mode" style="visibility:hidden;"><span id="txt_select_mode"></span> 
+                    <span><input name="radio_mode" id="radio_mode_1" type="radio" class="radio" onclick="on_radio_mode(MODE_DEMO)" title=""><label id="txt_demo" for="radio_mode_1"></label></span><span><input name="radio_mode" id="radio_mode_2" type="radio" class="radio" onclick="on_radio_mode(MODE_STUDY)" title=""><label id="txt_study" for="radio_mode_2"></label></span><span><input name="radio_mode" id="radio_mode_3" type="radio" class="radio" onclick="on_radio_mode(MODE_EXAMINE)" title=""><label id="txt_exam" for="radio_mode_3"></label></span></div>
+<div id="div_vcr" style="display:none;">
+<table class="infotable" width="100%" height="100%">
+<tr>
+<td align="left" valign="middle"><span class="imageButton" title="" id="btn_play" style="background-image: url(res_GENERIC_TRN/btn_play.gif);"> </span><span class="imageButton" title="" id="btn_pause" style="background-image: url(res_GENERIC_TRN/btn_pause.gif);"> </span><span class="imageButton" title="" id="btn_stop" style="background-image: url(res_GENERIC_TRN/btn_reset.gif);"> </span>
+                            
+                          <span class="imageButton" title="" id="btn_step_prev" style="background-image: url(res_GENERIC_TRN/btn_prev.gif);"> </span><span class="imageButton" title="" id="btn_step_next" style="background-image: url(res_GENERIC_TRN/btn_next.gif);"> </span></td>
+</tr>
+</table>
+</div>
+</td>
+<td align="right"><input id="btn_odf_procedure" type="button" class="button" style="" value="" onclick="on_odf_procedure()" title="" disabled></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table class="infotable" width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="12">
+<div id="div_scenario_controls" style="display:none;"><input id="btn_browse" disabled type="button" class="button" value="" title="" style="display:none;"><input id="btn_start" style="visibility:hidden;" type="button" class="button" value="" onclick="on_scenario_start()" title="" disabled><input id="btn_cancel" type="button" class="button" value="" onclick="on_scenario_cancel()" title="" style="display:none;"> 
+                    
+                    <input type="file" id="btn_file" class="button" style="display:none;"><a id="xref" style="display:none;" target="xref_window"></a></div>
+</td>
+<td align="right"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td id="td2btm" height="24">
+<table class="infotable" width="100%" height="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td>
+<table class="infotable" width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="12" align="left">
+<div id="settingsSpeedFreeze" style="display:none;"><span id="txt_speed"></span><input type="radio" name="sp_ratio" id="sp_ratio_1" onclick="api.set_speed_ratio(0.5);"><label for="sp_ratio_1">x1/2</label><input type="radio" name="sp_ratio" id="sp_ratio_2" onclick="api.set_speed_ratio(1);" checked><label for="sp_ratio_2">x1</label><input type="radio" name="sp_ratio" id="sp_ratio_3" onclick="api.set_speed_ratio(2);"><label for="sp_ratio_3">x2</label>
+                     <nobr><input id="chk_freeze" type="checkbox" onclick="api.set_freeze_viewpoint(this.checked);"><label id="txt_freeze_vp" for="chk_freeze"></label></nobr></div>
+</td>
+<td align="right"><input id="btn_skip_animation" type="button" class="button" style="width:110px;" value="" onclick="on_skip_animation()" title="" disabled></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table class="infotable" width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="12" align="left" width="50%">
+<table class="infotable" id="fault_meter_table" style="display:none;padding-right:10px;" width="100%" height="12" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="30" style="padding-right:5px;" id="txt_fail_level"></td>
+<td width="100%"><div id="bar"><div id="pos"></div></div></td>
+</tr>
+</table>
+</td>
+<td align="right" width="50%">
+<table class="infotable" id="location_table" style="display:none;" width="100%" height="12" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="30" id="location_caption"><nobr id="txt_location">Location:</nobr></td>
+<td width="100%"><div id="vp"> </div></td>
+</tr>
+</table>
+<div id="div_dummy" style="display:none;"></div>
+<div id="div_dummy_text" style="display:none;"></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div id="newcontent" style="display:none;">
+<div id="divdocument">
+<div id="divsteps">
+<h1>00-PG-32-10-02-00A-401A-T-004</h1>
+<div class="genstep" id="_3415C5B4965B4D7CB64DC863728816AE">
+<h4></h4>
+<div class="stepcomment"> <div class="operation" id="_9F3167DE29E4487AA759C8A95A35C495"><span class="note">NOTE: </span>Procedures for the right and left components are the same. Only the procedures for the left are given.</div>
+</div>
+</div>
+<div class="genstep" id="_4A58CC9509A94E728E6DE9F68152F5E0">
+<h4>S0001</h4>
+<div class="stepcomment"> <div class="operation">Remove the wheel assy</div>
+</div>
+</div>
+<div class="genstep" id="_57DC1F369BAD48F3A746F96A1142FABF">
+<h4>S0002</h4>
+<div class="stepcomment"> <div class="operation">Remove screw and nut</div> <div class="operation">Remove the clamp (14)</div>
+</div>
+</div>
+<div class="genstep" id="_5CD071E7C4D54B8A9ADB4E1B50EF1CB3">
+<h4>S0003</h4>
+<div class="stepcomment"> <div class="operation">Remove  the cotter pin (16)</div> <div class="operation">Remove the nuts (15)</div> <div class="operation">Remove the washers (17)</div> <div class="operation">Remove the bolts (20)</div> <div class="operation">Remove the standoff bracket (18)</div> <div class="operation">Remove the switch bracket (19)</div>
+</div>
+</div>
+<div class="genstep" id="_B9AC19FB21264B19B1D020F9DB069CCA">
+<h4>S0004</h4>
+<div class="stepcomment"> <div class="operation">Remove the nuts (12)</div> <div class="operation">Remove the washers (11)</div> <div class="operation">Remove the bolts (8)</div> <div class="operation">Remove the switch terminal bracket (9)</div>
+</div>
+</div>
+<div class="genstep" id="_6953D19045BD4796B1BD14FC0BF99813">
+<h4>S0005</h4>
+<div class="stepcomment"> <div class="operation">Remove the cotter pin (5)</div> <div class="operation">Remove the nut (4)</div> <div class="operation">Remove the washer (6)</div> <div class="operation">Remove the bolt (10)</div>
+</div>
+</div>
+<div class="genstep" id="_D294F31E55164074840F3E27DF1D89B9">
+<h4>S0006</h4>
+<div class="stepcomment"> <div class="operation">Remove the safety wire</div> <div class="operation">Remove the safety wire</div>
+</div>
+</div>
+<div class="genstep" id="_BCEA35BCF3F14A3AB4B4D72476182227">
+<h4>S0007</h4>
+<div class="stepcomment"> <div class="operation">Remove the spring pin (3)</div> <div class="operation">Detach the link pin (1)</div> <div class="operation">Remove the spring pin (3)</div> <div class="operation">Detach the link pin (1)</div>
+</div>
+</div>
+<div class="genstep" id="_28F1EDDC8EB7434A8C80180E6FB949B2">
+<h4>S0008</h4>
+<div class="stepcomment"> <div class="operation">Detach the upper torque link (2)</div> <div class="operation">Detach the lower torque link (7)</div>
+</div>
+</div>
+<div class="genstep" id="_C0B2759CF8C149729BC1862B67FC4070">
+<h4>S0009</h4>
+<div class="stepcomment"> <div class="operation">Inspect the strut</div> <div class="operation">Inspect the pins</div> <div class="operation">Inspect the torque link bushings</div>
+</div>
+</div>
+</div>
+</div>
+<div id="divcomments" style="display:none;">
+<h1>00-PG-32-10-02-00A-401A-T-004</h1> <div class="comment">MAIN LANDING GEAR BRAKE REMOVAL procedure (Ref. 00-PG-32-40-03-00A-401A-A)</div> <div id="cmmnt__3415C5B4965B4D7CB64DC863728816AE">
+<h2><b>Step </b></h2> <div class="operation"><span class="note">NOTE: </span>Procedures for the right and left components are the same. Only the procedures for the left are given.</div>
+</div> <div id="cmmnt__4A58CC9509A94E728E6DE9F68152F5E0">
+<h2><b>Step </b>S0001</h2> <div class="comment">Remove the wheel assy.</div> <div class="operation">Remove the wheel assy <div class="comment">Remove the wheel assy.</div>
+</div>
+</div> <div id="cmmnt__57DC1F369BAD48F3A746F96A1142FABF">
+<h2><b>Step </b>S0002</h2> <div class="comment">Remove the screw (13), clamp (14) and nut (21) from the torque link standoff bracket (18) (Ref. Fig. 401).</div> <div class="operation">Remove screw and nut <div class="comment">Remove the screw (13) and nut (21).</div>
+</div> <div class="operation">Remove the clamp (14) <div class="comment">Remove the clamp (14)</div>
+</div>
+</div> <div id="cmmnt__5CD071E7C4D54B8A9ADB4E1B50EF1CB3">
+<h2><b>Step </b>S0003</h2> <div class="comment">Remove the cotter pin (16), nuts (15), washers (17), bolts (20), standoff bracket (18) and switch bracket (19) from the upper torque link (2).</div> <div class="operation">Remove  the cotter pin (16) <div class="comment">Remove  the cotter pin (16)</div>
+</div> <div class="operation">Remove the nuts (15) <div class="comment">Remove the nuts (15)</div>
+</div> <div class="operation">Remove the washers (17) <div class="comment">Remove the washers (17)</div>
+</div> <div class="operation">Remove the bolts (20) <div class="comment">Remove the bolts (20)</div>
+</div> <div class="operation">Remove the standoff bracket (18) <div class="comment">Remove the standoff bracket (18)</div>
+</div> <div class="operation">Remove the switch bracket (19) <div class="comment">Remove the switch bracket (19)</div>
+</div>
+</div> <div id="cmmnt__B9AC19FB21264B19B1D020F9DB069CCA">
+<h2><b>Step </b>S0004</h2> <div class="comment">Remove the nuts (12), washers (11), bolts (8) and the switch terminal bracket (9) from the lower torque link (7).</div> <div class="operation">Remove the nuts (12) <div class="comment">Remove the nuts (12)</div>
+</div> <div class="operation">Remove the washers (11) <div class="comment">Remove the washers (11)</div>
+</div> <div class="operation">Remove the bolts (8) <div class="comment">Remove the bolts (8)</div>
+</div> <div class="operation">Remove the switch terminal bracket (9) <div class="comment">Remove the switch terminal bracket (9)</div>
+</div>
+</div> <div id="cmmnt__6953D19045BD4796B1BD14FC0BF99813">
+<h2><b>Step </b>S0005</h2> <div class="comment">Remove the cotter pin (5), nut (4), washer (6) and bolt (10) from the torque links (2 and 7).</div> <div class="operation">Remove the cotter pin (5) <div class="comment">Remove the cotter pin (5) </div>
+</div> <div class="operation">Remove the nut (4) <div class="comment">Remove the nut (4)</div>
+</div> <div class="operation">Remove the washer (6) <div class="comment">Remove the washer (6)</div>
+</div> <div class="operation">Remove the bolt (10) <div class="comment">Remove the bolt (10)</div>
+</div>
+</div> <div id="cmmnt__D294F31E55164074840F3E27DF1D89B9">
+<h2><b>Step </b>S0006</h2> <div class="comment">Remove the safety wire from each slotted spring pin (3).</div> <div class="operation">Remove the safety wire <div class="comment">Remove the upper safety wire</div>
+</div> <div class="operation">Remove the safety wire <div class="comment">Remove the lower safety wire</div>
+</div>
+</div> <div id="cmmnt__BCEA35BCF3F14A3AB4B4D72476182227">
+<h2><b>Step </b>S0007</h2> <div class="comment">Remove the spring pin (3) and link pin (1) from the upper (2) and lower (7) torque links.</div> <div class="operation">Remove the spring pin (3) <div class="comment">Remove the spring pin (3)</div>
+</div> <div class="operation">Detach the link pin (1) <div class="comment">Remove the link pin (1)</div>
+</div> <div class="operation">Remove the spring pin (3) <div class="comment">Remove the spring pin (3) </div>
+</div> <div class="operation">Detach the link pin (1) <div class="comment">Detach the link pin (1) </div>
+</div>
+</div> <div id="cmmnt__28F1EDDC8EB7434A8C80180E6FB949B2">
+<h2><b>Step </b>S0008</h2> <div class="comment">Remove the upper torque link (2) and lower torque link (7) from the strut and axle.</div> <div class="operation">Detach the upper torque link (2) <div class="comment">Detach the upper torque link (2) </div>
+</div> <div class="operation">Detach the lower torque link (7) <div class="comment">Detach the lower torque link (7) </div>
+</div>
+</div> <div id="cmmnt__C0B2759CF8C149729BC1862B67FC4070">
+<h2><b>Step </b>S0009</h2> <div class="comment">Inspect the strut, pins and torque link bushings for damage.</div> <div class="operation">Inspect the strut <div class="comment">Inspect the strut</div>
+</div> <div class="operation">Inspect the pins <div class="comment">Inspect the pins</div>
+</div> <div class="operation">Inspect the torque link bushings <div class="comment">Inspect the torque link bushings</div>
+</div>
+</div>
+</div>
+<div id="divparts" style="display:none;">
+<table width="100%" border="0" cellspacing="2" cellpadding="3">
+<tr>
+<th colspan="10">Part Name</th>
+</tr>
+<tr id="tprt_BACP10AD02C09P_15">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('BACP10AD02C09P_15', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('BACP10AD02C09P_15', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('BACP10AD02C09P_15', false);">BACP10AD02C09P</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('BACP10AD02C09P_15', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP10AD02C09P_15', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP10AD02C09P_15', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('BACP10AD02C09P_15', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP10AD02C09P_15', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP10AD02C09P_15', false);">meta</span></td>
+</tr>
+<tr id="tprt_BACP10AD02C09P_15_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">BACP10AD02C09P</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('BACP10AD02C09P_15', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP10AD02C09P_15', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP10AD02C09P_15', false);">meta</span></td>
+</tr>
+<tr id="tprt_BACP10AD02C09P_14">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('BACP10AD02C09P_14', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('BACP10AD02C09P_14', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('BACP10AD02C09P_14', false);">BACP10AD02C09P</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('BACP10AD02C09P_14', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP10AD02C09P_14', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP10AD02C09P_14', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('BACP10AD02C09P_14', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP10AD02C09P_14', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP10AD02C09P_14', false);">meta</span></td>
+</tr>
+<tr id="tprt_BACP10AD02C09P_14_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">BACP10AD02C09P</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('BACP10AD02C09P_14', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP10AD02C09P_14', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP10AD02C09P_14', false);">meta</span></td>
+</tr>
+<tr id="tprt_BACP10AD02C09P_19">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('BACP10AD02C09P_19', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('BACP10AD02C09P_19', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('BACP10AD02C09P_19', false);">BACP10AD02C09P</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('BACP10AD02C09P_19', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP10AD02C09P_19', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP10AD02C09P_19', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('BACP10AD02C09P_19', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP10AD02C09P_19', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP10AD02C09P_19', false);">meta</span></td>
+</tr>
+<tr id="tprt_BACP10AD02C09P_19_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">BACP10AD02C09P</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('BACP10AD02C09P_19', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP10AD02C09P_19', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP10AD02C09P_19', false);">meta</span></td>
+</tr>
+<tr id="tprt_BACP10AD02C09P_1a">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('BACP10AD02C09P_1a', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('BACP10AD02C09P_1a', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('BACP10AD02C09P_1a', false);">BACP10AD02C09P</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('BACP10AD02C09P_1a', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP10AD02C09P_1a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP10AD02C09P_1a', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('BACP10AD02C09P_1a', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP10AD02C09P_1a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP10AD02C09P_1a', false);">meta</span></td>
+</tr>
+<tr id="tprt_BACP10AD02C09P_1a_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">BACP10AD02C09P</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('BACP10AD02C09P_1a', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP10AD02C09P_1a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP10AD02C09P_1a', false);">meta</span></td>
+</tr>
+<tr id="tprt_BACP20BC01D07P_1c">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('BACP20BC01D07P_1c', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('BACP20BC01D07P_1c', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('BACP20BC01D07P_1c', false);">BACP20BC01D07P</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('BACP20BC01D07P_1c', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP20BC01D07P_1c', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP20BC01D07P_1c', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('BACP20BC01D07P_1c', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP20BC01D07P_1c', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP20BC01D07P_1c', false);">meta</span></td>
+</tr>
+<tr id="tprt_BACP20BC01D07P_1c_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">BACP20BC01D07P</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('BACP20BC01D07P_1c', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP20BC01D07P_1c', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP20BC01D07P_1c', false);">meta</span></td>
+</tr>
+<tr id="tprt_BACP20BC01D07P_1e">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('BACP20BC01D07P_1e', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('BACP20BC01D07P_1e', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('BACP20BC01D07P_1e', false);">BACP20BC01D07P</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('BACP20BC01D07P_1e', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP20BC01D07P_1e', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP20BC01D07P_1e', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('BACP20BC01D07P_1e', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP20BC01D07P_1e', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP20BC01D07P_1e', false);">meta</span></td>
+</tr>
+<tr id="tprt_BACP20BC01D07P_1e_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">BACP20BC01D07P</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('BACP20BC01D07P_1e', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('BACP20BC01D07P_1e', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('BACP20BC01D07P_1e', false);">meta</span></td>
+</tr>
+<tr id="tprt_bolt_(10)_9">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('bolt_(10)_9', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('bolt_(10)_9', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('bolt_(10)_9', false);">bolt (10)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('bolt_(10)_9', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolt_(10)_9', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolt_(10)_9', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('bolt_(10)_9', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolt_(10)_9', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolt_(10)_9', false);">meta</span></td>
+</tr>
+<tr id="tprt_bolt_(10)_9_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">bolt (10)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('bolt_(10)_9', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolt_(10)_9', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolt_(10)_9', false);">meta</span></td>
+</tr>
+<tr id="tprt_bolts_(20)_11">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('bolts_(20)_11', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('bolts_(20)_11', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('bolts_(20)_11', false);">bolts (20)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('bolts_(20)_11', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolts_(20)_11', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolts_(20)_11', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('bolts_(20)_11', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolts_(20)_11', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolts_(20)_11', false);">meta</span></td>
+</tr>
+<tr id="tprt_bolts_(20)_11_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">bolts (20)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('bolts_(20)_11', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolts_(20)_11', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolts_(20)_11', false);">meta</span></td>
+</tr>
+<tr id="tprt_bolts_(20)_10">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('bolts_(20)_10', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('bolts_(20)_10', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('bolts_(20)_10', false);">bolts (20)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('bolts_(20)_10', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolts_(20)_10', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolts_(20)_10', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('bolts_(20)_10', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolts_(20)_10', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolts_(20)_10', false);">meta</span></td>
+</tr>
+<tr id="tprt_bolts_(20)_10_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">bolts (20)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('bolts_(20)_10', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolts_(20)_10', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolts_(20)_10', false);">meta</span></td>
+</tr>
+<tr id="tprt_bolts_(8)_47">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('bolts_(8)_47', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('bolts_(8)_47', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('bolts_(8)_47', false);">bolts (8)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('bolts_(8)_47', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolts_(8)_47', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolts_(8)_47', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('bolts_(8)_47', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolts_(8)_47', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolts_(8)_47', false);">meta</span></td>
+</tr>
+<tr id="tprt_bolts_(8)_47_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">bolts (8)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('bolts_(8)_47', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolts_(8)_47', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolts_(8)_47', false);">meta</span></td>
+</tr>
+<tr id="tprt_bolts_(8)_48">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('bolts_(8)_48', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('bolts_(8)_48', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('bolts_(8)_48', false);">bolts (8)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('bolts_(8)_48', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolts_(8)_48', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolts_(8)_48', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('bolts_(8)_48', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolts_(8)_48', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolts_(8)_48', false);">meta</span></td>
+</tr>
+<tr id="tprt_bolts_(8)_48_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">bolts (8)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('bolts_(8)_48', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('bolts_(8)_48', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('bolts_(8)_48', false);">meta</span></td>
+</tr>
+<tr id="tprt_clamp_(14)_45">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('clamp_(14)_45', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('clamp_(14)_45', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('clamp_(14)_45', false);">clamp (14)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('clamp_(14)_45', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('clamp_(14)_45', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('clamp_(14)_45', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('clamp_(14)_45', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('clamp_(14)_45', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('clamp_(14)_45', false);">meta</span></td>
+</tr>
+<tr id="tprt_clamp_(14)_45_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">clamp (14)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('clamp_(14)_45', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('clamp_(14)_45', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('clamp_(14)_45', false);">meta</span></td>
+</tr>
+<tr id="tprt_cotter_pin_(5)_1b">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('cotter_pin_(5)_1b', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('cotter_pin_(5)_1b', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('cotter_pin_(5)_1b', false);">cotter pin (5)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('cotter_pin_(5)_1b', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('cotter_pin_(5)_1b', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('cotter_pin_(5)_1b', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('cotter_pin_(5)_1b', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('cotter_pin_(5)_1b', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('cotter_pin_(5)_1b', false);">meta</span></td>
+</tr>
+<tr id="tprt_cotter_pin_(5)_1b_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">cotter pin (5)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('cotter_pin_(5)_1b', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('cotter_pin_(5)_1b', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('cotter_pin_(5)_1b', false);">meta</span></td>
+</tr>
+<tr id="tprt_cotter_pins_(16)_13">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('cotter_pins_(16)_13', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('cotter_pins_(16)_13', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('cotter_pins_(16)_13', false);">cotter pins (16)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('cotter_pins_(16)_13', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('cotter_pins_(16)_13', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('cotter_pins_(16)_13', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('cotter_pins_(16)_13', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('cotter_pins_(16)_13', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('cotter_pins_(16)_13', false);">meta</span></td>
+</tr>
+<tr id="tprt_cotter_pins_(16)_13_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">cotter pins (16)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('cotter_pins_(16)_13', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('cotter_pins_(16)_13', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('cotter_pins_(16)_13', false);">meta</span></td>
+</tr>
+<tr id="tprt_cotter_pins_(16)_17">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('cotter_pins_(16)_17', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('cotter_pins_(16)_17', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('cotter_pins_(16)_17', false);">cotter pins (16)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('cotter_pins_(16)_17', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('cotter_pins_(16)_17', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('cotter_pins_(16)_17', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('cotter_pins_(16)_17', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('cotter_pins_(16)_17', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('cotter_pins_(16)_17', false);">meta</span></td>
+</tr>
+<tr id="tprt_cotter_pins_(16)_17_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">cotter pins (16)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('cotter_pins_(16)_17', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('cotter_pins_(16)_17', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('cotter_pins_(16)_17', false);">meta</span></td>
+</tr>
+<tr id="tprt_link_pin_(1)_4e">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('link_pin_(1)_4e', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('link_pin_(1)_4e', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('link_pin_(1)_4e', false);">link pin (1)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('link_pin_(1)_4e', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('link_pin_(1)_4e', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('link_pin_(1)_4e', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('link_pin_(1)_4e', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('link_pin_(1)_4e', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('link_pin_(1)_4e', false);">meta</span></td>
+</tr>
+<tr id="tprt_link_pin_(1)_4e_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">link pin (1)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('link_pin_(1)_4e', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('link_pin_(1)_4e', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('link_pin_(1)_4e', false);">meta</span></td>
+</tr>
+<tr id="tprt_link_pin_(1)_4f">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('link_pin_(1)_4f', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('link_pin_(1)_4f', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('link_pin_(1)_4f', false);">link pin (1)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('link_pin_(1)_4f', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('link_pin_(1)_4f', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('link_pin_(1)_4f', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('link_pin_(1)_4f', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('link_pin_(1)_4f', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('link_pin_(1)_4f', false);">meta</span></td>
+</tr>
+<tr id="tprt_link_pin_(1)_4f_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">link pin (1)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('link_pin_(1)_4f', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('link_pin_(1)_4f', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('link_pin_(1)_4f', false);">meta</span></td>
+</tr>
+<tr id="tprt_lower_torque_link_(7)_2d">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('lower_torque_link_(7)_2d', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('lower_torque_link_(7)_2d', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('lower_torque_link_(7)_2d', false);">lower torque link (7)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('lower_torque_link_(7)_2d', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('lower_torque_link_(7)_2d', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('lower_torque_link_(7)_2d', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('lower_torque_link_(7)_2d', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('lower_torque_link_(7)_2d', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('lower_torque_link_(7)_2d', false);">meta</span></td>
+</tr>
+<tr id="tprt_lower_torque_link_(7)_2d_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">lower torque link (7)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('lower_torque_link_(7)_2d', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('lower_torque_link_(7)_2d', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('lower_torque_link_(7)_2d', false);">meta</span></td>
+</tr>
+<tr id="tprt_nut_(21)_6">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('nut_(21)_6', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('nut_(21)_6', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('nut_(21)_6', false);">nut (21)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('nut_(21)_6', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nut_(21)_6', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nut_(21)_6', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('nut_(21)_6', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nut_(21)_6', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nut_(21)_6', false);">meta</span></td>
+</tr>
+<tr id="tprt_nut_(21)_6_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">nut (21)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('nut_(21)_6', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nut_(21)_6', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nut_(21)_6', false);">meta</span></td>
+</tr>
+<tr id="tprt_nut_(4)_8">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('nut_(4)_8', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('nut_(4)_8', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('nut_(4)_8', false);">nut (4)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('nut_(4)_8', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nut_(4)_8', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nut_(4)_8', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('nut_(4)_8', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nut_(4)_8', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nut_(4)_8', false);">meta</span></td>
+</tr>
+<tr id="tprt_nut_(4)_8_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">nut (4)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('nut_(4)_8', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nut_(4)_8', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nut_(4)_8', false);">meta</span></td>
+</tr>
+<tr id="tprt_nuts_(12)_4b">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('nuts_(12)_4b', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('nuts_(12)_4b', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('nuts_(12)_4b', false);">nuts (12)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('nuts_(12)_4b', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nuts_(12)_4b', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nuts_(12)_4b', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('nuts_(12)_4b', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nuts_(12)_4b', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nuts_(12)_4b', false);">meta</span></td>
+</tr>
+<tr id="tprt_nuts_(12)_4b_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">nuts (12)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('nuts_(12)_4b', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nuts_(12)_4b', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nuts_(12)_4b', false);">meta</span></td>
+</tr>
+<tr id="tprt_nuts_(12)_4c">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('nuts_(12)_4c', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('nuts_(12)_4c', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('nuts_(12)_4c', false);">nuts (12)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('nuts_(12)_4c', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nuts_(12)_4c', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nuts_(12)_4c', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('nuts_(12)_4c', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nuts_(12)_4c', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nuts_(12)_4c', false);">meta</span></td>
+</tr>
+<tr id="tprt_nuts_(12)_4c_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">nuts (12)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('nuts_(12)_4c', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nuts_(12)_4c', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nuts_(12)_4c', false);">meta</span></td>
+</tr>
+<tr id="tprt_nuts_(15)_d">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('nuts_(15)_d', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('nuts_(15)_d', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('nuts_(15)_d', false);">nuts (15)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('nuts_(15)_d', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nuts_(15)_d', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nuts_(15)_d', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('nuts_(15)_d', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nuts_(15)_d', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nuts_(15)_d', false);">meta</span></td>
+</tr>
+<tr id="tprt_nuts_(15)_d_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">nuts (15)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('nuts_(15)_d', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nuts_(15)_d', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nuts_(15)_d', false);">meta</span></td>
+</tr>
+<tr id="tprt_nuts_(15)_c">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('nuts_(15)_c', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('nuts_(15)_c', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('nuts_(15)_c', false);">nuts (15)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('nuts_(15)_c', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nuts_(15)_c', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nuts_(15)_c', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('nuts_(15)_c', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nuts_(15)_c', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nuts_(15)_c', false);">meta</span></td>
+</tr>
+<tr id="tprt_nuts_(15)_c_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">nuts (15)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('nuts_(15)_c', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('nuts_(15)_c', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('nuts_(15)_c', false);">meta</span></td>
+</tr>
+<tr id="tprt_pins_37">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('pins_37', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('pins_37', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('pins_37', false);">pins</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('pins_37', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('pins_37', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('pins_37', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('pins_37', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('pins_37', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('pins_37', false);">meta</span></td>
+</tr>
+<tr id="tprt_pins_37_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">pins</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('pins_37', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('pins_37', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('pins_37', false);">meta</span></td>
+</tr>
+<tr id="tprt_pins_4d">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('pins_4d', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('pins_4d', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('pins_4d', false);">pins</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('pins_4d', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('pins_4d', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('pins_4d', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('pins_4d', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('pins_4d', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('pins_4d', false);">meta</span></td>
+</tr>
+<tr id="tprt_pins_4d_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">pins</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('pins_4d', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('pins_4d', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('pins_4d', false);">meta</span></td>
+</tr>
+<tr id="tprt_safety_wire_69">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('safety_wire_69', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('safety_wire_69', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('safety_wire_69', false);">safety wire</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('safety_wire_69', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('safety_wire_69', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('safety_wire_69', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('safety_wire_69', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('safety_wire_69', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('safety_wire_69', false);">meta</span></td>
+</tr>
+<tr id="tprt_safety_wire_69_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">safety wire</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('safety_wire_69', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('safety_wire_69', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('safety_wire_69', false);">meta</span></td>
+</tr>
+<tr id="tprt_safety_wire_6a">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('safety_wire_6a', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('safety_wire_6a', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('safety_wire_6a', false);">safety wire</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('safety_wire_6a', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('safety_wire_6a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('safety_wire_6a', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('safety_wire_6a', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('safety_wire_6a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('safety_wire_6a', false);">meta</span></td>
+</tr>
+<tr id="tprt_safety_wire_6a_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">safety wire</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('safety_wire_6a', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('safety_wire_6a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('safety_wire_6a', false);">meta</span></td>
+</tr>
+<tr id="tprt_screw_(13)_b">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('screw_(13)_b', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('screw_(13)_b', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('screw_(13)_b', false);">screw (13)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('screw_(13)_b', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('screw_(13)_b', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('screw_(13)_b', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('screw_(13)_b', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('screw_(13)_b', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('screw_(13)_b', false);">meta</span></td>
+</tr>
+<tr id="tprt_screw_(13)_b_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">screw (13)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('screw_(13)_b', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('screw_(13)_b', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('screw_(13)_b', false);">meta</span></td>
+</tr>
+<tr id="tprt_spring_pin_(3)_38">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('spring_pin_(3)_38', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('spring_pin_(3)_38', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('spring_pin_(3)_38', false);">spring pin (3)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('spring_pin_(3)_38', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('spring_pin_(3)_38', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('spring_pin_(3)_38', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('spring_pin_(3)_38', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('spring_pin_(3)_38', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('spring_pin_(3)_38', false);">meta</span></td>
+</tr>
+<tr id="tprt_spring_pin_(3)_38_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">spring pin (3)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('spring_pin_(3)_38', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('spring_pin_(3)_38', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('spring_pin_(3)_38', false);">meta</span></td>
+</tr>
+<tr id="tprt_spring_pin_(3)_39">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('spring_pin_(3)_39', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('spring_pin_(3)_39', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('spring_pin_(3)_39', false);">spring pin (3)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('spring_pin_(3)_39', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('spring_pin_(3)_39', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('spring_pin_(3)_39', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('spring_pin_(3)_39', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('spring_pin_(3)_39', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('spring_pin_(3)_39', false);">meta</span></td>
+</tr>
+<tr id="tprt_spring_pin_(3)_39_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">spring pin (3)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('spring_pin_(3)_39', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('spring_pin_(3)_39', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('spring_pin_(3)_39', false);">meta</span></td>
+</tr>
+<tr id="tprt_standoff_bracket_(18)_7">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('standoff_bracket_(18)_7', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('standoff_bracket_(18)_7', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('standoff_bracket_(18)_7', false);">standoff bracket (18)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('standoff_bracket_(18)_7', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('standoff_bracket_(18)_7', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('standoff_bracket_(18)_7', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('standoff_bracket_(18)_7', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('standoff_bracket_(18)_7', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('standoff_bracket_(18)_7', false);">meta</span></td>
+</tr>
+<tr id="tprt_standoff_bracket_(18)_7_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">standoff bracket (18)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('standoff_bracket_(18)_7', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('standoff_bracket_(18)_7', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('standoff_bracket_(18)_7', false);">meta</span></td>
+</tr>
+<tr id="tprt_strut_1f">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('strut_1f', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('strut_1f', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('strut_1f', false);">strut</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('strut_1f', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('strut_1f', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('strut_1f', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('strut_1f', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('strut_1f', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('strut_1f', false);">meta</span></td>
+</tr>
+<tr id="tprt_strut_1f_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">strut</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('strut_1f', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('strut_1f', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('strut_1f', false);">meta</span></td>
+</tr>
+<tr id="tprt_switch_bracket_(19)_44">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('switch_bracket_(19)_44', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('switch_bracket_(19)_44', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('switch_bracket_(19)_44', false);">switch bracket (19)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('switch_bracket_(19)_44', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('switch_bracket_(19)_44', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('switch_bracket_(19)_44', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('switch_bracket_(19)_44', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('switch_bracket_(19)_44', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('switch_bracket_(19)_44', false);">meta</span></td>
+</tr>
+<tr id="tprt_switch_bracket_(19)_44_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">switch bracket (19)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('switch_bracket_(19)_44', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('switch_bracket_(19)_44', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('switch_bracket_(19)_44', false);">meta</span></td>
+</tr>
+<tr id="tprt_switch_terminal_bracket_(9)_46">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('switch_terminal_bracket_(9)_46', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('switch_terminal_bracket_(9)_46', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('switch_terminal_bracket_(9)_46', false);">switch terminal bracket (9)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('switch_terminal_bracket_(9)_46', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('switch_terminal_bracket_(9)_46', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('switch_terminal_bracket_(9)_46', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('switch_terminal_bracket_(9)_46', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('switch_terminal_bracket_(9)_46', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('switch_terminal_bracket_(9)_46', false);">meta</span></td>
+</tr>
+<tr id="tprt_switch_terminal_bracket_(9)_46_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">switch terminal bracket (9)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('switch_terminal_bracket_(9)_46', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('switch_terminal_bracket_(9)_46', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('switch_terminal_bracket_(9)_46', false);">meta</span></td>
+</tr>
+<tr id="tprt_torque_link_bushings_2f">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('torque_link_bushings_2f', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('torque_link_bushings_2f', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('torque_link_bushings_2f', false);">torque link bushings</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('torque_link_bushings_2f', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('torque_link_bushings_2f', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('torque_link_bushings_2f', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('torque_link_bushings_2f', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('torque_link_bushings_2f', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('torque_link_bushings_2f', false);">meta</span></td>
+</tr>
+<tr id="tprt_torque_link_bushings_2f_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">torque link bushings</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('torque_link_bushings_2f', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('torque_link_bushings_2f', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('torque_link_bushings_2f', false);">meta</span></td>
+</tr>
+<tr id="tprt_torque_link_bushings_3c">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('torque_link_bushings_3c', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('torque_link_bushings_3c', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('torque_link_bushings_3c', false);">torque link bushings</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('torque_link_bushings_3c', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('torque_link_bushings_3c', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('torque_link_bushings_3c', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('torque_link_bushings_3c', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('torque_link_bushings_3c', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('torque_link_bushings_3c', false);">meta</span></td>
+</tr>
+<tr id="tprt_torque_link_bushings_3c_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">torque link bushings</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('torque_link_bushings_3c', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('torque_link_bushings_3c', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('torque_link_bushings_3c', false);">meta</span></td>
+</tr>
+<tr id="tprt_upper_torque_link_(2)_3a">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('upper_torque_link_(2)_3a', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('upper_torque_link_(2)_3a', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('upper_torque_link_(2)_3a', false);">upper torque link (2)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('upper_torque_link_(2)_3a', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('upper_torque_link_(2)_3a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('upper_torque_link_(2)_3a', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('upper_torque_link_(2)_3a', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('upper_torque_link_(2)_3a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('upper_torque_link_(2)_3a', false);">meta</span></td>
+</tr>
+<tr id="tprt_upper_torque_link_(2)_3a_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">upper torque link (2)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('upper_torque_link_(2)_3a', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('upper_torque_link_(2)_3a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('upper_torque_link_(2)_3a', false);">meta</span></td>
+</tr>
+<tr id="tprt_washer_(6)_a">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('washer_(6)_a', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('washer_(6)_a', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('washer_(6)_a', false);">washer (6)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('washer_(6)_a', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washer_(6)_a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washer_(6)_a', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('washer_(6)_a', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washer_(6)_a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washer_(6)_a', false);">meta</span></td>
+</tr>
+<tr id="tprt_washer_(6)_a_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">washer (6)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('washer_(6)_a', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washer_(6)_a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washer_(6)_a', false);">meta</span></td>
+</tr>
+<tr id="tprt_washers_(11)_49">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('washers_(11)_49', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('washers_(11)_49', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('washers_(11)_49', false);">washers (11)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('washers_(11)_49', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washers_(11)_49', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washers_(11)_49', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('washers_(11)_49', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washers_(11)_49', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washers_(11)_49', false);">meta</span></td>
+</tr>
+<tr id="tprt_washers_(11)_49_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">washers (11)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('washers_(11)_49', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washers_(11)_49', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washers_(11)_49', false);">meta</span></td>
+</tr>
+<tr id="tprt_washers_(11)_4a">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('washers_(11)_4a', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('washers_(11)_4a', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('washers_(11)_4a', false);">washers (11)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('washers_(11)_4a', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washers_(11)_4a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washers_(11)_4a', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('washers_(11)_4a', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washers_(11)_4a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washers_(11)_4a', false);">meta</span></td>
+</tr>
+<tr id="tprt_washers_(11)_4a_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">washers (11)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('washers_(11)_4a', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washers_(11)_4a', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washers_(11)_4a', false);">meta</span></td>
+</tr>
+<tr id="tprt_washers_(17)_f">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('washers_(17)_f', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('washers_(17)_f', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('washers_(17)_f', false);">washers (17)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('washers_(17)_f', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washers_(17)_f', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washers_(17)_f', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('washers_(17)_f', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washers_(17)_f', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washers_(17)_f', false);">meta</span></td>
+</tr>
+<tr id="tprt_washers_(17)_f_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">washers (17)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('washers_(17)_f', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washers_(17)_f', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washers_(17)_f', false);">meta</span></td>
+</tr>
+<tr id="tprt_washers_(17)_e">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('washers_(17)_e', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('washers_(17)_e', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('washers_(17)_e', false);">washers (17)</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('washers_(17)_e', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washers_(17)_e', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washers_(17)_e', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('washers_(17)_e', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washers_(17)_e', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washers_(17)_e', false);">meta</span></td>
+</tr>
+<tr id="tprt_washers_(17)_e_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">washers (17)</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('washers_(17)_e', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('washers_(17)_e', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('washers_(17)_e', false);">meta</span></td>
+</tr>
+<tr id="tprt_wheel_assy_50">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2"><span class="linkbtn" onclick="parent.on_object_select('wheel_assy_50', false)" title="Select Part" onmouseover="this.style.textDecoration='underline';this.style.color='red';parent.on_object_highlight('wheel_assy_50', true);" onmouseout="this.style.textDecoration=this.style.color='';parent.on_object_highlight('wheel_assy_50', false);">wheel assy</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_locate('wheel_assy_50', false)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('wheel_assy_50', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('wheel_assy_50', false);">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('wheel_assy_50', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('wheel_assy_50', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('wheel_assy_50', false);">meta</span></td>
+</tr>
+<tr id="tprt_wheel_assy_50_disabled" style="color:#AAAAAA;display:none;">
+<td width="10"></td>
+<td class="parttd" width="100%" colspan="2">wheel assy</td>
+<td width="30"><span class="btn" style="color:#AAAAAA;cursor:auto;">locate</span></td>
+<td width="30"><span class="btn" onclick="parent.on_object_meta('wheel_assy_50', this)" onmouseover="this.style.textDecoration='underline';this.style.border='1px black solid';this.style.padding='0px 9px 2px 9px';parent.on_object_highlight('wheel_assy_50', true);" onmouseout="this.style.textDecoration=this.style.border=this.style.padding='';parent.on_object_highlight('wheel_assy_50', false);">meta</span></td>
+</tr>
+</table>
+</div>
+<style id="docstyle" media="print">
+  #divsteps {font-family:tahoma, sans-serif; color:black; background-color:#F0F0F0; font-size:10pt; margin:0px;}
+  #divsteps * {font-family:arial, helvetica, sans-serif; font-size:10pt;}
+  #divsteps tr {font-size:10pt;background-color:#ffffff;}
+  #divsteps td {font-family:arial, helvetica, sans-serif; font-size:10pt;}
+  #divsteps th {font-family:arial, helvetica, sans-serif; font-size:10pt; text-align:left; background-color:#EEEEFF;}
+  #divsteps h1 {padding:5px; margin:3px 2px 10px 2px; text-align:center; background-color:#AAAACC;}
+  #divsteps h2 {padding:5px; margin:3px 2px 1px 2px; text-align:center; font-style: italic; background-color:#AAAACC;}
+  #divsteps h3 {text-align:left; margin:3px 2px 1px 2px; text-decoration:underline;}
+  #divsteps .step {margin-left:20px; margin:5px 2px 1px 2px;}
+  #divsteps .note {margin-left:20px; margin-top:10px; color:green; font-weight:bold;}
+  .warning {margin-left:20px; margin-top:10px; color:red; font-weight:bold;}
+  #divsteps .caution {margin-left:20px; margin-top:10px; color:FF8000; font-weight:bold}
+  #divsteps .alerttext {padding-left:20px; padding-top:10px;}
+  #divsteps .num {font-weight:bold;}
+  #divsteps img {margin:20px;}
+  #divsteps .genstep {margin:5px 2px 8px 14px;}
+  #divsteps h4{text-align:left; margin:1px 2px 1px 2px; font-weight:bold; padding:0px 3px 0px 3px;}
+  
+  
+  #divcomments {font-family:tahoma, sans-serif; color:black; background-color:white; font-size:13px;}	
+  #divcomments table {background-color:white;}
+  #divcomments td {font-size:13px;} 
+  #divcomments th {font-size:14px; text-align:left;}
+  #divcomments h1 {font-size:14px; font-weight:bold;}
+  #divcomments h2 {color:darkblue;font-size:13px; margin:30px 0 0 0;}
+  #divcomments h2 b {text-transform:uppercase;}
+  #divcomments p {margin-left:20px;}
+  #divcomments .note {font-weight:bold;}
+  #divcomments .warning {font-weight:bold;color:red;}
+  #divcomments .caution {font-weight:bold;color:darkorange;}
+  .comment {margin:5px 0 0 15px; color:darkgreen; font-size:11px;  padding:0 8px 2px 8px;}
+  .operation {margin:15px 0 0 8px;}
+  .group {margin:15px 0 0 8px;}
+  .stepcomment{margin-left:25px; font-size:11px; font-style:italic;}
+  
+  #divparts { font-family:tahoma, sans-serif; color:black; background-color:#FFFFFF; font-size:13px; }
+  #divparts th {font-family:tahoma, sans-serif; color:black; background-color:#DDDDEE;  font-size:13px;}
+  #divparts .parttd {font-family:verdana; font-size:13px; border-bottom:1px #DDDDEE dotted;}
+  #divparts .linkbtn {font-family:verdana; font-size:13px; cursor:pointer;}
+  #divparts .btn {font-family:verdana; font-size:11px; cursor:pointer; background-color:#DDDDDD; color:#000000; padding:5px 10px 5px 10px;}
+  
+  #btn_close{width: 20px;}
+</style>
+<!--[if IE]>
+<style type="text/css">
+  #stTd2{background-color:#D2D0CB;}
+  #stTd3{filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFEFECE8', EndColorStr='#FFD2D0CB');}
+  #stTd3_2{text-align: right; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFEFECE8', EndColorStr='#FFD2D0CB');}
+  #sHeader1{white-space : nowrap; text-align: center; font-size: 12px; font-weight: bold; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFEFECE8', EndColorStr='#FFD2D0CB');}
+  #sHeader2{text-align: right; white-space: nowrap;	font-size: 12px; font-weight: bold;	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFEFECE8', EndColorStr='#FFD2D0CB'); width: 20px;}
+</style>
+<![endif]-->
+</div>
+</body>
+</html>

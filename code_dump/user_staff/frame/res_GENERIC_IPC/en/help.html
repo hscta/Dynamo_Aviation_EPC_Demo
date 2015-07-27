@@ -1,0 +1,1296 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></meta>
+<title>Illustrated Parts Catalog: User Interface</title>
+
+		<style type="text/css">
+<!--
+body
+{
+	font-family: verdana;
+	font-size: 80%;
+	background-color: white;
+	color: black;
+	margin-top: 12pt;
+	margin-bottom: 10pt;
+	margin-left: 10pt;
+	margin-right: 10pt;
+}
+
+p 
+{
+	font-family: verdana;
+	font-size: 100%;
+	color: black;
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+	margin-left: 0pt;
+}
+
+li
+{
+	font-family: verdana;
+	font-size: 100%;
+	margin-left: 0pt;
+}
+
+td
+{
+	font-family: verdana;
+	font-size: 80%;
+	color: black;
+
+	background-color: whitesmoke;
+	margin: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: solid 1px white;
+	vertical-align: top;
+}
+
+td.key
+{
+	background-color: gainsboro;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.wht
+{
+	background-color: white;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border: none;
+	vertical-align: top;
+}
+
+th
+{
+	font-family: verdana;
+	font-size: 80%;
+	color: black;
+	text-align: left;
+
+	background-color: gainsboro;
+	padding: 4px;
+	border: solid 1px white;
+}
+
+h1
+{
+	font-family: verdana;
+	font-size: 130%;
+	font-weight: bold;
+	background-color: white;
+	color: #336699;
+	margin-bottom: 6pt;
+}
+
+h2
+{
+	font-family: verdana;
+	font-size: 115%;
+	font-weight: bold;
+	background-color: white;
+	color: #336699;
+	margin-bottom: 6pt;
+	margin-top: 24pt;
+}
+
+h3
+{
+	font-family: verdana;
+	font-size: 100%;
+	font-weight: bold;
+	background-color: white;
+	color: black;
+	margin-bottom: 3pt;
+}
+
+hr
+{
+	color: #336699;
+	height: 1px;
+}
+
+ul
+{
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+	color: black;
+	list-style-type: disc;
+}
+
+a
+{
+	color: #1080FF;
+}
+
+a:visited
+{
+	color: saddlebrown;
+}
+
+a:hover
+{
+	color: darkorange;
+}
+
+.command
+{
+	padding:4px;
+	color: #336699;
+	background-color: whitesmoke;
+	font-family:courier;
+}
+
+.hdbar
+{
+  margin-top: 32px;
+  margin-bottom: 0px;
+  width: 100%;
+  font-weight: bold;
+  background-color: #6699CC;
+  color: white;
+  padding: 2px;
+  padding-left: 4px;
+}
+
+div.note 
+{
+	background-image: url(images/note1.png);
+        background-repeat: no-repeat;
+        background-color: white;
+        margin-top: 12pt;
+        margin-bottom: 0pt;
+	margin-left: 0pt;
+}
+div.table_note 
+{
+	background-image: url(images/note2.png);
+        background-repeat: no-repeat;
+        background-color: #F5F5F5;
+        margin-top: 6pt;
+        margin-bottom: 0pt;
+	margin-left: 0pt;
+}
+
+div.fig_note 
+{
+        font-size: 90%;
+        margin-top: 6pt;
+        margin-bottom: 6pt;
+	margin-left: 12pt;
+}
+
+-->
+</style>
+
+</head>
+
+<body>
+
+<h1>Illustrated Parts Catalog: User Interface</h1>
+<hr noshade></hr>
+
+<p>
+The user interface of the Illustrated Parts Catalog (IPC) consists of two workspaces: 
+3D window or 2D window and Detailed Parts List (DPL) table.
+Each workspace has its own control elements described below. 
+
+<p>
+<div class="note">&nbsp;</div>
+<ul><li>The IPC document can be represented in three graphics viewing modes:
+<ul><b>2D and 3D</b> mode allows viewing the 2D and 3D graphics of the IPC document in the 2D window and 3D window, respectively. 
+In this mode, the IPC document has a button <span style="white-space: nowrap;">(<img src="images/But_2D_Graphics.png" width="21" height="21"> 2D Graphics)</span> for switching between two windows.<br>
+<b>3D only</b> mode allows viewing only 3D graphics of the IPC document in the 3D window.<br>
+<b>2D only</b> mode allows viewing only 2D graphics of the IPC document in the 2D window. In this mode, the IPC document contains only the sheets that have 2D graphics. Other sheets are unavailable.
+</ul>
+<li>The desired mode is usually chosen using the application that the IPC document is originally created in.</li>
+<li>All colors mentioned in the help system are default colors.</li>
+</ul>
+</p>
+
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+  <td class="wht" width="130"><img src="images/PublishProject1.png" width="599" height="471" border="0"></td>
+</tr>
+</table>
+</p>
+
+<div class="hdbar">3D/2D Window</div>
+<p> 
+The 3D window displays 3D graphics of the current sheet.
+You can navigate the camera using the mouse or keyboard and specify a navigation mode using the Navigation bar.
+A locator (axis tripod) in the top right corner of the 3D window allows determining the orientation of the 3D graphics
+relative to the axes.
+</p>
+
+<p>
+The 2D window displays vector and raster graphics associated with the current sheet.
+</p>
+
+<!-- 3D/2D Commands -->
+<table cellpadding="2" cellspacing="0" border="0">
+  <tr>
+   <th valign="top" align="left">
+     Command
+   </th>
+   <th valign="top" align="left">
+     Button
+   </th>
+   <th valign="top" align="left">
+     Purpose
+   </th>
+  </tr>
+
+   <tr>
+   <td valign="top" align="left">
+     Sheet
+   </td>
+   <td valign="top" align="center">
+     &nbsp;
+   </td>
+   <td valign="top" align="left">
+    Allows you to choose the detail sheet from a list of available detail sheets.
+  </td>
+  </tr>
+  
+  <tr>
+   <td valign="top" align="left">
+     Reset
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_Reset.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+     Restores the original (user-defined) view on the current sheet.
+   </td>
+  </tr>
+  
+  <tr>
+   <td valign="top" align="left">
+     2D Graphics
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_2D_Graphics.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+     Allows switching between 2D window and 3D window. Enables/disables the 2D Graphics mode.
+     The button appears only in the <b>2D and 3D</b> graphics viewing mode.
+   </td>
+  </tr>
+  
+  <tr>
+   <td valign="top" align="left">
+     Print Graphics
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_3D_Print.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+    Allows you to print the current 3D/2D graphics as displayed in the 3D/2D window.
+   </td>
+  </tr> 
+  
+  <tr>
+   <td valign="top" align="left">
+     Callouts (for 3D window)
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_Callouts.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+    Enables/disables the Callout mode that allows drawing callouts over the current image in the 3D window. When the Callout mode is enabled, the Navigation bar is replaced with the Callout bar.
+  </td>
+  </tr> 
+  
+  <tr>
+  <td valign="top" align="left">
+     Ignore Transparent (for 3D window)
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_Ignore_Transparent.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+     Allows you to click through the transparent graphics in the 3D window.
+     If enabled, makes the transparent graphics insensitive for the user's click.
+   </td>
+  </tr>
+  
+  <tr>
+   <td valign="top" align="left">
+     Skip Animation (for 3D window)
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_Skip_Animation.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+     Allows you to avoid a smooth transition (animation) from one sheet to another
+     and makes the transition between the sheets abrupt.
+   </td>
+  </tr>
+  
+ <tr>
+   <td valign="top" align="left">
+     Show Graphics Only
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_Show_3DOnly.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+    Hides the DPL Table window and enlarges the 3D/2D window to full screen.
+   </td>
+  </tr> 
+  
+   
+</table>
+
+<!-- 2D Navigation-->  
+<h3>2D Navigation Bar</h3>
+<p>
+    Buttons for controlling the navigation modes in the 2D window depend on the 2D viewer used in the 
+    2D window.
+</p>
+
+  
+
+<!-- 3D Navigation -->
+<h3>3D Navigation Bar</h3>
+<p>
+    Buttons for controlling the navigation modes in the 3D window.
+</p>
+
+  <table cellpadding="2" cellspacing="0" border="0">
+  <tr>
+   <th valign="top" align="left">
+     Command
+   </th>
+   <th valign="top" align="left">
+     Button
+   </th>
+   <th valign="top" align="left">
+     Purpose
+   </th>
+  </tr>
+   
+   <tr>
+   <td valign="top" align="left">
+     Spin
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_Spin.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+    Allows you to rotate the image around a specified center in the 3D window.
+   </td>
+  </tr> 
+  
+  <tr>
+   <td valign="top" align="left">
+     Pan
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_Pan.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+    Allows you to reposition the image on the screen.
+   </td>
+  </tr> 
+  
+   <tr>
+   <td valign="top" align="left">
+     Zoom in/out
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_Zoom.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+    Allows you to move the image closer or further away from the user.
+   </td>
+  </tr> 
+  
+   <tr>
+   <td valign="top" align="left">
+     Set Center
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_Center.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+    Allows you to specify the rotation center for the image.
+   </td>
+  </tr> 
+  
+  
+   <tr>
+   <td valign="top" align="left">
+     Show/Hide Rotation Center
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_Center_Hide.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+    Allows you to hide or show the rotation center.
+   </td>
+  </tr> 
+  
+  <tr>
+   <td valign="top" align="left">
+    Fit
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_Fit.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+    Makes the entire 3D graphics fully visible in the 3D window.
+    The image moves to fit the bounding box of the 3D window.
+   </td>
+  </tr> 
+   
+ </table>
+
+ <p>
+There are several navigation modes that allow fitting the 3D graphics item(s)
+to the 3D window from the specified position:
+
+</p>
+
+<table cellpadding="2" cellspacing="0" border="0">
+  <tr>
+   <th valign="top" align="left">
+     Command
+   </th>
+   <th valign="top" align="left">
+     Button
+   </th>
+   <th valign="top" align="left">
+     Purpose
+   </th>
+  </tr>
+  
+  
+   <tr>
+   <td valign="top" align="left">
+     Front
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_Front.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+    Shows the image from the front.
+   </td>
+  </tr> 
+  
+  
+  <tr>
+   <td valign="top" align="left">
+     Back
+   </td>
+   <td valign="top" align="center">
+     <img src="images/But_Back.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+    Shows the image from the back.
+   </td>
+  </tr>
+  
+  
+  <tr>
+   <td valign="top" align="left">
+    Left
+   </td>
+   <td valign="top" align="center">
+   <img src="images/But_Left.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+   Shows the image from the left side.
+   </td>
+  </tr>
+  
+  <tr>
+   <td valign="top" align="left">
+    Right
+   </td>
+   <td valign="top" align="center">
+  <img src="images/But_Right.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+    Shows the image from the right side.
+   </td>
+  </tr>
+   
+  <tr>
+   <td valign="top" align="left">
+     Top
+   </td>
+   <td valign="top" align="center">
+    <img src="images/But_Top.png" width="21" height="21"> 
+   </td>
+   <td valign="top" align="left">
+     Shows the image from the top.
+   </td>
+  </tr> 
+   
+   
+   <tr>
+   <td valign="top" align="left">
+     Bottom
+   </td>
+   <td valign="top" align="center">
+   <img src="images/But_Bottom.png" width="21" height="21"> 
+   </td>
+   <td valign="top" align="left">
+     Shows the image from the bottom.
+   </td>
+  </tr> 
+  
+   <tr>
+   <td valign="top" align="left">
+     Isometric
+   </td>
+   <td valign="top" align="center">
+   <img src="images/But_Isometric.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+     Shows the image from the front left looking aft.
+   </td>
+  </tr> 
+
+</table>
+
+
+<h3>Callout Bar (for 3D window)</h3>   
+<p>
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+  <td class="wht" width="130"><img src="images/Callout_bar.png" width="445" height="26" border="0"></td>
+</tr>
+</table>
+</p>
+<p>Replaces the Navigation bar in the Callout mode (the <img src="images/But_Callouts.png" width="21" height="21"> Callouts button is pressed).
+The mode allows drawing callouts over a snap-shot of the 3D window. The resulted image can be printed. Navigation is unavailable in the Callout mode.
+</p>
+<table cellpadding="2" cellspacing="0" border="0">
+  <tr>
+   <th valign="top" align="left">
+     Command
+   </th>
+   
+   <th valign="top" align="left">
+     Purpose
+   </th>
+  </tr>
+  
+  
+  <tr>
+   <td valign="top" align="left">
+     Callout Text
+   </td>
+   <td valign="top" align="left">
+     Allows typing a text for a new callout.
+   </td>
+  </tr> 
+  
+  <tr>
+   <td valign="top" align="left">
+     Undo
+   </td>
+   <td valign="top" align="left">
+     Removes the last callout drawn.
+   </td>
+  </tr> 
+  
+  </table>
+
+
+<h3>Selection Bar (for 3D window)</h3>   
+<p>Allows fitting, showing, hiding and making transparent the selected 3D graphics item in the 3D window.</p>
+<table cellpadding="2" cellspacing="0" border="0">
+  <tr>
+   <th valign="top" align="left">
+     Command
+   </th>
+   
+   <th valign="top" align="left">
+     Purpose
+   </th>
+  </tr>
+  
+  
+  <tr>
+   <td valign="top" align="left">
+     Fit
+   </td>
+   <td valign="top" align="left">
+     Moves the image to fit the bounding box.
+   </td>
+  </tr> 
+  
+  <tr>
+   <td valign="top" align="left">
+     Show
+   </td>
+   <td valign="top" align="left">
+     Shows the selected 3D image in the 3D window.
+  </td>
+  </tr> 
+  
+   <tr>
+   <td valign="top" align="left">
+     Hide
+   </td>
+   <td valign="top" align="left">
+     Hides the selected 3D image in the 3D window.
+   </td>
+  </tr> 
+  
+  <tr>
+   <td valign="top" align="left">
+     Transparency
+   </td>
+   <td valign="top" align="left">
+     Sets the desired amount of transparency for the selected part.
+  </td>
+  </tr> 
+  
+  
+</table>
+
+
+<!-- DPL Table Commands-->  
+<div class="hdbar">DPL Table Window</div>
+<p>Displays the DPL table.
+</p>
+
+<table cellpadding="2" cellspacing="0" border="0">
+  <tr>
+   <th valign="top" align="left">
+     Command
+   </th>
+   <th valign="top" align="left">
+     Button
+   </th>
+   <th valign="top" align="left">
+     Purpose
+   </th>
+  </tr>
+  
+  
+  <tr>
+   <td valign="top" align="left">
+     Print Table 
+   </td>
+   <td valign="top" align="center">
+   <img src="images/But_Print_Table.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+     Allows you to print the DPL table.
+   </td>
+  </tr> 
+
+  <tr>
+   <td valign="top" align="left">
+    Composite Print
+   </td>
+   <td valign="top" align="center">
+   <img src="images/But_composite_print.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+     Allows you to print both the DPL table and all 2D images available in the IPC module.
+     Each 2D image is printed out on a separate page.
+   </td>
+  </tr> 
+
+  <tr>  
+   <td valign="top" align="left">
+     Check Boxes (for 3D window)
+   </td>
+   <td valign="top" align="center">
+   &nbsp;
+   </td>
+   <td valign="top" align="left">
+     Shows or hides the <i>Check Boxes</i> column of the DPL table.
+     The <i>Check Boxes</i> column is a column with tick boxes.
+     <ul>
+     <li> <img src="images/Check_Selected.png" width="13" height="13"> selected check box (check mark is bold) &ndash; means that the DPL row has the corresponding part visible in the 3D window on the current sheet.</li>
+     <li> <img src="images/Check_Selected_Semihidden.png" width="13" height="13"> selected check box (check mark is gray) &ndash; means that one or more 3D graphics items of the lower hierarchical level are hidden in the 3D window on the current sheet.</li>
+     <li> <img src="images/Check_Cleared.png" width="13" height="13"> cleared check box &ndash; means that the corresponding part is hidden in the 3D window on the current sheet. </li>
+     <li> <img src="images/Check_Crossed.png" width="13" height="13"></li> crossed-out check box &ndash; means that the DPL row has no corresponding 3D image on all sheets of the figure.
+     <li> <img src="images/Check_Null.png" width="11" height="11"> no check box &ndash; means that the DPL row has no corresponding 3D image on the current sheet.</li>
+     </ul>
+   </td>
+  </tr> 
+
+<td valign="top" align="left">
+     Full Table
+   </td>
+   <td valign="top" align="center">
+   &nbsp;
+   </td>
+   <td valign="top" align="left">
+    Shows the entire DPL table. The text of the rows that are not associated with the current sheet (inactive rows) is gray in color.
+   </td>
+  </tr> 
+  
+  <td valign="top" align="left">
+     Export to Excel
+   </td>
+   <td valign="top" align="center">
+   <img src="images/But_Excel.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+    Puts the selected parts in a Microsoft Excel spreadsheet. 
+    If no parts are selected in the DPL Table, all visible parts are placed in Microsoft Excel spreadsheet.
+   </td>
+  </tr> 
+   
+  <td valign="top" align="left">
+     Help
+   </td>
+   <td valign="top" align="center">
+   <img src="images/But_Help.png" width="21" height="21">
+   </td>
+   <td valign="top" align="left">
+    Provides a help system for the user interface.
+   </td>
+  </tr> 
+  
+  
+  <td valign="top" align="left">
+     Title area
+   </td>
+   <td valign="top" align="center">
+   &nbsp;
+   </td>
+   <td valign="top" align="left">
+   The Title area provides information about the project name and published date.
+  </td>
+  </tr> 
+  
+
+</table>
+
+
+<!-- DPL Table Commands-->  
+<div class="hdbar">Context-Sensitive Menus in 3D Window and DPL Table</div>
+<p>Right-click any 3D graphics item in the 3D window or a DPL row in the DPL Table to access the context-sensitive menus.
+</p>
+
+<table cellpadding="2" cellspacing="0" border="0">
+  <tr>
+   <th valign="top" align="left">
+     Menu Item
+   </th>
+   <th valign="top" align="left">
+     Purpose
+   </th>
+   </tr>
+  
+   <td valign="top" align="left">
+     Item: 
+   </td>
+   <td valign="top" align="left">
+   Shows the Item number for the selected 3D image and DPL row.
+   </td>
+   </tr> 
+   
+   <td valign="top" align="left">
+    Fit
+   </td>
+   <td valign="top" align="left">
+   Moves the image to fit the bounding box of selected 3D graphics item to the 3D window.
+   </td>
+   </tr> 
+   
+   <td valign="top" align="left">
+    Show/Hide
+   </td>
+   <td valign="top" align="left">
+   Shows or hides the selected 3D image in the 3D window.
+   <div class="table_note">&nbsp;</div>
+   <ul><li>When you show or hide the chosen 3D image, the check box of the corresponding DPL
+    row becomes selected or cleared respectively.</li></ul>
+   </td>
+   </tr>
+   
+   <td valign="top" align="left">
+    Select/Unselect
+   </td>
+   <td valign="top" align="left">
+   Selects or unselects the chosen 3D image in 3D window or the chosen DPL row in the DPL table.
+   </td>
+   </tr>
+   
+   <td valign="top" align="left">
+    Go to Sheet <i>{Sheet name}</i>
+   </td>
+   <td valign="top" align="left">
+   Shows all available transitions to the other detail sheets.
+   The <i>Sheet name</i> in bold indicates a sheet that provides the best view for the 3D image represented by the DPL row.
+   The current Sheet is marked as active in brackets. 
+   </td>
+   </tr>
+         
+  <tr>
+  <td valign="top" align="left">
+    Show All
+   </td>
+   <td valign="top" align="left">
+   Shows all hidden 3D images in the 3D window and selects the corresponding check boxes in the DPL Table.
+   </td>
+   </tr> 
+   
+   <td valign="top" align="left">
+    Cortona Properties (in 3D window)
+   </td>
+   <td valign="top" align="left">
+   Allows you to select a rendering mode.
+   The Cortona3D Viewer is used in the application and it provides a software renderer and two hardware renderers:
+   OpenGL and DirectX. If your system has hardware acceleration for either OpenGL or Direct3D,
+   choose the appropriate renderer.
+   Using hardware renderers can introduce limitations.
+   Select a renderer to compare the performance and visual quality of hardware versus software rendering
+   and set your preferences accordingly.
+   </td>
+   </tr>
+   
+   <tr>
+   <td valign="top" align="left">
+    About
+   </td>
+   <td valign="top" align="left">
+   Shows the versions of the IPC document, Cortona3D Viewer and 2D viewer. This menu item is also available in the 2D window.
+   </td>
+      
+   </tr>         
+ </table>
+ 
+ <!-- DPL Table Procedures-->  
+<div class="hdbar">DPL Table: Main Procedures</div>
+
+<table cellpadding="2" cellspacing="0" border="0">
+  <tr>
+   <th valign="top" align="left">
+     Procedure Name
+   </th>
+   
+   <th valign="top" align="left">
+    Procedure
+   </th>
+   
+   <th valign="top" align="left">
+     Result
+   </th>
+  </tr>
+  
+   <td valign="top" align="left">
+    Highlighting
+   </td>
+   
+   <td valign="top" align="left">
+    Point to the required DPL row.
+   </td>
+   
+   <td valign="top" align="left">
+   The DPL row is highlighted in light gray, if its corresponding 3D image is illustrated in the 3D window.
+   The corresponding 3D image is also highlighted in the 3D window.
+   <div class="table_note">&nbsp;</div>
+   <ul><li>If the pointed DPL row has no corresponding 3D image or it has a hidden 3D image,
+    such DPL row is highlighted in rose.</li></ul>
+   </td>
+   </tr> 
+
+ <td valign="top" align="left">
+    Selection
+   </td>
+   
+   <td valign="top" align="left">
+    Click the required DPL row.
+   </td>
+   
+   <td valign="top" align="left">
+   The DPL row and the corresponding 3D/2D graphics are highlighted in yellow.
+   </td>
+   </tr> 
+   
+   <td valign="top" align="left">
+    Multiple Selection
+   </td>
+   
+   <td valign="top" align="left">
+    Press and hold down CTRL, and then click each required DPL row. 
+   </td>
+   
+   <td valign="top" align="left">
+   The DPL rows are selected one by one.
+   </td>
+   </tr> 
+   
+    <td valign="top" align="left">
+    Consecutive Multiple Selection
+   </td>
+   
+   <td valign="top" align="left">
+    Click the first DPL row, press and hold down SHIFT, and then click the last DPL row. 
+
+   </td>
+   
+   <td valign="top" align="left">
+   The consecutive DPL rows are selected.
+   </td>
+   </tr> 
+   
+   <td valign="top" align="left">
+    Fit
+   </td>
+   
+   <td valign="top" align="left">
+   Double-click the required DPL row. 
+
+   </td>
+   <td valign="top" align="left">
+   Moves the image to fit the bounding box of the 3D window.
+   </td>
+   </tr> 
+   
+   <td valign="top" align="left">
+    Show
+   </td>
+   
+   <td valign="top" align="left">
+   Select the check box (Check Boxes column) of the required DPL row to make the corresponding 3D image visible in the 3D window. 
+
+   </td>
+   <td valign="top" align="left">
+   The corresponding 3D image is shown in the 3D window.
+   </td>
+   </tr> 
+   
+   <td valign="top" align="left">
+    Hide
+   </td>
+   
+   <td valign="top" align="left">
+   Clear the check box (Check Boxes column) of the required DPL row to make the corresponding 3D image invisible in the 3D window. 
+
+   </td>
+   <td valign="top" align="left">
+   The corresponding 3D image is hidden in the 3D window.
+   </td>
+   </tr> 
+   
+
+</table>
+
+<!-- 2D Window Procedures-->  
+<div class="hdbar">2D Window: Main Procedures</div>
+<p>Callouts in the 2D window are interactive hotspots that allow for linking between the 2D graphics and DPL table.
+The navigation commands depend on the 2D viewer used in the 2D window.
+</p>
+<table cellpadding="2" cellspacing="0" border="0">
+  <tr>
+   <th valign="top" align="left">
+     Procedure Name
+   </th>
+   
+   <th valign="top" align="left">
+    Procedure
+   </th>
+   
+   <th valign="top" align="left">
+     Result
+   </th>
+  </tr>
+  
+   <td valign="top" align="left">
+    Highlighting
+   </td>
+   
+   <td valign="top" align="left">
+    Point to the required callout.
+   </td>
+   
+   <td valign="top" align="left">
+   The callout and the corresponding DPL row are highlighted. 
+   The Item number is displayed as a popup for the highlighted callout. 
+   </td>
+   </tr> 
+   
+   <td valign="top" align="left">
+    Selection
+   </td>
+   
+   <td valign="top" align="left">
+    Click the required callout. 
+   </td>
+   
+   <td valign="top" align="left">
+   The callout and the corresponding DPL row are highlighted in yellow.  
+   </td>
+   </tr> 
+   
+      
+
+     
+</table>
+
+
+ <!-- 3D Window Procedures-->  
+<div class="hdbar">3D Window: Main Procedures</div>
+
+<table cellpadding="2" cellspacing="0" border="0">
+  <tr>
+   <th valign="top" align="left">
+     Procedure Name
+   </th>
+   
+   <th valign="top" align="left">
+    Procedure
+   </th>
+   
+   <th valign="top" align="left">
+     Result
+   </th>
+  </tr>
+  
+   <td valign="top" align="left">
+    Highlighting
+   </td>
+   
+   <td valign="top" align="left">
+    Point to the required 3D image.
+   </td>
+   
+   <td valign="top" align="left">
+   The 3D image and the corresponding DPL row are highlighted.
+   The Item is displayed as a popup for the highlighted 3D image.
+  </td>
+   </tr>
+   
+   <td valign="top" align="left">
+    Selection
+   </td>
+   
+   <td valign="top" align="left">
+    Click the required 3D image.
+   </td>
+   
+   <td valign="top" align="left">
+   The 3D image and the DPL row are highlighted in yellow.
+   </td>
+   </tr>
+   
+   
+   
+   <td valign="top" align="left">
+    Multiple Selection
+   </td>
+   
+   <td valign="top" align="left">
+    Press and hold down CTRL, and then click each required 3D images. 
+   </td>
+   
+   <td valign="top" align="left">
+   The 3D images are selected one by one.
+   </td>
+   </tr>
+   
+    
+   <td valign="top" align="left">
+    Hierarchy Selection (in case of hierarchic structure)
+   </td>
+   
+   <td valign="top" align="left">
+   Click the required 3D image and then click it once more while holding the SHIFT key, repeat clicking the 3D image with SHIFT pressed until 
+   all required upper levels of hierarchy are selected. 
+   </td>
+   
+   <td valign="top" align="left">
+   The 3D images of the next level up in the hierarchy are highlighted in the 3D window and DPL table.
+   <div class="table_note">&nbsp;</div>
+   <ul><li>In the 3D window, the 3D images of all selected levels are highlighted,
+    while in the DPL table, the DPL row of the last selected level is highlighted. </li></ul>
+   </td>
+   </tr>
+   
+    <td valign="top" align="left">
+    Zoom (navigation)
+   </td>
+   
+   <td valign="top" align="left">
+  <ul><li> Rotate the mouse wheel forward or backward.</li>
+ <br> – or –
+ <li> Click the <img src="images/But_Zoom.png" width="21" height="21"> Zoom button on the Navigation bar, you can position the pointer anywhere in the 3D window, press the left mouse button, and then move the mouse while holding down its left button. </li>
+  </ul>
+  </td>
+   
+   <td valign="top" align="left">
+   The image moves closer or farther away in the 3D window.
+   </td>
+   </tr>
+   
+      <td valign="top" align="left">
+   Pan (navigation)
+   </td>
+   
+   <td valign="top" align="left">
+  <ul>
+  <li> Position the pointer anywhere in the 3D window, and then move the mouse with the middle button (or mouse wheel) pressed. </li>
+  <br> – or – 
+  <li> Click the <img src="images/But_Pan.png" width="21" height="21">  <b>Pan</b> button on the Navigation bar, position the pointer over 3D window, and move the mouse while holding down its left button. </li>
+  </ul>
+  </td>
+   <td valign="top" align="left">
+  The image moves up/down or left/right in the 3D window.
+   </td>
+   </tr>
+     
+     
+     
+   <td valign="top" align="left">
+   Spin (navigation)
+   </td>
+   
+   <td valign="top" align="left">
+   Click the <img src="images/But_Spin.png" width="21" height="21">  <b>Spin</b> button on the Navigation bar, position the pointer over 3D window, and move the mouse while holding down its left button.
+   </td>
+  <td valign="top" align="left">
+  The image rotates around the specified center in the 3D window.
+   </td>
+   </tr>
+   
+      
+   <td valign="top" align="left">
+  Setting Rotation Center (navigation)
+   </td>
+  <td valign="top" align="left">
+  <ul>
+  <li> Press the ALT key and then click any 3D image in the 3D window.</li>
+  <br> – or – 
+  <li> Click the <img src="images/But_Center.png" width="21" height="21"> <b>Set Center</b> on the Navigation bar, and then click the required 3D image in the 3D window. </li>
+  <br> – or –
+  <li> Position the pointer over any 3D image in the 3D window, and then click the middle mouse button.</li>
+  </ul>
+  </td>
+  <td valign="top" align="left">
+  The rotation center of the chosen 3D image is specified.
+   </td>
+   </tr>
+   
+  <td valign="top" align="left">
+  Fit 3D Graphics Marked in the Current DPL table
+   </td>
+   <td valign="top" align="left">
+  Click the <img src="images/But_Fit.png" width="21" height="21"> <b>Fit</b> button on the Navigation bar.
+  </td>
+  <td valign="top" align="left">
+  The 3D images, corresponding to rows with selected check boxes, are fully visible in the 3D window.
+     </td>
+   </tr>
+   
+   <td valign="top" align="left">
+  Fit Selection
+   </td>
+   <td valign="top" align="left">
+  Select the required 3D image in the 3D window or DPL table, and then click the <b>Fit</b> button on the Selection bar. 
+  </td>
+  <td valign="top" align="left">
+  The image moves to fit the bounding box of selected 3D image to the 3D window.
+   </td>
+   </tr>
+   
+ <td valign="top" align="left">
+  Fit 3D Graphics from Specified Position
+   </td>
+   <td valign="top" align="left">
+Click the required button ( <img src="images/But_Front.png" width="21" height="21">Front, <img src="images/But_Back.png" width="21" height="21"> Back,
+ <img src="images/But_Left.png" width="21" height="21"> Left, <img src="images/But_Right.png" width="21" height="21"> Right,
+   <img src="images/But_Top.png" width="21" height="21"> Top, <img src="images/But_Bottom.png" width="21" height="21"> Bottom, and <img src="images/But_Isometric.png" width="21" height="21"> Isometric) on the Navigation bar. 
+  </td>
+  <td valign="top" align="left">
+ The 3D images, corresponding to rows with selected check boxes, are shown in the 3D window from the specified position (Front, Back, Left, Right, Top, Bottom, and Isometric).
+   </td>
+   </tr>
+   
+ <td valign="top" align="left">
+  Show
+   </td>
+ <td valign="top" align="left">
+Select the DPL row of the hidden 3D image or DPL table, and then click the <b>Show</b> button on Selection bar.
+<div class="table_note">&nbsp;</div>
+<ul><li>The DPL row of the hidden 3D image has its Check Boxes column cleared,
+and when you point to such DPL row, it is highlighted in rose. </li></ul>
+ </td>
+  <td valign="top" align="left">
+The hidden 3D image is shown in the 3D window.
+   </td>
+   </tr>
+     
+<td valign="top" align="left">
+  Hide
+   </td>
+ <td valign="top" align="left">
+Select the required 3D image in the 3D window or DPL table, and then click the <b>Hide</b> button on the Selection bar.
+ </td>
+  <td valign="top" align="left">
+The selected 3D image is hidden in the 3D window.
+   </td>
+   </tr>
+ 
+<td valign="top" align="left">
+  Setting Transparency/Opacity
+   </td>
+ <td valign="top" align="left">
+Select the required 3D image in the 3D window or DPL table, and then drag the Transparency slider on the Selection bar,
+until the desired effect is achieved in the 3D window.
+ </td>
+  <td valign="top" align="left">
+The selected 3D image is made transparent or opaque in the 3D window.
+   </td>
+   </tr>  
+   
+<td valign="top" align="left">
+  Print 3D with Callouts
+</td>
+ <td valign="top" align="left">
+<ol>
+<li>Navigate and use available commands to choose the desired image in the 3D window.
+</li>
+<li>Press the <b>Callout</b> button to switch to the Callout mode.
+</li>
+<li>Select a DPL row to specify the Item, if needed.</li>
+<li>Type or edit the callout text in the <b>Callout Text</b> box, if needed.</li>
+<li>In the 3D window, click where you want the callout to start, and then drag the mouse to where you want the callout to finish.</li>
+<li>Repeat 3-5, if needed.</li>
+<li>Print the resulted image using the <b>Print 3D</b> button.</li>
+<li>Exit the Callout mode.</li>
+</ol>
+
+<div class="table_note">&nbsp;</div>
+<ul><li>By default, the callout text contains the Item number associated with the selected DPL row.</li>
+<li>To remove the last callout drawn, click the <b>Undo</b> button.</li>
+<li>To remove all callouts drawn but keep the image (viewpoint) in the 3D window, click the <b>Callout</b> button twice.</li>
+<li>To exit the Callout mode, either click the <b>Callout</b> button or the <b>Reset</b> button or go to another Sheet. Note that all callouts drawn are removed when you exit.</li>
+</ul>
+</td>
+
+<td valign="top" align="left">
+The chosen 3D image is printed with the drawn callouts.
+   </td>
+ </tr>  
+   
+</table>
+
+
+  
+	
+</body>
+</html>

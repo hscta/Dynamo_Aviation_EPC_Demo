@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <title>Welcome - DSS Administrator</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"> 
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/docs.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+<div class="site_container">
+<div class="wrapper div_center">
+
+
+  <div class="wrapper_segment div_left talignl" id="header">
+    <!-- <div id="header"  class="width-48-950 last nofloat clearfix"> -->
+
+    <div class="logo div_left">
+      <a id="logo" rel="home" title="Home" href="index.php?page=dashboard">
+       <img alt="Home" src="img/logo.png" style="margin-left:30px;"> 
+     </a>
+    </div>
+
+    <div id="site-name">
+      <strong>
+        <a rel="home" title="Home" href="/"><span></span></a>
+      </strong>
+    </div>
+
+    <div class="pull-right header_welcome">
+          Welcome <span>Sanjay Nath</span> | <a href="javascript:logout()">Logout</a>
+        </div>
+
+
+  </div>
+
+
+  <div class="wrapper_segment menu_segment div_left talignl" id="main-navigation">
+    <!-- <div id="" class="width-45-890"> -->
+    
+    <ul class="menu_1" id="main-menu">
+
+
+   
+
+
+                <li class="active current single_line"><a href="dashboard.html"><span>Dashboard</span> </a> </li>
+
+
+         
+        
+
+
+       </ul>
+
+      </div>
+
+
+<div class="main">
+  <div class="main-inner">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span12" id="slide1">
+
+
+
+<br/>
+
+
+
+<br/>
+<div id="storeList">
+
+<div class="row-fluid">
+   <div class="col-xs-12 col-md-12" style="text-align:right">
+
+    Select Month: <select id="monthList" onchange="changeData()">
+      <option value="1">January</option>
+      <option value="2">February</option>
+      <option value="3">March</option>
+      <option value="4">April</option>
+      <option value="5">May</option>
+      <option value="6">June</option>
+      <option value="7">July</option>
+      <option value="8">August</option>
+      <option value="9">September</option>
+      <option value="10">October</option>
+      <option value="11">November</option>
+      <option value="12">December</option>
+    </select>
+
+   </div>
+
+ </div>
+<br/><br/>
+<div class="row-fluid">
+   <div class="col-xs-3 col-md-3">
+      <h4 style="margin-top:30px;">Dealer 10347</h4>
+   </div>
+   <div class="col-xs-8 col-md-8 dashboard">
+      <div class="btn-group btn-group-justified">
+        <a role="button" href="#" class="btn btn-default summaryBtn black">Adherence<span class="adh">80%</span></a>
+        <a role="button" href="#" class="btn btn-default summaryBtn blue">Score<span class="sco">8</span></a>
+      </div>
+   </div>
+   <div class="col-xs-1 col-md-1"></div>
+</div>
+
+        </div>
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /main-inner --> 
+</div>
+<!-- /main -->
+
+<div class="footer">
+  <div class="footer-inner">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="col-md-6 col-sm-6"> &copy; 2014. All rights reserved by <a href="http://www.bajajauto.com/" target="_blank">Bajaj Auto</a>. </div>
+        <div class="col-md-6 col-sm-6 provision"> Provisioned on <a href="http://www.gladminds.co/" target="_blank">GladMinds Connect Platform</a>. <span class="ver noselect">V 0.0.1</span></div>
+        <!-- /span12 --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /footer-inner --> 
+</div>
+
+</div>
+</div>
+
+<div id="loading">
+  <div class="txt"></div>
+  <div class="bg"></div>
+</div>
+
+
+<script>
+
+function logout(){
+  if(confirm("Are you sure you want to logout?")){
+    document.location.href="index.html";
+  }
+}
+
+
+function changeData(){
+  
+  listVal = $("#monthList").val();
+
+  if(listVal == 1){
+    $(".adh").html("10%");
+    $(".sco").html("1");
+  }
+  if(listVal == 2){
+    $(".adh").html("70%");
+    $(".sco").html("7");
+  }
+  if(listVal == 3){
+    $(".adh").html("50%");
+    $(".sco").html("5");
+  }
+  if(listVal == 4){
+    $(".adh").html("60%");
+    $(".sco").html("6");
+  }
+  if(listVal == 5){
+    $(".adh").html("70%");
+    $(".sco").html("7");
+  }
+  if(listVal == 6){
+    $(".adh").html("90%");
+    $(".sco").html("9");
+  }
+  if(listVal == 7){
+    $(".adh").html("60%");
+    $(".sco").html("6");
+  }
+  if(listVal == 8){
+    $(".adh").html("70%");
+    $(".sco").html("7");
+  }
+  if(listVal == 9){
+    $(".adh").html("90%");
+    $(".sco").html("9");
+  }
+  if(listVal == 10){
+    $(".adh").html("40%");
+    $(".sco").html("4");
+  }
+  if(listVal == 11){
+    $(".adh").html("50%");
+    $(".sco").html("5");
+  }
+  if(listVal == 12){
+    $(".adh").html("80%");
+    $(".sco").html("8");
+  }
+
+
+
+
+
+
+
+
+
+
+}
+ </script>
+ 
+</body>
+</html>

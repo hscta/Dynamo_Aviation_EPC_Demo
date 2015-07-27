@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bajaj Failure Complaint Reporting</title>
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="js/jquery.ui.datepicker.js"></script>
+    <script src="js/inc.js"></script>
+    <script id="mobile-datepicker" src="js/jquery.mobile.datepicker.js"></script>
+
+</head>
+<body>
+
+
+<div data-role="page" id="page1">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+
+	</div>
+
+	<div role="main" class="ui-content">
+		<div class="ui-body ui-body-e ui-corner-all">
+
+		<div class="aCenter loginPageImage">
+			<img src="images/login.png" style="height:100%"/>
+		</div>
+
+			<div class="login-form">
+				<form name="loginForm" id="loginForm" autocomplete="off">
+					<input type="hidden" name="action" value="loginCheck">
+					<p class="alert"></p>
+
+					<div data-role="fieldcontain" class="text-field">
+						<input autocomplete="off" type="text" name="txtEmpCode" value="" placeholder="Employee Code" class="required" id="txtEmpCode" />
+					</div>
+
+					<div data-role="fieldcontain" class="text-field">
+						<input autocomplete="off"  type="password" name="txtPassword" value="" placeholder="Password" id="txtPassword" />
+					</div>
+
+					<div data-role="fieldcontain" class="text-field">
+						<label><input name="sign_remember" type="checkbox" checked value="1">Remember my Login</label>
+					</div>
+
+					<div class="send">
+						<a href="javascript:void(0)" data-role="button" data-iconpos="right" id="login" class="ui-btn ui-btn-b ui-corner-all">Login</a>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+    	<h4>Bajaj Auto. Confidential</h4>
+    </div>
+</div>
+
+<div data-role="page" id="page1a">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+	</div>
+
+	<div role="main" class="ui-content">
+		<div class="ui-body ui-body-e ui-corner-all">
+
+
+			<div data-demo-html="true">
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#page2" data-transition="slide"><span class="green"></span>Failure Complaint Reporting</a></li>
+				</ul>
+			</div><!--/demo-html -->
+
+
+		</div>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+    	<h4>Bajaj Auto. Confidential</h4>
+    </div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+
+		 <div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="#page1a" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		     <a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+		 </div>
+
+		<div class="miniHeader">Setup</div>
+	</div>
+
+	<div role="main" class="ui-content" style="text-align:center;">
+
+		
+		<a href="fcr_failure.html#frDashboard" rel="external" data-role="button" data-theme="a" class="custom-btn ui-btn ui-btn-inline" data-transition="slide">Failure<span class="red failure_open"></span> <span class="green failure_closed"></span></a>
+		<a href="fcr_complaint.html#frDashboard" rel="external" data-role="button" data-theme="b" class="custom-btn ui-btn ui-btn-inline" data-transition="slide">Complaint<span class="red complaint_open"></span> <span class="green complaint_closed"></span></a>
+
+
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+
+
+
+<script language="javascript" type="text/javascript">
+    $(function() {
+        $('#datepicker').date({ dateFormat: 'd M, y' }).val()
+    });
+
+    $("#startTask").click(function(){
+    	$(".selDealer").html($("#selectDealer").val())
+    	localStorage.setItem("selDealer", $("#selectDealer").val());
+    	
+    	if($("#selectDealer").val()==""){
+    		alert("Please select Dealer");
+    		return false;
+    	}
+
+    	if($("#selectDealer").val()==""){
+    		alert("Please select Dealer");
+    		return false;
+    	}
+
+    	$.mobile.navigate( "#page3" );
+
+    });
+
+	$(document).delegate('.ui-page', 'pageshow', function () {
+	    $(".selDealer").html(localStorage.getItem("selDealer"))
+	});
+
+
+	$("#login").click(function(){
+
+		if($("#txtEmpCode").val()==""){
+			alert("Please enter Employee Code");
+			$("#txtEmpCode").focus();
+			return false;
+		}
+
+		if($("#txtPassword").val()==""){
+			alert("Please enter Password");
+			$("#txtPassword").focus();
+			return false;
+		} 
+
+		ajaxifyForm("loginForm","page1a");
+
+	})
+
+
+	//redirect to page 2 if he is already loggedin
+	$("#page1").on("pageinit",function(){
+		if (!(localStorage.getItem("bajaj_name") === null)) {
+        	$.mobile.changePage("#page1a");
+		}
+	});
+
+	//redirect to page 1 if he is not loggedin
+	$("#page1a,#page2").on("pageinit",function(){
+		if ((localStorage.getItem("bajaj_name") === null)) {
+        	$.mobile.changePage("#page1");
+		}
+	});	
+
+	//redirect to page 2 if he is already loggedin
+	$("#page2").on("pageshow",function(){
+
+		showLoading();	
+		emp_code = localStorage.getItem("bajaj_empcode");
+
+		$.getJSON( host+"index.php?action=fetchFCList&emp_code="+emp_code, function( data ) {
+		    
+
+			$(".failure_open").html("Open: "+data.failure.open)
+			$(".failure_closed").html("Closed: "+data.failure.closed)
+
+			$(".complaint_open").html("Open: "+data.complaint.open)
+			$(".complaint_closed").html("Closed: "+data.complaint.closed)
+
+		    hideLoading();
+		  });
+
+	});
+
+
+
+</script>
+
+
+</body>
+
+</html>

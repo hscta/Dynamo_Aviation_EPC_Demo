@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bajaj Failure Complaint Reporting</title>
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/jquery.datetimepicker.css" />	
+	<link rel="stylesheet" href="css/bootstrap-fileupload.css" />
+	<link href="assets/css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+	<script src="js/jquery.datetimepicker.js"></script>
+	<script src="js/inc.js"></script>
+
+
+</head>
+<body>
+
+	<div data-role="page" id="frDashboard">
+		<div data-role="header" class="header">
+			<h1>Bajaj OneApp</h1>
+			<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+			     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		     <a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+			 </div>
+
+			<div class="miniHeader minitext">All Failures <span class="selDealer"></span>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content acenter">
+			<a href="#" id="addFailure" data-role="button" data-icon="plus" data-mini="true" class="fright">Add</a>
+			<a href="#frDashboardClosed" data-role="button" data-mini="true" class="fright">Closed Issues</a>
+			<h2 class="pageHeading">Failure - Open Issues</h2>
+			<table data-role="table" id="compaintTable" data-mode="columntoggle" class="ui-responsive table-stroke table-stripe" data-column-btn-text="Cols...">
+
+
+
+			  <thead>
+			    <tr>
+			      <th>Failure ID</th>
+			      <th>Customer Name</th>
+			      <th>Phone number</th>
+			      <th>VIN Number</th>
+			      <th data-priority="5">Registation Number</th>
+			      <th data-priority="5">Location</th>
+			      <th data-priority="5">Engine Number</th>
+			      <th data-priority="5">Channel Name</th>
+			      <th>&nbsp;</th>
+			    </tr>
+			  </thead>
+			  <tbody id="complaintList">
+			   
+			  </tbody>
+			</table>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Bajaj Auto. Confidential</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="frDashboardClosed">
+		<div data-role="header" class="header">
+			<h1>Bajaj OneApp</h1>
+			<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+			     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		     <a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+			 </div>
+
+			<div class="miniHeader minitext">All Failures <span class="selDealer"></span>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content acenter">
+			<a href="#" id="addFailure1" data-role="button" data-icon="plus" data-mini="true" class="fright">Add</a>
+			<a href="#frDashboard" data-role="button" data-mini="true" class="fright">Open Issues</a>
+			<h2 class="pageHeading">Failure - Closed Issues</h2>
+			<table data-role="table" id="compaintTableClosed" data-mode="columntoggle" class="ui-responsive table-stroke table-stripe">
+			  <thead>
+			    <tr>
+			      <th>Failure ID</th>
+			      <th>Customer Name</th>
+			      <th>Phone number</th>
+			      <th>VIN Number</th>
+			      <th data-priority="5">Registation Number</th>
+			      <th data-priority="5">Location</th>
+			      <th data-priority="5">Engine Number</th>
+			      <th data-priority="5">Channel Name</th>
+			      <th>&nbsp;</th>
+			    </tr>
+			  </thead>
+			  <tbody id="complaintListClosed">
+			   
+			  </tbody>
+			</table>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Bajaj Auto. Confidential</h4>
+		</div>
+	</div>
+
+	<!--*************************************************************************************-->
+	<!--FR stands for Failure Registration ***** Add Section Start -->
+
+	<div data-role="page" id="fr_add_default" data-add-back-btn="true">
+		<div data-role="header" class="header">
+			<h1>Failure Registration Form</h1>
+			<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+			     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		     <a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+			 </div>
+
+			<div class="miniHeader minitext">New Failure Registration
+				<div class="step">1/5</div>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content acenter">
+			<form id="add_default" class="ui-body ui-body-a ui-corner-all" data-ajax="true" method="post">
+				<input type="hidden" name="action" value="addDefault">
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Employee Code:</label>
+				    <input type="text" id="fr_txtEmpCode" name="fr_txtEmpCode" value="" readonly />
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Failure Number:</label>
+				    <input name="fr_txtFailureNumber" id="fr_txtFailureNumber" readonly type="text" readonly>
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Expected Delivery <span class="red">*</span>:</label>
+				    <input type="text" id="fr_datetime" name="fr_datetime" placeholder="Select date and Time" value="" readonly/>
+				</div>
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Channel Name :</label>
+				    <input type="text" id="fr_channelName" name="fr_channelName" placeholder="Enter Channel Name" value=""/>
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Channel Type <span class="red">*</span>:</label>
+				    <select name="fr_txtChannelType" id="fr_txtChannelType">
+				    	<option value="">Select Channel</option>
+				    </select>
+				</div>
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Location <span class="red">*</span>:</label>
+				    <select name="fr_txtLocation" id="fr_txtLocation">
+				    	<option value="">Select Location</option>
+				    </select>
+				</div>
+
+				<div class="ui-grid-solo">
+				    <div class="ui-block-a"><a href="#" id="addDefault" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >Add Customer Details</a></div>
+				</div>
+			</form>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Bajaj Auto. Confidential</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="fr_add_customer" data-add-back-btn="true">
+		<div data-role="header" class="header">
+			<h1>Failure Registration Form</h1>
+			<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+			     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		     <a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+			 </div>
+
+			<div class="miniHeader minitext">Customer Details
+				<div class="step">2/5</div>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content acenter">
+			<form id="add_customer" class="ui-body ui-body-a ui-corner-all" data-ajax="true" method="post">
+				<input type="hidden" name="action" value="addCustomer">
+				<input type="hidden" name="failureNumber" class="failureNumber" value="">
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Name:</label>
+				    <input name="fr_txtName" id="fr_txtName" placeholder="Enter Customer Name" value="" type="text">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Email:</label>
+				    <input name="fr_txtEmail" id="fr_txtEmail" placeholder="Enter Customer Email" value="" type="text">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Phone <span class="red">*</span>:</label>
+				    <input name="fr_txtPhone" id="fr_txtPhone" placeholder="Enter Customer Phone" value="" type="text" maxlength="15">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Address:</label>
+				    <textarea name="fr_txtAddress" id="fr_txtAddress" placeholder="Enter Customer Address" rows="3"></textarea>
+				</div>
+
+				<div class="ui-grid-solo">
+				    <div class="ui-block-a"><a href="#" id="addCustomer" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >Add Vehicle Details</a></div>
+				</div>
+
+			</form>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Bajaj Auto. Confidential</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="fr_add_vehicle" data-add-back-btn="true">
+		<div data-role="header" class="header">
+			<h1>Failure Registration Form</h1>
+			<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+			     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		     <a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+			 </div>
+
+			<div class="miniHeader minitext">Vehicle Details
+				<div class="step">3/5</div>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content acenter">
+			<form id="add_vehicle" class="ui-body ui-body-a ui-corner-all" data-ajax="true" method="post">
+				<input type="hidden" name="action" value="addVehicle">
+				<input type="hidden" name="failureNumber" class="failureNumber" value="">
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Model:</label>
+				    <select name="fr_txtModel" id="fr_txtModel">
+				    	<option value="">Select Vehicle Model</option>
+				    </select>
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Registration Number:</label>
+				    <input name="fr_txtregno" id="fr_txtregno" placeholder="Enter Vehicle Registration Number" value="" type="text">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Frame No. / VIN No. <span class="red">*</span>:</label>
+				    <input name="fr_txtVinno" id="fr_txtVinno" placeholder="Enter Vehicle Frame No. / VIN No." value="" type="text" maxlength="17" class="vin"><span id="result"></span>
+				</div>
+
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Engine No. <span class="red">*</span>:</label>
+				    <input name="fr_txtEngno" id="fr_txtEngno" placeholder="Enter Vehicle Engine No." value="" type="text" maxlength="11">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Date of Sale:</label>
+				    <input name="fr_txtDOP" id="fr_txtDOP" placeholder="Enter Vehicle Date of Sale" value="" type="text" readonly>
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Kilometer Reading:</label>
+				    <input name="fr_txtKMR" id="fr_txtKMR" placeholder="Enter Vehicle Kilometer Reading" value="" type="text">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Repair Type:</label>
+
+
+				<div class="ui-grid-a ui-responsive">
+				    <div class="ui-block-a"><input name="fr_txtrtype" id="fr_txtrtype1" value="0" type="radio" checked><label for="fr_txtrtype1">Under Warranty</label></div>
+				    <div class="ui-block-b"><input name="fr_txtrtype" id="fr_txtrtype2" value="1" type="radio"><label for="fr_txtrtype2">Paid</label></div>
+				</div>
+
+				</div>
+
+
+				<div class="ui-grid-solo">
+				    <div class="ui-block-a"><a href="#" id="addVehicle" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >Add Failures</a></div>
+				</div>
+			</form>
+
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Bajaj Auto. Confidential</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="fr_add_failure" data-add-back-btn="true">
+		<div data-role="header" class="header">
+			<h1>Failure Registration Form</h1>
+			<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+			     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		     <a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+			 </div>
+
+			<div class="miniHeader minitext">Failure Details
+				<div class="step">4/5</div>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content acenter">
+			<form id="add_vehicleForm" data-ajax="true" method="post" onsubmit="return addFailureSubmit()">
+				<input type="hidden" name="action" value="addFailureDetails">
+				<input type="hidden" name="failureNumber" class="failureNumber" value="">
+				<div id="boxHolder"></div>
+				<br/>
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><a href="#" id="addBtn" data-role="button" data-icon="plus" data-iconpos="left" data-theme="b" data-mini="true">Add</a></div>
+					<div class="ui-block-b">
+
+						<input type="submit" value="Upload Photo" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-mini="true">
+		   			</div>
+				</div>
+		  	</form>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Bajaj Auto. Confidential</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="fr_uploadPic" data-add-back-btn="true">
+		<div data-role="header" class="header">
+			<h1>Failure Registration Form</h1>
+			<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+			     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		     <a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+			 </div>
+
+			<div class="miniHeader minitext">Failure Details
+				<div class="step">5/5</div>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content acenter">
+
+			<form id="upload" method="post" action="http://www.gladminds.co/bajaj/fcr_mobile/upload.php" enctype="multipart/form-data">
+				<input type="hidden" name="failureNumber" class="failureNumber" value="">
+				<ul></ul>			
+				<div id="drop">Drop Here<a>Browse</a><input type="file" name="upl" accept="image/*;capture=camera" capture="camera"></div>
+			</form>
+
+			<br/><br/>
+			<div class="ui-grid-solo">
+			    <div class="ui-block-a">
+			    	<a href="#fr_finish" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >Finish</a>
+			    </div>
+			</div>
+
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Bajaj Auto. Confidential</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="fr_finish" data-add-back-btn="true">
+		<div data-role="header" class="header">
+			<h1>Failure Registration Form</h1>
+			<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+			     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		     <a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+			 </div>
+
+			<div class="miniHeader minitext">Failure Details
+				
+			</div>
+		</div>
+
+		<div role="main" class="ui-content acenter">
+
+			
+
+			<div class="ui-grid-solo">
+			    <div class="ui-block-a"><h3 class="aCenter">Thankyou. Your Failure ID is: <a href="#fr_action"><span class="red" id="failureID"></span></a></h3></div>
+			</div>
+
+
+
+			<div class="ui-grid-solo">
+			    <div class="ui-block-a"><a href="#frDashboard" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >OK</a></div>
+			</div>
+
+
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Bajaj Auto. Confidential</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="fr_action" data-add-back-btn="true">
+		<div data-role="header" class="header">
+			<h1>Failure Action Form</h1>
+			<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+			     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		     <a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+			 </div>
+
+			<div class="miniHeader minitext">Failure Details for <b class="complaintID">12345</b>
+				
+			</div>
+		</div>
+
+		<div role="main" class="ui-content acenter">
+
+			<form name="failureActions" id="failureActions" method="post">
+				<input type="hidden" name="action" value="saveActions">
+				<input type="hidden" name="failureNumber" class="failureNumber" value="">
+				<input type="hidden" name="closeTicketFailure" id="closeTicketFailure" value="0">
+
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Job Complete Date:</label>
+				    <input name="fr_txtJobCompleteDate" id="fr_txtJobCompleteDate" readonly type="text" placeholder="Select date and Time" readonly>
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Vehicle Delivery Date:</label>
+				    <input type="text" id="fr_DeliveryDatetime" name="fr_DeliveryDatetime" placeholder="Select date and Time" value="" readonly/>
+				</div>
+
+
+
+
+				<table data-role="table" class="ui-responsive table-stroke vaBottom">
+			     <thead>
+			       <tr>
+			         <th width="98%" class="aleft">Actions taken to solve customer complaints</th>
+			         <th width="2%"><a href="javascript:void(0)" style="background:#138E5F;color:#fff;text-shadow:none;" data-role="button" data-icon="plus" data-mini="true" class="fright" id="addFailureActions">Add</a></th>
+			       </tr>
+			     </thead>
+			     <tbody id="customerComplaints">
+			       
+			     </tbody>
+			   	</table>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Dealer/ASM Remarks:</label>
+				    <textarea name="fr_DealerAsmRemark" id="fr_DealerAsmRemark" placeholder="Enter Dealer ASM Remarks" rows="3"></textarea>
+				</div>
+
+
+		   	</form>
+		   	<hr/>
+		   	<p class="aCenter">
+			   	<a href="#" id="draftAction" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b">Draft</a>
+				<a href="#" id="closeFailure" class="ui-btn ui-btn-inline ui-shadow ui-corner-all">Close Ticket</a>
+				<a href="#frDashboard" class="ui-btn ui-btn-inline ui-shadow ui-corner-all">Cancel</a>
+			</p>
+
+
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Bajaj Auto. Confidential</h4>
+		</div>
+	</div>
+
+	<!--*************************************************************************************-->
+	<!--FR stands for Failure Registration ***** Edit Section Start -->
+
+
+	<div data-role="page" id="fr_edit_default" data-add-back-btn="true">
+		<div data-role="header" class="header">
+			<h1>Failure Registration Form</h1>
+			<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+			     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		     <a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+			 </div>
+
+			<div class="miniHeader minitext">Edit Failure Registration
+				<div class="step">1/5</div>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content acenter">
+			<form id="edit_default" class="ui-body ui-body-a ui-corner-all" data-ajax="true" method="post">
+				<input type="hidden" name="action" value="editDefault">
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Employee Code:</label>
+				    <input type="text" id="fr_txtEmpCode_edit" name="fr_txtEmpCode_edit" value="" readonly />
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Failure Number:</label>
+				    <input name="fr_txtFailureNumber_edit" id="fr_txtFailureNumber_edit" readonly type="text" readonly>
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Expected Delivery <span class="red">*</span>:</label>
+				    <input type="text" id="fr_datetime_edit" name="fr_datetime_edit" placeholder="Select date and Time" value="" readonly/>
+				</div>
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Channel Name :</label>
+				    <input type="text" id="fr_channelName_edit" name="fr_channelName_edit" placeholder="Enter Channel Name" value=""/>
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Channel Type <span class="red">*</span>:</label>
+				    <select name="fr_txtChannelType_edit" id="fr_txtChannelType_edit">
+				    	<option value="">Select Channel</option>
+				    </select>
+				</div>
+				<div class="ui-field-contain">
+				    <label for="textinput-fc">Location <span class="red">*</span>:</label>
+				    <select name="fr_txtLocation_edit" id="fr_txtLocation_edit">
+				    	<option value="">Select Location</option>
+				    </select>
+				</div>
+
+				<div class="ui-grid-solo">
+				    <div class="ui-block-a"><a href="#" id="editDefault" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >Edit Customer Details</a></div>
+				</div>
+			</form>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Bajaj Auto. Confidential</h4>
+		</div>
+	</div>
+
+
+	<div data-role="page" id="fr_edit_customer" data-add-back-btn="true">
+		<div data-role="header" class="header">
+			<h1>Failure Registration Form</h1>
+			<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+			     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		     <a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+			 </div>
+
+			<div class="miniHeader minitext">Edit Customer Details
+				<div class="step">2/5</div>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content acenter">
+			<form id="edit_customer" class="ui-body ui-body-a ui-corner-all" data-ajax="true" method="post">
+				<input type="hidden" name="action" value="editCustomer">
+				<input type="hidden" name="failureNumber" class="failureNumber" value="">
+				<div class="ui-field-contain">
+				    <label for="fr_txtName_edit">Name:</label>
+				    <input name="fr_txtName_edit" id="fr_txtName_edit" placeholder="Enter Customer Name" value="" type="text">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="fr_txtEmail_edit">Email:</label>
+				    <input name="fr_txtEmail_edit" id="fr_txtEmail_edit" placeholder="Enter Customer Email" value="" type="text">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="fr_txtPhone_edit">Phone <span class="red">*</span>:</label>
+				    <input name="fr_txtPhone_edit" id="fr_txtPhone_edit" placeholder="Enter Customer Phone" value="" type="text" maxlength="15">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="fr_txtAddress_edit">Address:</label>
+				    <textarea name="fr_txtAddress_edit" id="fr_txtAddress_edit" placeholder="Enter Customer Address" rows="3"></textarea>
+				</div>
+
+				<div class="ui-grid-solo">
+				    <div class="ui-block-a"><a href="#" id="editCustomer" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >Edit Vehicle Details</a></div>
+				</div>
+
+			</form>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Bajaj Auto. Confidential</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="fr_edit_vehicle" data-add-back-btn="true">
+		<div data-role="header" class="header">
+			<h1>Failure Registration Form</h1>
+			<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+			     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		     <a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+			 </div>
+
+			<div class="miniHeader minitext">Edit Vehicle Details
+				<div class="step">3/5</div>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content acenter">
+			<form id="edit_vehicle" class="ui-body ui-body-a ui-corner-all" data-ajax="true" method="post">
+				<input type="hidden" name="action" value="editVehicle">
+				<input type="hidden" name="failureNumber" class="failureNumber" value="">
+				<div class="ui-field-contain">
+				    <label for="fr_txtModel_edit">Model:</label>
+				    <select name="fr_txtModel_edit" id="fr_txtModel_edit">
+				    	<option value="">Select Vehicle Model</option>
+				    </select>
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="fr_txtregno_edit">Registration Number:</label>
+				    <input name="fr_txtregno_edit" id="fr_txtregno_edit" placeholder="Enter Vehicle Registration Number" value="" type="text">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="fr_txtVinno_edit">Frame No. / VIN No. <span class="red">*</span>:</label>
+				    <input name="fr_txtVinno_edit" id="fr_txtVinno_edit" placeholder="Enter Vehicle Frame No. / VIN No." value="" type="text" maxlength="17" class="vin">  <span id="result"></span>
+				</div>
+
+
+				<div class="ui-field-contain">
+				    <label for="fr_txtEngno_edit">Engine No. <span class="red">*</span>:</label>
+				    <input name="fr_txtEngno_edit" id="fr_txtEngno_edit" placeholder="Enter Vehicle Engine No." value="" type="text" maxlength="11">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="fr_txtDOP_edit">Date of Sale:</label>
+				    <input name="fr_txtDOP_edit" id="fr_txtDOP_edit" placeholder="Enter Vehicle Date of Sale" value="" type="text" readonly>
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="fr_txtKMR_edit">Kilometer Reading:</label>
+				    <input name="fr_txtKMR_edit" id="fr_txtKMR_edit" placeholder="Enter Vehicle Kilometer Reading" value="" type="text">
+				</div>
+
+				<div class="ui-field-contain">
+				    <label for="fr_txtrtype_edit">Repair Type:</label>
+
+
+				<div class="ui-grid-a ui-responsive">
+				    <div class="ui-block-a"><input name="fr_txtrtype_edit" id="fr_txtrtype1_edit" value="0" type="radio" checked><label for="fr_txtrtype1_edit">Under Warranty</label></div>
+				    <div class="ui-block-b"><input name="fr_txtrtype_edit" id="fr_txtrtype2_edit" value="1" type="radio"><label for="fr_txtrtype2_edit">Paid</label></div>
+				</div>
+
+				</div>
+
+
+				<div class="ui-grid-solo">
+				    <div class="ui-block-a"><a href="#" id="editVehicle" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-mini="true" >Edit Failures</a></div>
+				</div>
+			</form>
+
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Bajaj Auto. Confidential</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="fr_edit_failure" data-add-back-btn="true">
+		<div data-role="header" class="header">
+			<h1>Failure Registration Form</h1>
+			<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+			     <a href="index.html#page1a" rel="external" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		     <a href="javascript:logout()" data-role="button" data-icon="lock" data-iconpos="notext"  data-mini="true" >Logout</a>
+			 </div>
+
+			<div class="miniHeader minitext">Failure Details
+				<div class="step">4/5</div>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content acenter">
+			<form id="edit_vehicleForm" data-ajax="true" method="post" onsubmit="return editFailureSubmit()">
+				<input type="hidden" name="action" value="addFailureDetails">
+				<input type="hidden" name="failureNumber" class="failureNumber" value="">
+				<div id="boxHolder_edit"></div>
+				<br/>
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><a href="#" id="addBtn_edit" data-role="button" data-icon="plus" data-iconpos="left" data-theme="b" data-mini="true">Add</a></div>
+					<div class="ui-block-b">
+						<input type="submit" value="Upload Photo" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-mini="true">
+		   			</div>
+				</div>
+		  	</form>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Bajaj Auto. Confidential</h4>
+		</div>
+	</div>
+
+
+	<script src="js/fcr_failure.js"></script>
+	<script src="assets/js/jquery.knob.js"></script>
+
+	<!-- jQuery File Upload Dependencies -->
+	<script src="assets/js/jquery.ui.widget.js"></script>
+	<script src="assets/js/jquery.iframe-transport.js"></script>
+	<script src="assets/js/jquery.fileupload.js"></script>
+
+	<!-- Our main JS file -->
+	<script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>

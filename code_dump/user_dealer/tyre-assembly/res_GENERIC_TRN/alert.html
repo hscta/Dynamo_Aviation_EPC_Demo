@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+  <script language="javascript">
+      document.writeln('<link rel="stylesheet" href="'+window.dialogArguments.css+'">');
+  </script>
+</head>
+<body>
+  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <div style="height:100%;overflow-y:auto;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="8">
+            <script language="javascript">
+              document.title = window.dialogArguments.title;
+              document.writeln(window.dialogArguments.syntax);
+            </script>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td align="right" valign="middle" height="40">
+        <script language="javascript">
+          window.returnValue=false;
+          var resUI = window.dialogArguments.res;
+          if(window.dialogArguments.type == 0)
+            document.writeln('<input type="button" value="'+resUI.get("UI_BTN_CLOSE")+'" onclick="window.close()">');
+          else
+          if(window.dialogArguments.type == 1)
+            document.writeln('<input type="button" value="'+resUI.get("UI_BTN_YES")+'" onclick="window.returnValue=true;window.close()">&nbsp;<input type="button" value="'+resUI.get("UI_BTN_NO")+'" onclick="window.returnValue=false;window.close()">');
+          else
+            document.writeln('<input type="button" value="'+resUI.get("UI_BTN_OK")+'" onclick="window.returnValue=true;window.close()">&nbsp;<input type="button" value="'+resUI.get("UI_BTN_CANCEL")+'" onclick="window.returnValue=false;window.close()">');
+        </script>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

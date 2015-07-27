@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created by VTE v.7, 1, 3, 0 (build 7.1.3.444)-->
+<scenario xmlns="http://services.parallelgraphics.com/vm/mmr/vm-training-xml/all" id="_CC9D0D4CE48B467E8C57BA1DE53E6614">
+	<vrml-file src="MLG with training scenario.wrl"/>
+	<description>00-PG-32-10-02-00A-401A-T-004</description>
+	<comment>MAIN LANDING GEAR BRAKE REMOVAL procedure (Ref. 00-PG-32-40-03-00A-401A-A)</comment>
+	<variables/>
+	<steps>
+		<step faults-count="1" weight="1" id="_3415C5B4965B4D7CB64DC863728816AE">
+			<action>
+				<seq-group>
+					<operation id="_9F3167DE29E4487AA759C8A95A35C495">
+						<description>Procedures for the right and left components are the same. Only the procedures for the left are given.</description>
+						<alert type="note"/>
+					</operation>
+				</seq-group>
+			</action>
+			<next-step>
+				<jump step="_4A58CC9509A94E728E6DE9F68152F5E0"/>
+			</next-step>
+		</step>
+		<step faults-count="3" weight="1" id="_4A58CC9509A94E728E6DE9F68152F5E0" document-ref="1668C9EE-243E-43D8-BCA6-122792531631">
+			<description>S0001</description>
+			<comment>Remove the wheel assy.</comment>
+			<action>
+				<seq-group>
+					<operation id="_6B857FEF354F4B2987D3FF6296270425" document-ref="F6A52224-3668-44A3-84A4-3179296831B2">
+						<description>Remove the wheel assy</description>
+						<comment>Remove the wheel assy.</comment>
+						<activity multiple-object-selection-type="and">
+							<question text="Perform the procedure">
+								<list>
+									<list-item>MAIN LANDING GEAR BRAKE REMOVAL</list-item>
+									<list-item>MAIN LANDING GEAR SHOCK STRUT REMOVAL</list-item>
+									<list-item>DRAG BRACE ASSY REMOVAL</list-item>
+									<list-item>MAIN LANDING GEAR BRAKE ROD REMOVAL</list-item>
+								</list>
+							</question>
+						</activity>
+						<animation>
+							<animstep>F6A52224-3668-44A3-84A4-3179296831B2</animstep>
+						</animation>
+					</operation>
+				</seq-group>
+			</action>
+			<next-step>
+				<jump step="_57DC1F369BAD48F3A746F96A1142FABF"/>
+			</next-step>
+		</step>
+		<step faults-count="3" weight="1" id="_57DC1F369BAD48F3A746F96A1142FABF" document-ref="4610B846-5CB0-406F-84EA-CD1AAFB3F6C9">
+			<description>S0002</description>
+			<comment>Remove the screw (13), clamp (14) and nut (21) from the torque link standoff bracket (18) (Ref. Fig. 401).</comment>
+			<action>
+				<seq-group>
+					<operation id="_99FCF3DC74CD482FB8852A71590EDFCD" document-ref="6B39B2CA-A77A-4601-A690-3EED6FA20F90">
+						<description>Remove screw and nut</description>
+						<comment>Remove the screw (13) and nut (21).</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>screw_(13)_b</object-ref>
+							<object-ref>nut_(21)_6</object-ref>
+						</activity>
+						<animation>
+							<animstep>6B39B2CA-A77A-4601-A690-3EED6FA20F90</animstep>
+						</animation>
+					</operation>
+					<operation id="_E94A768289EB45A286C3B1C2052240E0" document-ref="F61A29BA-BB72-4970-9FDD-BA9D1CA7A4C8">
+						<description>Remove the clamp (14)</description>
+						<comment>Remove the clamp (14)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>clamp_(14)_45</object-ref>
+						</activity>
+						<animation>
+							<animstep>F61A29BA-BB72-4970-9FDD-BA9D1CA7A4C8</animstep>
+						</animation>
+					</operation>
+				</seq-group>
+			</action>
+			<next-step>
+				<jump step="_5CD071E7C4D54B8A9ADB4E1B50EF1CB3"/>
+			</next-step>
+		</step>
+		<step faults-count="3" weight="1" id="_5CD071E7C4D54B8A9ADB4E1B50EF1CB3" document-ref="FF486A98-11CA-4B6C-8A80-569A39134A9C">
+			<description>S0003</description>
+			<comment>Remove the cotter pin (16), nuts (15), washers (17), bolts (20), standoff bracket (18) and switch bracket (19) from the upper torque link (2).</comment>
+			<action>
+				<seq-group>
+					<operation id="_0490DC23550C4DA192DF853E879241E8" document-ref="EB2A4226-DC5C-4A08-AF43-A7E6425F1BD1">
+						<description>Remove  the cotter pin (16)</description>
+						<comment>Remove  the cotter pin (16)</comment>
+						<activity multiple-object-selection-type="or">
+							<object-ref>cotter_pins_(16)_17</object-ref>
+							<object-ref>cotter_pins_(16)_13</object-ref>
+						</activity>
+						<animation>
+							<animstep>EB2A4226-DC5C-4A08-AF43-A7E6425F1BD1</animstep>
+						</animation>
+					</operation>
+					<operation id="_469217DD956E44C99374660370025B5B" document-ref="D21FFE38-687D-412C-8B49-61CDD41C3189">
+						<description>Remove the nuts (15)</description>
+						<comment>Remove the nuts (15)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>nuts_(15)_c</object-ref>
+							<object-ref>nuts_(15)_d</object-ref>
+						</activity>
+						<animation>
+							<animstep>D21FFE38-687D-412C-8B49-61CDD41C3189</animstep>
+						</animation>
+					</operation>
+					<operation id="_0B51262851254EC4B35F8D393E55C225" document-ref="4C126B77-2829-4722-8084-57268A86FF98">
+						<description>Remove the washers (17)</description>
+						<comment>Remove the washers (17)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>washers_(17)_f</object-ref>
+							<object-ref>washers_(17)_e</object-ref>
+						</activity>
+						<animation>
+							<animstep>4C126B77-2829-4722-8084-57268A86FF98</animstep>
+						</animation>
+					</operation>
+					<operation id="_595CDA3C7F1F4293B65925B05CCC0B47" document-ref="B15F3BC6-F653-498A-B9AC-DB0A205A36C7">
+						<description>Remove the bolts (20)</description>
+						<comment>Remove the bolts (20)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>bolts_(20)_10</object-ref>
+							<object-ref>bolts_(20)_11</object-ref>
+						</activity>
+						<animation>
+							<animstep>B15F3BC6-F653-498A-B9AC-DB0A205A36C7</animstep>
+						</animation>
+					</operation>
+					<operation id="_9E3BDF933DEF4991915CAC00C144AB32" document-ref="E78594D4-928E-4921-9FB5-E0DFD5E3BB40">
+						<description>Remove the standoff bracket (18)</description>
+						<comment>Remove the standoff bracket (18)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>standoff_bracket_(18)_7</object-ref>
+						</activity>
+						<animation>
+							<animstep>E78594D4-928E-4921-9FB5-E0DFD5E3BB40</animstep>
+						</animation>
+					</operation>
+					<operation id="_E415FEFFA6204A9F8B5FE6B43AFB7320" document-ref="F23267A2-3598-49BB-8F2D-FD0ED992BD64">
+						<description>Remove the switch bracket (19)</description>
+						<comment>Remove the switch bracket (19)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>switch_bracket_(19)_44</object-ref>
+						</activity>
+						<animation>
+							<animstep>F23267A2-3598-49BB-8F2D-FD0ED992BD64</animstep>
+						</animation>
+					</operation>
+				</seq-group>
+			</action>
+			<next-step>
+				<jump step="_B9AC19FB21264B19B1D020F9DB069CCA"/>
+			</next-step>
+		</step>
+		<step faults-count="3" weight="1" id="_B9AC19FB21264B19B1D020F9DB069CCA" document-ref="DF78DA6F-AA63-41B0-B7DD-E09263218F6A">
+			<description>S0004</description>
+			<comment>Remove the nuts (12), washers (11), bolts (8) and the switch terminal bracket (9) from the lower torque link (7).</comment>
+			<action>
+				<seq-group>
+					<operation id="_CDC172FF84574D5284FFE7A3323B34FF" document-ref="AA4C60A7-825F-4D04-B223-CFD8B97A1128">
+						<description>Remove the nuts (12)</description>
+						<comment>Remove the nuts (12)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>nuts_(12)_4b</object-ref>
+							<object-ref>nuts_(12)_4c</object-ref>
+						</activity>
+						<animation>
+							<animstep>AA4C60A7-825F-4D04-B223-CFD8B97A1128</animstep>
+						</animation>
+					</operation>
+					<operation id="_99CB80C4EF934C1DA641EEF489F2018E" document-ref="B3110BB2-15AD-49C2-B067-4396310EC024">
+						<description>Remove the washers (11)</description>
+						<comment>Remove the washers (11)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>washers_(11)_49</object-ref>
+							<object-ref>washers_(11)_4a</object-ref>
+						</activity>
+						<animation>
+							<animstep>B3110BB2-15AD-49C2-B067-4396310EC024</animstep>
+						</animation>
+					</operation>
+					<operation id="_2B839AD884A94BEC9CCF58466169EE75" document-ref="23123F1F-8856-4AAD-B0B8-682B906CC981">
+						<description>Remove the bolts (8)</description>
+						<comment>Remove the bolts (8)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>bolts_(8)_47</object-ref>
+							<object-ref>bolts_(8)_48</object-ref>
+						</activity>
+						<animation>
+							<animstep>23123F1F-8856-4AAD-B0B8-682B906CC981</animstep>
+						</animation>
+					</operation>
+					<operation id="_761F5012BC6A4CD0A2C22F742094114C" document-ref="1FD8B91D-FEB4-47B5-B778-CA3ED3852EE5">
+						<description>Remove the switch terminal bracket (9)</description>
+						<comment>Remove the switch terminal bracket (9)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>switch_terminal_bracket_(9)_46</object-ref>
+						</activity>
+						<animation>
+							<animstep>1FD8B91D-FEB4-47B5-B778-CA3ED3852EE5</animstep>
+						</animation>
+					</operation>
+				</seq-group>
+			</action>
+			<next-step>
+				<jump step="_6953D19045BD4796B1BD14FC0BF99813"/>
+			</next-step>
+		</step>
+		<step faults-count="3" weight="1" id="_6953D19045BD4796B1BD14FC0BF99813" document-ref="55FBC517-8945-4193-8316-C6D056EB3E3B">
+			<description>S0005</description>
+			<comment>Remove the cotter pin (5), nut (4), washer (6) and bolt (10) from the torque links (2 and 7).</comment>
+			<action>
+				<seq-group>
+					<operation id="_2D8A2837A45F41A0B71F9DE9DB09D75B" document-ref="9E78410B-61D4-4D4E-A462-4CBAD26874BA">
+						<description>Remove the cotter pin (5)</description>
+						<comment>Remove the cotter pin (5) </comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>cotter_pin_(5)_1b</object-ref>
+						</activity>
+						<animation>
+							<animstep>9E78410B-61D4-4D4E-A462-4CBAD26874BA</animstep>
+						</animation>
+					</operation>
+					<operation id="_92738DBB4E474707BD4EFAC351EB5F93" document-ref="83D200F2-E256-420A-97AF-97767DB346FA">
+						<description>Remove the nut (4)</description>
+						<comment>Remove the nut (4)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>nut_(4)_8</object-ref>
+						</activity>
+						<animation>
+							<animstep>83D200F2-E256-420A-97AF-97767DB346FA</animstep>
+						</animation>
+					</operation>
+					<operation id="_F26A678DDE9D4E8A9C2DD68A77263434" document-ref="957D9829-34EB-4059-B551-6AA505F8174F">
+						<description>Remove the washer (6)</description>
+						<comment>Remove the washer (6)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>washer_(6)_a</object-ref>
+						</activity>
+						<animation>
+							<animstep>957D9829-34EB-4059-B551-6AA505F8174F</animstep>
+						</animation>
+					</operation>
+					<operation id="_9944CAB982F34CAC8BF1C958BCDD7953" document-ref="8D0B02E2-5758-4B60-A1D4-1A5CA9B26CBE">
+						<description>Remove the bolt (10)</description>
+						<comment>Remove the bolt (10)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>bolt_(10)_9</object-ref>
+						</activity>
+						<animation>
+							<animstep>8D0B02E2-5758-4B60-A1D4-1A5CA9B26CBE</animstep>
+						</animation>
+					</operation>
+				</seq-group>
+			</action>
+			<next-step>
+				<jump step="_D294F31E55164074840F3E27DF1D89B9"/>
+			</next-step>
+		</step>
+		<step faults-count="3" weight="1" id="_D294F31E55164074840F3E27DF1D89B9" document-ref="EDD9865D-D0D6-4BAE-8E93-B74AC2A22EC1">
+			<description>S0006</description>
+			<comment>Remove the safety wire from each slotted spring pin (3).</comment>
+			<action>
+				<seq-group>
+					<operation id="_65C4069656194C7C9CA6ACC1B08592B9" document-ref="3BF3A72F-2A77-4F9F-91FD-DF1F1B2363DC">
+						<description>Remove the safety wire</description>
+						<comment>Remove the upper safety wire</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>safety_wire_69</object-ref>
+						</activity>
+						<animation>
+							<animstep>3BF3A72F-2A77-4F9F-91FD-DF1F1B2363DC</animstep>
+						</animation>
+					</operation>
+					<operation id="_64BA8D50F1804641A83A8AAD5BB6A096" document-ref="1D5AE681-C9CF-4D9A-A8C1-44166329E225">
+						<description>Remove the safety wire</description>
+						<comment>Remove the lower safety wire</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>safety_wire_6a</object-ref>
+						</activity>
+						<animation>
+							<animstep>1D5AE681-C9CF-4D9A-A8C1-44166329E225</animstep>
+						</animation>
+					</operation>
+				</seq-group>
+			</action>
+			<next-step>
+				<jump step="_BCEA35BCF3F14A3AB4B4D72476182227"/>
+			</next-step>
+		</step>
+		<step faults-count="3" weight="1" id="_BCEA35BCF3F14A3AB4B4D72476182227" document-ref="00F88CF7-807C-4FDD-8596-ED3FA70172CA">
+			<description>S0007</description>
+			<comment>Remove the spring pin (3) and link pin (1) from the upper (2) and lower (7) torque links.</comment>
+			<action>
+				<seq-group>
+					<operation id="_D9EA7D5CE23A4201ACF51CE3D2C3E082" document-ref="D231B70B-5DCF-48F8-BFAB-9F7CF7E0026F">
+						<description>Remove the spring pin (3)</description>
+						<comment>Remove the spring pin (3)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>spring_pin_(3)_38</object-ref>
+						</activity>
+						<animation>
+							<animstep>D231B70B-5DCF-48F8-BFAB-9F7CF7E0026F</animstep>
+						</animation>
+					</operation>
+					<operation id="_3DDA0AC22E6843BF81BE2B0D145E83FD" document-ref="5B4CFA61-2419-4A92-B98A-06C3EA981688">
+						<description>Detach the link pin (1)</description>
+						<comment>Remove the link pin (1)</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>link_pin_(1)_4e</object-ref>
+						</activity>
+						<animation>
+							<animstep>5B4CFA61-2419-4A92-B98A-06C3EA981688</animstep>
+						</animation>
+					</operation>
+					<operation id="_7E8CE9FECF7A487CA0C5ECC1A2FE4636" document-ref="8C01C874-1F17-4216-9CEA-4A89E78A5351">
+						<description>Remove the spring pin (3)</description>
+						<comment>Remove the spring pin (3) </comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>spring_pin_(3)_39</object-ref>
+						</activity>
+						<animation>
+							<animstep>8C01C874-1F17-4216-9CEA-4A89E78A5351</animstep>
+						</animation>
+					</operation>
+					<operation id="_B2AE4B59FC0349BEB16070E1313C1FBB" document-ref="012076B2-A71C-4B86-8DEE-1453665707D9">
+						<description>Detach the link pin (1)</description>
+						<comment>Detach the link pin (1) </comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>link_pin_(1)_4f</object-ref>
+						</activity>
+						<animation>
+							<animstep>012076B2-A71C-4B86-8DEE-1453665707D9</animstep>
+						</animation>
+					</operation>
+				</seq-group>
+			</action>
+			<next-step>
+				<jump step="_28F1EDDC8EB7434A8C80180E6FB949B2"/>
+			</next-step>
+		</step>
+		<step faults-count="3" weight="1" id="_28F1EDDC8EB7434A8C80180E6FB949B2" document-ref="944057C5-389E-459A-BAF2-81E53B5080B1">
+			<description>S0008</description>
+			<comment>Remove the upper torque link (2) and lower torque link (7) from the strut and axle.</comment>
+			<action>
+				<seq-group>
+					<operation id="_FF175BBFA16B4235A318C36398938B84" document-ref="3551D854-45BA-4957-B5C8-CDC46D066E10">
+						<description>Detach the upper torque link (2)</description>
+						<comment>Detach the upper torque link (2) </comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>upper_torque_link_(2)_3a</object-ref>
+						</activity>
+						<animation>
+							<animstep>3551D854-45BA-4957-B5C8-CDC46D066E10</animstep>
+						</animation>
+					</operation>
+					<operation id="_FD6C7AD0910F46F3BCD44AC55D8ABC6A" document-ref="F1B02A24-F823-49D6-BC8C-3820918462BA">
+						<description>Detach the lower torque link (7)</description>
+						<comment>Detach the lower torque link (7) </comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>lower_torque_link_(7)_2d</object-ref>
+						</activity>
+						<animation>
+							<animstep>F1B02A24-F823-49D6-BC8C-3820918462BA</animstep>
+						</animation>
+					</operation>
+				</seq-group>
+			</action>
+			<next-step>
+				<jump step="_C0B2759CF8C149729BC1862B67FC4070"/>
+			</next-step>
+		</step>
+		<step faults-count="3" weight="1" id="_C0B2759CF8C149729BC1862B67FC4070" document-ref="8C91ED79-F994-40B1-AC6D-DD3370FEF668">
+			<description>S0009</description>
+			<comment>Inspect the strut, pins and torque link bushings for damage.</comment>
+			<action>
+				<seq-group>
+					<operation id="_4F39782E11D94666A951E87F510012C4" document-ref="F71CED76-14BD-4C15-B567-0FD1DBE9134C">
+						<description>Inspect the strut</description>
+						<comment>Inspect the strut</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>strut_1f</object-ref>
+						</activity>
+						<animation>
+							<animstep>F71CED76-14BD-4C15-B567-0FD1DBE9134C</animstep>
+						</animation>
+					</operation>
+					<operation id="_68F24E1626FE457695957D035CA4218B" document-ref="6857B0E7-E351-454D-9389-88688ED0AE72">
+						<description>Inspect the pins</description>
+						<comment>Inspect the pins</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>pins_4d</object-ref>
+						</activity>
+						<animation>
+							<animstep>6857B0E7-E351-454D-9389-88688ED0AE72</animstep>
+						</animation>
+					</operation>
+					<operation id="_C23F7482D9AB48C3A468887098399BB3" document-ref="FA4F4464-1C68-4AA8-B0B2-CEAA35844474">
+						<description>Inspect the torque link bushings</description>
+						<comment>Inspect the torque link bushings</comment>
+						<activity multiple-object-selection-type="and">
+							<object-ref>torque_link_bushings_3c</object-ref>
+							<object-ref>torque_link_bushings_2f</object-ref>
+						</activity>
+						<animation>
+							<animstep>FA4F4464-1C68-4AA8-B0B2-CEAA35844474</animstep>
+						</animation>
+					</operation>
+				</seq-group>
+			</action>
+			<next-step/>
+		</step>
+	</steps>
+	<objects>
+		<object id="safety_wire_69" name="safety wire"/>
+		<object id="safety_wire_6a" name="safety wire"/>
+		<object id="cotter_pins_(16)_13" name="cotter pins (16)"/>
+		<object id="bolts_(20)_11" name="bolts (20)"/>
+		<object id="bolts_(20)_10" name="bolts (20)"/>
+		<object id="washers_(17)_f" name="washers (17)"/>
+		<object id="washers_(17)_e" name="washers (17)"/>
+		<object id="nuts_(15)_d" name="nuts (15)"/>
+		<object id="nuts_(15)_c" name="nuts (15)"/>
+		<object id="screw_(13)_b" name="screw (13)"/>
+		<object id="washer_(6)_a" name="washer (6)"/>
+		<object id="bolt_(10)_9" name="bolt (10)"/>
+		<object id="nut_(4)_8" name="nut (4)"/>
+		<object id="standoff_bracket_(18)_7" name="standoff bracket (18)"/>
+		<object id="nut_(21)_6" name="nut (21)"/>
+		<object id="BACP10AD02C09P_15" name="BACP10AD02C09P"/>
+		<object id="BACP10AD02C09P_14" name="BACP10AD02C09P"/>
+		<object id="cotter_pins_(16)_17" name="cotter pins (16)"/>
+		<object id="BACP10AD02C09P_19" name="BACP10AD02C09P"/>
+		<object id="BACP10AD02C09P_1a" name="BACP10AD02C09P"/>
+		<object id="cotter_pin_(5)_1b" name="cotter pin (5)"/>
+		<object id="BACP20BC01D07P_1c" name="BACP20BC01D07P"/>
+		<object id="BACP20BC01D07P_1e" name="BACP20BC01D07P"/>
+		<object id="strut_1f" name="strut"/>
+		<object id="lower_torque_link_(7)_2d" name="lower torque link (7)"/>
+		<object id="torque_link_bushings_2f" name="torque link bushings"/>
+		<object id="pins_37" name="pins"/>
+		<object id="spring_pin_(3)_38" name="spring pin (3)"/>
+		<object id="spring_pin_(3)_39" name="spring pin (3)"/>
+		<object id="upper_torque_link_(2)_3a" name="upper torque link (2)"/>
+		<object id="torque_link_bushings_3c" name="torque link bushings"/>
+		<object id="switch_bracket_(19)_44" name="switch bracket (19)"/>
+		<object id="clamp_(14)_45" name="clamp (14)"/>
+		<object id="switch_terminal_bracket_(9)_46" name="switch terminal bracket (9)"/>
+		<object id="bolts_(8)_47" name="bolts (8)"/>
+		<object id="bolts_(8)_48" name="bolts (8)"/>
+		<object id="washers_(11)_49" name="washers (11)"/>
+		<object id="washers_(11)_4a" name="washers (11)"/>
+		<object id="nuts_(12)_4b" name="nuts (12)"/>
+		<object id="nuts_(12)_4c" name="nuts (12)"/>
+		<object id="pins_4d" name="pins"/>
+		<object id="link_pin_(1)_4e" name="link pin (1)"/>
+		<object id="link_pin_(1)_4f" name="link pin (1)"/>
+		<object id="wheel_assy_50" name="wheel assy"/>
+	</objects>
+</scenario>

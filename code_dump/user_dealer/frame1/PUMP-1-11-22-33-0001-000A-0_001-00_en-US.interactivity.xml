@@ -1,0 +1,5901 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ipc>
+	<figure>
+		<metadata>
+			<value id="5e44d0" name="modelIdentCode" decl-id="MI" changed="0">
+				<![CDATA[PUMP]]>
+			</value>
+			<value id="5e4710" name="systemDiffCode" decl-id="SDC" changed="0">
+				<![CDATA[1]]>
+			</value>
+			<value id="5e4758" name="systemCode" decl-id="SYSTEM" changed="0">
+				<![CDATA[11]]>
+			</value>
+			<value id="5e47a0" name="subSystem" decl-id="SUBSYSTEM" changed="0">
+				<![CDATA[22]]>
+			</value>
+			<value id="5e47e8" name="assyCode" decl-id="UNIT" changed="0">
+				<![CDATA[33]]>
+			</value>
+			<value id="5e4830" name="disassyCode" decl-id="DC" changed="0">
+				<![CDATA[00]]>
+			</value>
+			<value id="5e4878" name="disassyCodeVariant" decl-id="DCV" changed="0">
+				<![CDATA[01]]>
+			</value>
+			<value id="5e48c0" name="infoCode" decl-id="IC" changed="0">
+				<![CDATA[000]]>
+			</value>
+			<value id="5e4908" name="infoCodeVariant" decl-id="ICV" changed="0">
+				<![CDATA[A]]>
+			</value>
+			<value id="5e4950" name="itemLocationCode" decl-id="ILC" changed="0">
+				<![CDATA[0]]>
+			</value>
+			<value id="5e4998" name="model" decl-id="MODEL" changed="0">
+				<![CDATA[Pump HP7357]]>
+			</value>
+			<value id="5e49e0" name="figure" decl-id="FIGURE" changed="0">
+				<![CDATA[01]]>
+			</value>
+			<value id="5e4a28" name="issueType" decl-id="ISSUE_TYPE" changed="0">
+				<![CDATA[new]]>
+			</value>
+			<value id="5e4a70" name="issueDate" decl-id="ISSUE_DATE" changed="0">
+				<![CDATA[20101201]]>
+			</value>
+			<value id="619000" name="issueNumber" decl-id="ISSUE_NO" changed="0">
+				<![CDATA[1]]>
+			</value>
+			<value id="619048" name="figureVariant" decl-id="FIGUREVAR" changed="0">
+				<![CDATA[A]]>
+			</value>
+			<value id="619090" name="Security" decl-id="SECCLASS" changed="0">
+				<![CDATA[1]]>
+			</value>
+		</metadata>
+		<media id="1" type="vm/vrml" src="ICN-PUMP-1-112233-0-00000-00000-A-01-1.wrl">
+			<value name="IllustrationType">0</value>
+			<value name="3DBackgroundColor">#FFFFFF</value>
+			<value name="3DSelectedColor">#FFFF00</value>
+			<value name="TableBackgroundColor">#FFFFFF</value>
+			<value name="TableTextColor">#000000</value>
+			<value name="TableBackgroundColorSel">#EEEE00</value>
+			<value name="TableBackgroundColorHL">#C8E2E2</value>
+			<value name="TableBackgroundColorHLNotIll">#FFE4E1</value>
+			<value name="TableInactiveTextColor">#808080</value>
+			<value name="2DSelectedColor">#FFFF00</value>
+			<value name="2DHighLightColor">#00FF00</value>
+			<value name="ContextMenuBackgroundColor">#FFFFFF</value>
+			<value name="RemoveSpace">No</value>
+			<value name="SimplifyFloats">No</value>
+			<value name="CoordinateResolution">0</value>
+			<value name="TooltipFormat">CSN:%[ITEM]%[ITEMVAR]</value>
+			<value name="Viewer2DType">1</value>
+			<value name="ForceDirectX">Yes</value>
+			<value name="PublisherVersion">7.1.3.324</value>
+			<value name="SpecID">S1000D4_0_IPD</value>
+			<value name="SpecVersion">1.14</value>
+		</media>
+		<media id="5ea240" type="image/cgm" src="ICN-YAK130-A-732003-0-00000-33626-A-01-1.cgm">
+			<value name="Name">
+				<![CDATA[ICN-YAK130-A-732003-0-00000-33626-A-01-1]]>
+			</value>
+			<value name="Description"/>
+		</media>
+		<media id="632ea0" type="image/cgm" src="ICN-YAK130-A-732003-0-00000-33626-A-01-2.cgm">
+			<value name="Name">
+				<![CDATA[ICN-YAK130-A-732003-0-00000-33626-A-01-2]]>
+			</value>
+			<value name="Description"/>
+		</media>
+		<media id="632ef8" type="image/cgm" src="ICN-YAK130-A-732003-0-00000-33626-A-01-3.cgm">
+			<value name="Name">
+				<![CDATA[ICN-YAK130-A-732003-0-00000-33626-A-01-3]]>
+			</value>
+			<value name="Description"/>
+		</media>
+		<media id="632f50" type="image/cgm" src="ICN-YAK130-A-732003-0-00000-33626-A-01-4.cgm">
+			<value name="Name">
+				<![CDATA[ICN-YAK130-A-732003-0-00000-33626-A-01-4]]>
+			</value>
+			<value name="Description"/>
+		</media>
+		<media id="632fa8" type="image/cgm" src="ICN-YAK130-A-732003-0-00000-33626-A-01-5.cgm">
+			<value name="Name">
+				<![CDATA[ICN-YAK130-A-732003-0-00000-33626-A-01-5]]>
+			</value>
+			<value name="Description"/>
+		</media>
+		<media id="633000" type="image/cgm" src="ICN-YAK130-A-732003-0-00000-33626-A-01-6.cgm">
+			<value name="Name">
+				<![CDATA[ICN-YAK130-A-732003-0-00000-33626-A-01-6]]>
+			</value>
+			<value name="Description"/>
+		</media>
+		<dplist>
+			<item id="635738" refPart="5bcd08">
+				<metadata>
+					<value id="6295c0" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[0]]>
+					</value>
+					<value id="629608" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="629650" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[RF]]>
+					</value>
+					<value id="629698" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="6296e0" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[1]]>
+					</value>
+					<value id="629728" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="629770" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="6297b8" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="629800" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="629848" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="629890" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbd0d08" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[0]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:0]]>
+				</tooltip>
+				<commands>
+					<command id="5ecce8" type="DFP" changed="0">
+						<value refMeta="629608" name="Отступ">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="619120" name="Описание детали (DFP)">
+							<![CDATA[Pump Assy]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005300_0</refmedia>
+			</item>
+			<item id="62f9c8" refPart="5c32e8">
+				<refview ref="view_1"/>
+				<metadata>
+					<value id="629920" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[10]]>
+					</value>
+					<value id="629968" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[2]]>
+					</value>
+					<value id="6299b0" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="6299f8" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="629a40" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[2]]>
+					</value>
+					<value id="629a88" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="629ad0" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="644140" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="644188" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="6441d0" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="644218" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbd0d50" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[1]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:10]]>
+				</tooltip>
+				<commands>
+					<command id="645640" type="DFP" changed="0">
+						<value refMeta="629968" name="Отступ">
+							<![CDATA[2]]>
+						</value>
+						<value refMeta="6191f8" name="Описание детали (DFP)">
+							<![CDATA[Back Plate Assy]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005301_1</refmedia>
+			</item>
+			<item id="635770" refPart="5c3360">
+				<refview ref="view_1"/>
+				<metadata>
+					<value id="6442a8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[20]]>
+					</value>
+					<value id="6442f0" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="644338" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[8]]>
+					</value>
+					<value id="644380" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="6443c8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[3]]>
+					</value>
+					<value id="644410" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="644458" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="6444a0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="6444e8" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="644530" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="644578" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbd0d98" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[2]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:20]]>
+				</tooltip>
+				<commands>
+					<command id="6458c0" type="DFP" changed="0">
+						<value refMeta="6442f0" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="6192d0" name="Описание детали (DFP)">
+							<![CDATA[Bolt, Hex Head]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">Bolts_10</refmedia>
+			</item>
+			<item id="6359d8" refPart="5c33d8">
+				<refview ref="view_1"/>
+				<metadata>
+					<value id="644608" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[30]]>
+					</value>
+					<value id="644650" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="644698" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="6446e0" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="644728" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[4]]>
+					</value>
+					<value id="644770" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="6447b8" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="644800" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="644848" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="644890" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="6448d8" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbd0de0" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[3]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:30]]>
+				</tooltip>
+				<commands>
+					<command id="645b40" type="DFP" changed="0">
+						<value refMeta="644650" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="6193a8" name="Описание детали (DFP)">
+							<![CDATA[Retaining ring]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005302_2</refmedia>
+			</item>
+			<item id="635bd0" refPart="5c3450">
+				<refview ref="view_1"/>
+				<metadata>
+					<value id="644968" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[40]]>
+					</value>
+					<value id="6449b0" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="6449f8" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="644a40" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="644a88" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[5]]>
+					</value>
+					<value id="644ad0" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="644b18" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="644b60" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="644ba8" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="644bf0" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="644c38" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbd0e28" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[4]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:40]]>
+				</tooltip>
+				<commands>
+					<command id="645dc0" type="DFP" changed="0">
+						<value refMeta="6449b0" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="619480" name="Описание детали (DFP)">
+							<![CDATA[Ball Bearing Assy]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005303_7</refmedia>
+			</item>
+			<item id="62f878" refPart="5c34c8">
+				<refview ref="view_1"/>
+				<metadata>
+					<value id="644cc8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[50]]>
+					</value>
+					<value id="644d10" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="644d58" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="644da0" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="644de8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[6]]>
+					</value>
+					<value id="644e30" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="644e78" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="644ec0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="644f08" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="644f50" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="644f98" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbd0e70" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[5]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:50]]>
+				</tooltip>
+				<commands>
+					<command id="646040" type="DFP" changed="0">
+						<value refMeta="644d10" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="619558" name="Описание детали (DFP)">
+							<![CDATA[Ball Bearing]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005305_8</refmedia>
+			</item>
+			<item id="635af0" refPart="5c3540">
+				<refview ref="view_1"/>
+				<metadata>
+					<value id="645028" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[60]]>
+					</value>
+					<value id="645070" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="6450b8" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="64c540" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="64c588" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[7]]>
+					</value>
+					<value id="64c5d0" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="64c618" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="64c660" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="64c6a8" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="64c6f0" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="64c738" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbd0eb8" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[6]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:60]]>
+				</tooltip>
+				<commands>
+					<command id="6462c0" type="DFP" changed="0">
+						<value refMeta="645070" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="619630" name="Описание детали (DFP)">
+							<![CDATA[Zerk Fitting]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005310_9</refmedia>
+			</item>
+			<item id="635888" refPart="5c35b8">
+				<refview ref="view_1"/>
+				<metadata>
+					<value id="64c7c8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[70]]>
+					</value>
+					<value id="64c810" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="64c858" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="64c8a0" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="64c8e8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[8]]>
+					</value>
+					<value id="64c930" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="64c978" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="64c9c0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="64ca08" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="64ca50" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="64ca98" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbd0f00" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[7]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:70]]>
+				</tooltip>
+				<commands>
+					<command id="64d980" type="DFP" changed="0">
+						<value refMeta="64c810" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="619708" name="Описание детали (DFP)">
+							<![CDATA[Backplate]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005320_3</refmedia>
+			</item>
+			<item id="635850" refPart="5c3630">
+				<refview ref="view_1"/>
+				<metadata>
+					<value id="64cb28" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[80]]>
+					</value>
+					<value id="64cb70" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="64cbb8" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[2]]>
+					</value>
+					<value id="64cc00" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="64cc48" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[9]]>
+					</value>
+					<value id="64cc90" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="64ccd8" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="64cd20" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="64cd68" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="64cdb0" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="64cdf8" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbd0f48" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[8]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:80]]>
+				</tooltip>
+				<commands>
+					<command id="64dc00" type="DFP" changed="0">
+						<value refMeta="64cb70" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="6197e0" name="Описание детали (DFP)">
+							<![CDATA[Dowel Pin]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">DP00356_(1)_4</refmedia>
+				<refmedia ref="1">DP00356_(2)_5</refmedia>
+			</item>
+			<item id="635ab8" refPart="5c36a8">
+				<refview ref="view_1"/>
+				<metadata>
+					<value id="64ce88" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[90]]>
+					</value>
+					<value id="64ced0" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="64cf18" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="64cf60" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="64cfa8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[10]]>
+					</value>
+					<value id="64cff0" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="64d038" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="64d080" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="64d0c8" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="64d110" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="64d158" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbd0f90" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[9]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:90]]>
+				</tooltip>
+				<commands>
+					<command id="64e140" type="DFP" changed="0">
+						<value refMeta="64ced0" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="6198b8" name="Описание детали (DFP)">
+							<![CDATA[Gasket, Case]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005330_(1)_6</refmedia>
+			</item>
+			<item id="6359a0" refPart="5c3720">
+				<refview ref="view_2"/>
+				<metadata>
+					<value id="64d1e8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[100]]>
+					</value>
+					<value id="64d230" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[2]]>
+					</value>
+					<value id="64d278" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[8]]>
+					</value>
+					<value id="64d2c0" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="64d308" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[11]]>
+					</value>
+					<value id="64d350" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="64d398" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="64d3e0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="64d428" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="64d470" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="64d4b8" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbd0fd8" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[10]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:100]]>
+				</tooltip>
+				<commands>
+					<command id="64e3c0" type="DFP" changed="0">
+						<value refMeta="64d230" name="Отступ">
+							<![CDATA[2]]>
+						</value>
+						<value refMeta="619990" name="Описание детали (DFP)">
+							<![CDATA[Bolt, Hex Head]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">BLT000350_(1)_36</refmedia>
+				<refmedia ref="1">BLT000350_(2)_37</refmedia>
+				<refmedia ref="1">BLT000350_(3)_38</refmedia>
+				<refmedia ref="1">BLT000350_(4)_39</refmedia>
+				<refmedia ref="1">BLT000350_(5)_40</refmedia>
+				<refmedia ref="1">BLT000350_(6)_41</refmedia>
+				<refmedia ref="1">BLT000350_(7)_42</refmedia>
+				<refmedia ref="1">BLT000350_(8)_43</refmedia>
+			</item>
+			<item id="6355e8" refPart="5c3798">
+				<refview ref="view_2"/>
+				<metadata>
+					<value id="651f38" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[110]]>
+					</value>
+					<value id="651f80" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[2]]>
+					</value>
+					<value id="651fc8" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[2]]>
+					</value>
+					<value id="652010" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="652058" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[12]]>
+					</value>
+					<value id="6520a0" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="6520e8" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="652130" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="652178" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="6521c0" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="652208" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbddca0" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[11]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:110]]>
+				</tooltip>
+				<commands>
+					<command id="64e640" type="DFP" changed="0">
+						<value refMeta="651f80" name="Отступ">
+							<![CDATA[2]]>
+						</value>
+						<value refMeta="619a68" name="Описание детали (DFP)">
+							<![CDATA[Flange, Straight]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005340_(1)_44</refmedia>
+				<refmedia ref="1">PM005340_(2)_45</refmedia>
+			</item>
+			<item id="635620" refPart="5c3810">
+				<refview ref="view_2"/>
+				<metadata>
+					<value id="652298" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[120]]>
+					</value>
+					<value id="6522e0" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[2]]>
+					</value>
+					<value id="652328" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[2]]>
+					</value>
+					<value id="652370" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="6523b8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[13]]>
+					</value>
+					<value id="652400" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="652448" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="652490" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="6524d8" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="652520" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="652568" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbddce8" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[12]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:120]]>
+				</tooltip>
+				<commands>
+					<command id="64e8c0" type="DFP" changed="0">
+						<value refMeta="6522e0" name="Отступ">
+							<![CDATA[2]]>
+						</value>
+						<value refMeta="619b40" name="Описание детали (DFP)">
+							<![CDATA[Gasket, Flange]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005345_(1)_46</refmedia>
+				<refmedia ref="1">PM005345_(2)_47</refmedia>
+			</item>
+			<item id="62fb18" refPart="5c3888">
+				<refview ref="view_2"/>
+				<metadata>
+					<value id="6525f8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[130]]>
+					</value>
+					<value id="652640" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[2]]>
+					</value>
+					<value id="652688" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="6526d0" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="652718" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[14]]>
+					</value>
+					<value id="652760" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="6527a8" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="6527f0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="652838" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="652880" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="6528c8" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbddd30" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[13]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:130]]>
+				</tooltip>
+				<commands>
+					<command id="64dd00" type="DFP" changed="0">
+						<value refMeta="652640" name="Отступ">
+							<![CDATA[2]]>
+						</value>
+						<value refMeta="619c18" name="Описание детали (DFP)">
+							<![CDATA[Casing]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PPM005350_48</refmedia>
+			</item>
+			<item id="62fbc0" refPart="61a850">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="652958" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[140]]>
+					</value>
+					<value id="6529a0" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[2]]>
+					</value>
+					<value id="6529e8" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="652a30" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="652a78" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[15]]>
+					</value>
+					<value id="652ac0" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="652b08" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="652b50" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="652b98" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="652be0" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="652c28" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbddd78" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[14]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:140]]>
+				</tooltip>
+				<commands>
+					<command id="654730" type="DFP" changed="0">
+						<value refMeta="6529a0" name="Отступ">
+							<![CDATA[2]]>
+						</value>
+						<value refMeta="619cf0" name="Описание детали (DFP)">
+							<![CDATA[Idler Shaft Assy]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005500_28</refmedia>
+			</item>
+			<item id="635818" refPart="61a8c8">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="652cb8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[150]]>
+					</value>
+					<value id="652d00" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="652d48" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="652d90" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="652dd8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[16]]>
+					</value>
+					<value id="652e20" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="652e68" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="657930" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="657978" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="6579c0" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="657a08" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbdddc0" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[15]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:150]]>
+				</tooltip>
+				<commands>
+					<command id="6549b0" type="DFP" changed="0">
+						<value refMeta="652d00" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="619dc8" name="Описание детали (DFP)">
+							<![CDATA[Shaft, Idler]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">SH40020_30</refmedia>
+			</item>
+			<item id="62fb88" refPart="61a940">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="657a98" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[160]]>
+					</value>
+					<value id="657ae0" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="657b28" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="657b70" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="657bb8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[17]]>
+					</value>
+					<value id="657c00" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="657c48" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="657c90" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="657cd8" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="657d20" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="657d68" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbdde08" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[16]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:160]]>
+				</tooltip>
+				<commands>
+					<command id="654c30" type="DFP" changed="0">
+						<value refMeta="657ae0" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="619ea0" name="Описание детали (DFP)">
+							<![CDATA[Key]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">SH40140_(2)_34</refmedia>
+			</item>
+			<item id="62fae0" refPart="61a9b8">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="657df8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[170]]>
+					</value>
+					<value id="657e40" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="657e88" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="657ed0" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="657f18" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[18]]>
+					</value>
+					<value id="657f60" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="657fa8" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="657ff0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="658038" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="658080" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="6580c8" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbdde50" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[17]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:170]]>
+				</tooltip>
+				<commands>
+					<command id="654eb0" type="DFP" changed="0">
+						<value refMeta="657e40" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="619f78" name="Описание детали (DFP)">
+							<![CDATA[Gear, Right Hand]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">SH40500_29</refmedia>
+			</item>
+			<item id="6355b0" refPart="61aa30">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="658158" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[180]]>
+					</value>
+					<value id="6581a0" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="6581e8" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[2]]>
+					</value>
+					<value id="658230" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="658278" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[19]]>
+					</value>
+					<value id="6582c0" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="658308" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="658350" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="658398" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="6583e0" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="658428" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbdde98" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[18]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:180]]>
+				</tooltip>
+				<commands>
+					<command id="655130" type="DFP" changed="0">
+						<value refMeta="6581a0" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="61b090" name="Описание детали (DFP)">
+							<![CDATA[Bushing, Long]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005510_(2)_31</refmedia>
+				<refmedia ref="1">PM005510_(3)_35</refmedia>
+			</item>
+			<item id="635578" refPart="61aaa8">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="6584b8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[190]]>
+					</value>
+					<value id="658500" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="658548" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[2]]>
+					</value>
+					<value id="658590" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="6585d8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[20]]>
+					</value>
+					<value id="658620" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="658668" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="6586b0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="6586f8" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="658740" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="658788" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbddee0" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[19]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:190]]>
+				</tooltip>
+				<commands>
+					<command id="6553b0" type="DFP" changed="0">
+						<value refMeta="658500" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="61b168" name="Описание детали (DFP)">
+							<![CDATA[Washer, Expansion]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005530_(3)_33</refmedia>
+				<refmedia ref="1">PM005530_(2)_32</refmedia>
+			</item>
+			<item id="635658" refPart="61ab20">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="658818" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[200]]>
+					</value>
+					<value id="658860" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[2]]>
+					</value>
+					<value id="6588a8" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="65f488" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="65f4d0" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[21]]>
+					</value>
+					<value id="65f518" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="65f560" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="65f5a8" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="65f5f0" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="65f638" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="65f680" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbddf28" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[20]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:200]]>
+				</tooltip>
+				<commands>
+					<command id="6605c8" type="DFP" changed="0">
+						<value refMeta="658860" name="Отступ">
+							<![CDATA[2]]>
+						</value>
+						<value refMeta="61b240" name="Описание детали (DFP)">
+							<![CDATA[Drive Shaft Assy]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005501_19</refmedia>
+			</item>
+			<item id="635690" refPart="61ab98">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="65f710" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[210]]>
+					</value>
+					<value id="65f758" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="65f7a0" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="65f7e8" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="65f830" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[22]]>
+					</value>
+					<value id="65f878" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="65f8c0" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="65f908" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="65f950" name="interchangeability" decl-id="ICY" changed="0">
+						<![CDATA[1]]>
+					</value>
+					<value id="65f998" name="descrForLocation" decl-id="DFL" changed="0">
+						<![CDATA[CAN BE REPLACED BY SH40121]]>
+					</value>
+					<value id="65f9e0" name="usableOnCodeAssy" decl-id="UCA" changed="0">
+						<![CDATA[A]]>
+					</value>
+					<value id="65fa28" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="65fa70" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbddf70" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[21]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:210]]>
+				</tooltip>
+				<commands>
+					<command id="660848" type="DFP" changed="0">
+						<value refMeta="65f758" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="61b318" name="Описание детали (DFP)">
+							<![CDATA[Shaft, Drive - Rev. A]]>
+						</value>
+					</command>
+					<command id="660888" type="DFL" changed="0">
+						<value refMeta="65f998" name="Данные о расположении изделия (DFL)">
+							<![CDATA[CAN BE REPLACED BY SH40121]]>
+						</value>
+					</command>
+					<command id="6608c8" type="UCA" changed="0">
+						<value refMeta="65f9e0" name="Код конфигурации сборки">
+							<![CDATA[A]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">SH40120_20</refmedia>
+			</item>
+			<item id="635c08" refPart="61ccb0">
+				<metadata>
+					<value id="65fb00" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="65fb48" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[47]]>
+					</value>
+					<value id="65fb90" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="65fbd8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[215]]>
+					</value>
+					<value id="65fc20" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="65fc68" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="65fcb0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="65fcf8" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="65fd40" name="interchangeability" decl-id="ICY" changed="0">
+						<![CDATA[1]]>
+					</value>
+					<value id="65fd88" name="usableOnCodeAssy" decl-id="UCA" changed="0">
+						<![CDATA[B]]>
+					</value>
+					<value id="65fdd0" name="descrForLocation" decl-id="DFL" changed="0">
+						<![CDATA[CAN BE REPLACED BY SH40120]]>
+					</value>
+					<value id="65fe18" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="65fe60" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbddfb8" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[22]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:215]]>
+				</tooltip>
+				<commands>
+					<command id="660b48" type="DFP" changed="0">
+						<value refMeta="65fcf8" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="61d3a8" name="Описание детали (DFP)">
+							<![CDATA[Shaft, Drive - Rev. B]]>
+						</value>
+					</command>
+					<command id="660b88" type="DFL" changed="0">
+						<value refMeta="65fdd0" name="Данные о расположении изделия (DFL)">
+							<![CDATA[CAN BE REPLACED BY SH40120]]>
+						</value>
+					</command>
+					<command id="660bc8" type="UCA" changed="0">
+						<value refMeta="65fd88" name="Код конфигурации сборки">
+							<![CDATA[B]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">SH40121_27</refmedia>
+			</item>
+			<item id="635a48" refPart="61ac10">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="65fef0" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[220]]>
+					</value>
+					<value id="65ff38" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="65ff80" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="65ffc8" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="660010" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[23]]>
+					</value>
+					<value id="660058" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="6600a0" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="6600e8" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="660130" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="660178" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="6601c0" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde000" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[23]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:220]]>
+				</tooltip>
+				<commands>
+					<command id="660e48" type="DFP" changed="0">
+						<value refMeta="65ff38" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="61b3f0" name="Описание детали (DFP)">
+							<![CDATA[Key]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">SH40040_25</refmedia>
+			</item>
+			<item id="635a10" refPart="61a940">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="660250" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[230]]>
+					</value>
+					<value id="660298" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="6602e0" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="660328" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="660370" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[24]]>
+					</value>
+					<value id="6603b8" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="660400" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="6678a8" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="6678f0" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="667938" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="667980" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde048" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[24]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:230]]>
+				</tooltip>
+				<commands>
+					<command id="6610c8" type="DFP" changed="0">
+						<value refMeta="660298" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="619ea0" name="Описание детали (DFP)">
+							<![CDATA[Key]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">SH40140_(1)_26</refmedia>
+			</item>
+			<item id="62fa00" refPart="61ac88">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="667a10" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[240]]>
+					</value>
+					<value id="667a58" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="667aa0" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="667ae8" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="667b30" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[25]]>
+					</value>
+					<value id="667b78" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="667bc0" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="667c08" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="667c50" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="667c98" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="667ce0" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde090" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[25]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:240]]>
+				</tooltip>
+				<commands>
+					<command id="661348" type="DFP" changed="0">
+						<value refMeta="667a58" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="61b4c8" name="Описание детали (DFP)">
+							<![CDATA[Gear, Left Hand]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">SH40400_21</refmedia>
+			</item>
+			<item id="635b98" refPart="61aa30">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="667d70" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[250]]>
+					</value>
+					<value id="667db8" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="667e00" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="667e48" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="667e90" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[26]]>
+					</value>
+					<value id="667ed8" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="667f20" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="667f68" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="667fb0" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="667ff8" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="668040" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde0d8" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[26]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:250]]>
+				</tooltip>
+				<commands>
+					<command id="669720" type="DFP" changed="0">
+						<value refMeta="667db8" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="61b090" name="Описание детали (DFP)">
+							<![CDATA[Bushing, Long]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005510_(1)_23</refmedia>
+			</item>
+			<item id="635a80" refPart="61ad00">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="6680d0" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[260]]>
+					</value>
+					<value id="668118" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="668160" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="6681a8" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="6681f0" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[27]]>
+					</value>
+					<value id="668238" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="668280" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="6682c8" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="668310" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="668358" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="6683a0" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde120" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[27]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:260]]>
+				</tooltip>
+				<commands>
+					<command id="6699a0" type="DFP" changed="0">
+						<value refMeta="668118" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="61b5a0" name="Описание детали (DFP)">
+							<![CDATA[Bushing, Short]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005520_22</refmedia>
+			</item>
+			<item id="635540" refPart="61aaa8">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="668430" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[270]]>
+					</value>
+					<value id="668478" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="6684c0" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="668508" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="668550" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[28]]>
+					</value>
+					<value id="668598" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="6685e0" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="668628" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="668670" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="6686b8" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="668700" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde168" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[28]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:270]]>
+				</tooltip>
+				<commands>
+					<command id="669c20" type="DFP" changed="0">
+						<value refMeta="668478" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="61b168" name="Описание детали (DFP)">
+							<![CDATA[Washer, Expansion]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005530_(1)_24</refmedia>
+			</item>
+			<item id="635700" refPart="61ad78">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="668790" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[280]]>
+					</value>
+					<value id="6687d8" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[2]]>
+					</value>
+					<value id="668820" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="66d1a0" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="66d1e8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[29]]>
+					</value>
+					<value id="66d230" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="66d278" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="66d2c0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="66d308" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="66d350" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="66d398" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde1b0" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[29]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:280]]>
+				</tooltip>
+				<commands>
+					<command id="669ea0" type="DFP" changed="0">
+						<value refMeta="6687d8" name="Отступ">
+							<![CDATA[2]]>
+						</value>
+						<value refMeta="61b678" name="Описание детали (DFP)">
+							<![CDATA[Face Plate Assy]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005600_49</refmedia>
+			</item>
+			<item id="6356c8" refPart="5c3360">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="66d428" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[290]]>
+					</value>
+					<value id="66d470" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="66d4b8" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[6]]>
+					</value>
+					<value id="66d500" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="66d548" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[30]]>
+					</value>
+					<value id="66d590" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="66d5d8" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="66d620" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="66d668" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="66d6b0" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="66d6f8" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde1f8" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[30]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:290]]>
+				</tooltip>
+				<commands>
+					<command id="66a120" type="DFP" changed="0">
+						<value refMeta="66d470" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="6192d0" name="Описание детали (DFP)">
+							<![CDATA[Bolt, Hex Head]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">BLT000324_(9)_50</refmedia>
+				<refmedia ref="1">BLT000324_(10)_51</refmedia>
+				<refmedia ref="1">BLT000324_(11)_52</refmedia>
+				<refmedia ref="1">BLT000324_(12)_53</refmedia>
+				<refmedia ref="1">BLT000324_(13)_54</refmedia>
+				<refmedia ref="1">BLT000324_(14)_55</refmedia>
+			</item>
+			<item id="6358c0" refPart="5c3630">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="66d788" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[300]]>
+					</value>
+					<value id="66d7d0" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="66d818" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[2]]>
+					</value>
+					<value id="66d860" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="66d8a8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[31]]>
+					</value>
+					<value id="66d8f0" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="66d938" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="66d980" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="66d9c8" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="66da10" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="66da58" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde240" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[31]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:300]]>
+				</tooltip>
+				<commands>
+					<command id="66a3a0" type="DFP" changed="0">
+						<value refMeta="66d7d0" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="6197e0" name="Описание детали (DFP)">
+							<![CDATA[Dowel Pin]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">DP00356_(3)_57</refmedia>
+				<refmedia ref="1">DP00356_(4)_58</refmedia>
+			</item>
+			<item id="635b28" refPart="5c36a8">
+				<refview ref="view_3"/>
+				<metadata>
+					<value id="66dae8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[310]]>
+					</value>
+					<value id="66db30" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="66db78" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="66dbc0" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="66dc08" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[32]]>
+					</value>
+					<value id="66dc50" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="66dc98" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="66dce0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="66dd28" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="66dd70" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="66ddb8" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde288" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[32]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:310]]>
+				</tooltip>
+				<commands>
+					<command id="671660" type="DFP" changed="0">
+						<value refMeta="66db30" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="6198b8" name="Описание детали (DFP)">
+							<![CDATA[Gasket, Case]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005330_(2)_56</refmedia>
+			</item>
+			<item id="62fb50" refPart="61adf0">
+				<refview ref="view_4"/>
+				<metadata>
+					<value id="66de48" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[320]]>
+					</value>
+					<value id="66de90" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[3]]>
+					</value>
+					<value id="66ded8" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="66df20" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="66df68" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[33]]>
+					</value>
+					<value id="66dfb0" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="66dff8" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="66e040" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="66e088" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="66e0d0" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="66e118" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde2d0" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[33]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:320]]>
+				</tooltip>
+				<commands>
+					<command id="6718e0" type="DFP" changed="0">
+						<value refMeta="66de90" name="Отступ">
+							<![CDATA[3]]>
+						</value>
+						<value refMeta="61b750" name="Описание детали (DFP)">
+							<![CDATA[Face Plate Assembly, Relief Valve]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005400_59</refmedia>
+			</item>
+			<item id="635968" refPart="61ae68">
+				<refview ref="view_4"/>
+				<metadata>
+					<value id="6725e8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[330]]>
+					</value>
+					<value id="672630" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="672678" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="6726c0" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="672708" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[34]]>
+					</value>
+					<value id="672750" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="672798" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="6727e0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="672828" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="672870" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="6728b8" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde318" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[34]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:330]]>
+				</tooltip>
+				<commands>
+					<command id="671b60" type="DFP" changed="0">
+						<value refMeta="672630" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="61b828" name="Описание детали (DFP)">
+							<![CDATA[Face Plate]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005410_60</refmedia>
+			</item>
+			<item id="6357e0" refPart="61aee0">
+				<refview ref="view_4"/>
+				<metadata>
+					<value id="672948" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[340]]>
+					</value>
+					<value id="672990" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="6729d8" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[2]]>
+					</value>
+					<value id="672a20" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="672a68" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[35]]>
+					</value>
+					<value id="672ab0" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="672af8" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="672b40" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="672b88" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="672bd0" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="672c18" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde360" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[35]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:340]]>
+				</tooltip>
+				<commands>
+					<command id="671de0" type="DFP" changed="0">
+						<value refMeta="672990" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="61b900" name="Описание детали (DFP)">
+							<![CDATA[Drive Screw]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005420_(1)_75</refmedia>
+				<refmedia ref="1">PM005420_(2)_76</refmedia>
+			</item>
+			<item id="62f920" refPart="61af58">
+				<refview ref="view_4"/>
+				<metadata>
+					<value id="672ca8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[350]]>
+					</value>
+					<value id="672cf0" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="672d38" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="672d80" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="672dc8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[36]]>
+					</value>
+					<value id="672e10" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="672e58" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="672ea0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="672ee8" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="672f30" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="672f78" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde3a8" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[36]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:350]]>
+				</tooltip>
+				<commands>
+					<command id="672060" type="DFP" changed="0">
+						<value refMeta="672cf0" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="61b9d8" name="Описание детали (DFP)">
+							<![CDATA[Name Plate]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005430_77</refmedia>
+			</item>
+			<item id="62faa8" refPart="61c800">
+				<refview ref="view_4"/>
+				<metadata>
+					<value id="673008" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[360]]>
+					</value>
+					<value id="673050" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="673098" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[2]]>
+					</value>
+					<value id="6730e0" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="673128" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[37]]>
+					</value>
+					<value id="673170" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="6731b8" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="673200" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="673248" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="673290" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="6732d8" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde3f0" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[37]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:360]]>
+				</tooltip>
+				<commands>
+					<command id="6722e0" type="DFP" changed="0">
+						<value refMeta="673050" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="61bab0" name="Описание детали (DFP)">
+							<![CDATA[Pipe Plug]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005440_(1)_61</refmedia>
+				<refmedia ref="1">PM005440_(2)_62</refmedia>
+			</item>
+			<item id="62fa70" refPart="61c878">
+				<refview ref="view_4"/>
+				<metadata>
+					<value id="673368" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[370]]>
+					</value>
+					<value id="6733b0" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="6733f8" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="673440" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="673488" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[38]]>
+					</value>
+					<value id="6734d0" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="673518" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="677d10" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="677d58" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="677da0" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="677de8" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde438" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[38]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:370]]>
+				</tooltip>
+				<commands>
+					<command id="678d10" type="DFP" changed="0">
+						<value refMeta="6733b0" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="61bb88" name="Описание детали (DFP)">
+							<![CDATA[Poppet and Spring]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005450_63</refmedia>
+			</item>
+			<item id="6357a8" refPart="61c8f0">
+				<refview ref="view_4"/>
+				<metadata>
+					<value id="677e78" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[380]]>
+					</value>
+					<value id="677ec0" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="677f08" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="677f50" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="677f98" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[39]]>
+					</value>
+					<value id="677fe0" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="678028" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="678070" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="6780b8" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="678100" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="678148" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde480" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[39]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:380]]>
+				</tooltip>
+				<commands>
+					<command id="678f90" type="DFP" changed="0">
+						<value refMeta="677ec0" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="61bc60" name="Описание детали (DFP)">
+							<![CDATA[Spring, Standard]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005460_66</refmedia>
+			</item>
+			<item id="62f990" refPart="61c968">
+				<refview ref="view_4"/>
+				<metadata>
+					<value id="6781d8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[390]]>
+					</value>
+					<value id="678220" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="678268" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="6782b0" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="6782f8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[40]]>
+					</value>
+					<value id="678340" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="678388" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="6783d0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="678418" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="678460" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="6784a8" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde4c8" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[40]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:390]]>
+				</tooltip>
+				<commands>
+					<command id="679210" type="DFP" changed="0">
+						<value refMeta="678220" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="61bd38" name="Описание детали (DFP)">
+							<![CDATA[O-Ring, Buna]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005470_67</refmedia>
+			</item>
+			<item id="62fa38" refPart="61c9e0">
+				<refview ref="view_4"/>
+				<metadata>
+					<value id="678538" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[400]]>
+					</value>
+					<value id="678580" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="6785c8" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="678610" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="678658" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[41]]>
+					</value>
+					<value id="6786a0" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="6786e8" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="678730" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="678778" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="6787c0" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="678808" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde510" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[41]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:400]]>
+				</tooltip>
+				<commands>
+					<command id="679490" type="DFP" changed="0">
+						<value refMeta="678580" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="61be10" name="Описание детали (DFP)">
+							<![CDATA[Plug Cap]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM005480_69</refmedia>
+			</item>
+			<item id="6358f8" refPart="61ca58">
+				<refview ref="view_4"/>
+				<metadata>
+					<value id="678898" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[410]]>
+					</value>
+					<value id="6788e0" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="678928" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="678970" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="6789b8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[42]]>
+					</value>
+					<value id="678a00" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="678a48" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="678a90" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="678ad8" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="678b20" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="678b68" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde558" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[42]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:410]]>
+				</tooltip>
+				<commands>
+					<command id="679710" type="DFP" changed="0">
+						<value refMeta="6788e0" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="61bee8" name="Описание детали (DFP)">
+							<![CDATA[Nut]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">NT3456_68</refmedia>
+			</item>
+			<item id="635930" refPart="61cad0">
+				<refview ref="view_4"/>
+				<metadata>
+					<value id="678bf8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[420]]>
+					</value>
+					<value id="678c40" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="678c88" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="cbd0060" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="cbd00a8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[43]]>
+					</value>
+					<value id="cbd00f0" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="cbd0138" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="cbd0180" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="cbd01c8" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="cbd0210" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="cbd0258" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde5a0" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[43]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:420]]>
+				</tooltip>
+				<commands>
+					<command id="679990" type="DFP" changed="0">
+						<value refMeta="678c40" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="61d000" name="Описание детали (DFP)">
+							<![CDATA[Nut, Lock and Seal]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">NT4850_70</refmedia>
+			</item>
+			<item id="62fbf8" refPart="61cb48">
+				<refview ref="view_4"/>
+				<metadata>
+					<value id="cbd02e8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[430]]>
+					</value>
+					<value id="cbd0330" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="cbd0378" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="cbd03c0" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="cbd0408" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[44]]>
+					</value>
+					<value id="cbd0450" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="cbd0498" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="cbd04e0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="cbd0528" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="cbd0570" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="cbd05b8" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde5e8" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[44]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:430]]>
+				</tooltip>
+				<commands>
+					<command id="679c10" type="DFP" changed="0">
+						<value refMeta="cbd0330" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="61d0d8" name="Описание детали (DFP)">
+							<![CDATA[Screw, Adjustment]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">BLT005532_71</refmedia>
+			</item>
+			<item id="62f958" refPart="61cbc0">
+				<refview ref="view_4"/>
+				<metadata>
+					<value id="cbd0648" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[440]]>
+					</value>
+					<value id="cbd0690" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="cbd06d8" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="cbd0720" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="cbd0768" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[45]]>
+					</value>
+					<value id="cbd07b0" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="cbd07f8" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="cbd0840" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="cbd0888" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="cbd08d0" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="cbd0918" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde630" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[45]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:440]]>
+				</tooltip>
+				<commands>
+					<command id="cbd52d0" type="DFP" changed="0">
+						<value refMeta="cbd0690" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="61d1b0" name="Описание детали (DFP)">
+							<![CDATA[Spring, High Pressure]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">PM5490_72</refmedia>
+			</item>
+			<item id="635b60" refPart="61cc38">
+				<refview ref="view_4"/>
+				<metadata>
+					<value id="cbd09a8" name="item" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[450]]>
+					</value>
+					<value id="cbd09f0" name="indenture" decl-id="IND" changed="0" role="5">
+						<![CDATA[4]]>
+					</value>
+					<value id="cbd0a38" name="quantityPerNextHigherAssy" decl-id="QNA" changed="0" role="6">
+						<![CDATA[2]]>
+					</value>
+					<value id="cbd0a80" name="itemSeqNumberValue" decl-id="ISN" changed="0">
+						<![CDATA[00A]]>
+					</value>
+					<value id="cbd0ac8" name="SEQNO" decl-id="SEQNO" changed="0">
+						<![CDATA[46]]>
+					</value>
+					<value id="cbd0b10" name="notIllustrated" decl-id="NIL" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="cbd0b58" name="itemVariant" decl-id="ITEMVAR" changed="0" role="4"/>
+					<value id="cbd0ba0" name="unitOfIssue" decl-id="UOI" changed="0"/>
+					<value id="cbd0be8" name="interchangeability" decl-id="ICY" changed="0"/>
+					<value id="cbd0c30" name="sourceMaintRecoverability" decl-id="SMR" changed="0">
+						<![CDATA[x]]>
+					</value>
+					<value id="cbd0c78" name="service" decl-id="SRV" changed="0">
+						<![CDATA[xxx]]>
+					</value>
+					<value id="cbde678" name="$SEQ#" decl-id="_475892E0979948B6A6071D4D628A32DD" changed="0">
+						<![CDATA[46]]>
+					</value>
+				</metadata>
+				<tooltip>
+					<![CDATA[CSN:450]]>
+				</tooltip>
+				<commands>
+					<command id="cbd5550" type="DFP" changed="0">
+						<value refMeta="cbd09f0" name="Отступ">
+							<![CDATA[4]]>
+						</value>
+						<value refMeta="61d288" name="Описание детали (DFP)">
+							<![CDATA[Bolt, Hex Head]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">BLT003345_73</refmedia>
+				<refmedia ref="1">BBLT003345_74</refmedia>
+			</item>
+		</dplist>
+		<ipc-table>
+			<table>
+				<thead>
+					<row>
+						<entry/>
+						<entry column-id="FIG" width="3">
+							<para>
+								<![CDATA[Рис.]]>
+							</para>
+						</entry>
+						<entry column-id="ITEM" width="4">
+							<para>
+								<![CDATA[Поз.]]>
+							</para>
+						</entry>
+						<entry column-id="UPA" width="8">
+							<para>
+								<![CDATA[Кол-во в
+сборочной
+единице
+/Единица
+поставки]]>
+							</para>
+						</entry>
+						<entry column-id="NCAGE" width="6">
+							<para>
+								<![CDATA[Код
+органи-
+зации
+(NCAGE)]]>
+							</para>
+						</entry>
+						<entry column-id="PARTNUMBER" width="18">
+							<para>
+								<![CDATA[Обозначение
+детали/
+Номенклатурный
+код НАТО]]>
+							</para>
+						</entry>
+						<entry column-id="NOMENCLATURE" width="31">
+							<para>
+								<![CDATA[Наименование]]>
+							</para>
+						</entry>
+						<entry column-id="UCA" width="11">
+							<para>
+								<![CDATA[Применя-
+емость
+MOV/EFY]]>
+							</para>
+						</entry>
+						<entry column-id="ICY" width="5">
+							<para>
+								<![CDATA[Взаимо-
+заменя-
+емость
+(ICY)]]>
+							</para>
+						</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row refItem="635738">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[  0 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[RF ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005300]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="5ecce8">
+								<![CDATA[Pump Assy]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62f9c8">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[ 10 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005301]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="645640">
+								<![CDATA[•Back Plate Assy]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635770">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[ 20 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[8 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[BLT000324]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="6458c0">
+								<![CDATA[••Bolt, Hex Head]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="6359d8">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[ 30 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005302]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="645b40">
+								<![CDATA[••Retaining ring]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635bd0">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[ 40 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005303]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="645dc0">
+								<![CDATA[••Ball Bearing Assy]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62f878">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[ 50 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005305]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="646040">
+								<![CDATA[•••Ball Bearing]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635af0">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[ 60 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005310]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="6462c0">
+								<![CDATA[•••Zerk Fitting]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635888">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[ 70 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005320]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="64d980">
+								<![CDATA[••Backplate]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635850">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[ 80 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[2 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[DP00356]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="64dc00">
+								<![CDATA[••Dowel Pin]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635ab8">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[ 90 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005330]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="64e140">
+								<![CDATA[••Gasket, Case]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="6359a0">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[100 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[8 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[BLT000350]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="64e3c0">
+								<![CDATA[•Bolt, Hex Head]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="6355e8">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[110 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[2 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005340]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="64e640">
+								<![CDATA[•Flange, Straight]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635620">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[120 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[2 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005345]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="64e8c0">
+								<![CDATA[•Gasket, Flange]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62fb18">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[130 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005350]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="64dd00">
+								<![CDATA[•Casing]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62fbc0">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[140 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005500]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="654730">
+								<![CDATA[•Idler Shaft Assy]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635818">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[150 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[SH40020]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="6549b0">
+								<![CDATA[••Shaft, Idler]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62fb88">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[160 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[SH40140]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="654c30">
+								<![CDATA[••Key]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62fae0">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[170 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[SH40500]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="654eb0">
+								<![CDATA[••Gear, Right Hand]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="6355b0">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[180 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[2 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005510]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="655130">
+								<![CDATA[••Bushing, Long]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635578">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[190 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[2 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005530]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="6553b0">
+								<![CDATA[••Washer, Expansion]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635658">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[200 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005501]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="6605c8">
+								<![CDATA[•Drive Shaft Assy]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635690">
+						<entry>
+							<para>
+								<![CDATA[
+]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[210 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[SH40120]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="660848">
+								<![CDATA[••Shaft, Drive - Rev. A
+]]>
+							</cmdtext>
+							<cmdtext refCmd="660888">
+								<![CDATA[  CAN BE REPLACED BY SH40121]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<cmdtext refCmd="6608c8">
+								<![CDATA[*A]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+					</row>
+					<row refItem="635c08">
+						<entry>
+							<para>
+								<![CDATA[
+]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[215 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[SH40121]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="660b48">
+								<![CDATA[••Shaft, Drive - Rev. B
+]]>
+							</cmdtext>
+							<cmdtext refCmd="660b88">
+								<![CDATA[  CAN BE REPLACED BY SH40120]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<cmdtext refCmd="660bc8">
+								<![CDATA[*B]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+					</row>
+					<row refItem="635a48">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[220 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[SH40040]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="660e48">
+								<![CDATA[••Key]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635a10">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[230 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[SH40140]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="6610c8">
+								<![CDATA[••Key]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62fa00">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[240 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[SH40400]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="661348">
+								<![CDATA[••Gear, Left Hand]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635b98">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[250 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005510]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="669720">
+								<![CDATA[••Bushing, Long]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635a80">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[260 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005520]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="6699a0">
+								<![CDATA[••Bushing, Short]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635540">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[270 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005530]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="669c20">
+								<![CDATA[••Washer, Expansion]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635700">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[280 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005600]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="669ea0">
+								<![CDATA[•Face Plate Assy]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="6356c8">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[290 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[6 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[BLT000324]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="66a120">
+								<![CDATA[••Bolt, Hex Head]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="6358c0">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[300 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[2 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[DP00356]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="66a3a0">
+								<![CDATA[••Dowel Pin]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635b28">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[310 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005330]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="671660">
+								<![CDATA[••Gasket, Case]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62fb50">
+						<entry>
+							<para>
+								<![CDATA[
+]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[320 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005400]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="6718e0">
+								<![CDATA[••Face Plate Assembly, Relief
+  Valve]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635968">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[330 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005410]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="671b60">
+								<![CDATA[•••Face Plate]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="6357e0">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[340 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[2 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005420]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="671de0">
+								<![CDATA[•••Drive Screw]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62f920">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[350 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005430]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="672060">
+								<![CDATA[•••Name Plate]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62faa8">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[360 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[2 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005440]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="6722e0">
+								<![CDATA[•••Pipe Plug]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62fa70">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[370 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005450]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="678d10">
+								<![CDATA[•••Poppet and Spring]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="6357a8">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[380 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005460]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="678f90">
+								<![CDATA[•••Spring, Standard]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62f990">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[390 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005470]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="679210">
+								<![CDATA[•••O-Ring, Buna]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62fa38">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[400 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM005480]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="679490">
+								<![CDATA[•••Plug Cap]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="6358f8">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[410 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[NT3456]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="679710">
+								<![CDATA[•••Nut]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635930">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[420 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[NT4850]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="679990">
+								<![CDATA[•••Nut, Lock and Seal]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62fbf8">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[430 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[BLT005532]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="679c10">
+								<![CDATA[•••Screw, Adjustment]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="62f958">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[440 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[PM5490]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="cbd52d0">
+								<![CDATA[•••Spring, High Pressure]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="635b60">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[450 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[2 ]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10819]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[BLT003345]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="cbd5550">
+								<![CDATA[•••Bolt, Hex Head]]>
+							</cmdtext>
+						</entry>
+						<entry/>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+				</tbody>
+			</table>
+		</ipc-table>
+		<bgmedia>
+			<refmedia ref="1">DirectLight_78</refmedia>
+			<refmedia ref="1">Callout_&lt;font_color=__ffffff___face=_t_79</refmedia>
+		</bgmedia>
+		<views>
+			<view id="view_0" stepid="view_0" changed="0" revst="U" hidden="0">
+				<description>Assembled</description>
+				<transition id="view_1" stepid="trans_0"/>
+				<transition id="view_2" stepid="trans_1"/>
+				<transition id="view_3" stepid="trans_2"/>
+				<transition id="view_5" stepid="trans_3"/>
+				<viewpoint>
+					<refmedia ref="1">
+						<![CDATA[vp_0]]>
+					</refmedia>
+				</viewpoint>
+				<refItem ref="62f878"/>
+				<refItem ref="62f920"/>
+				<refItem ref="62f958"/>
+				<refItem ref="62f990"/>
+				<refItem ref="62f9c8"/>
+				<refItem ref="62fa00"/>
+				<refItem ref="62fa38"/>
+				<refItem ref="62fa70"/>
+				<refItem ref="62faa8"/>
+				<refItem ref="62fae0"/>
+				<refItem ref="62fb18"/>
+				<refItem ref="62fb50"/>
+				<refItem ref="62fb88"/>
+				<refItem ref="62fbc0"/>
+				<refItem ref="62fbf8"/>
+				<refItem ref="635540"/>
+				<refItem ref="635578"/>
+				<refItem ref="6355b0"/>
+				<refItem ref="6355e8"/>
+				<refItem ref="635620"/>
+				<refItem ref="635658"/>
+				<refItem ref="635690"/>
+				<refItem ref="6356c8"/>
+				<refItem ref="635700"/>
+				<refItem ref="635738"/>
+				<refItem ref="635770"/>
+				<refItem ref="6357a8"/>
+				<refItem ref="6357e0"/>
+				<refItem ref="635818"/>
+				<refItem ref="635850"/>
+				<refItem ref="635888"/>
+				<refItem ref="6358c0"/>
+				<refItem ref="6358f8"/>
+				<refItem ref="635930"/>
+				<refItem ref="635968"/>
+				<refItem ref="6359a0"/>
+				<refItem ref="6359d8"/>
+				<refItem ref="635a10"/>
+				<refItem ref="635a48"/>
+				<refItem ref="635a80"/>
+				<refItem ref="635ab8"/>
+				<refItem ref="635af0"/>
+				<refItem ref="635b28"/>
+				<refItem ref="635b60"/>
+				<refItem ref="635b98"/>
+				<refItem ref="635bd0"/>
+				<metadata/>
+				<refmedia ref="1"/>
+				<refmedia ref="5ea240"/>
+			</view>
+			<view id="view_1" stepid="view_1" changed="0" revst="U" hidden="0">
+				<description>Backplate Assy</description>
+				<viewpoint>
+					<refmedia ref="1">
+						<![CDATA[vp_1]]>
+					</refmedia>
+				</viewpoint>
+				<refItem ref="62f878"/>
+				<refItem ref="62f9c8"/>
+				<refItem ref="62fb18"/>
+				<refItem ref="635738"/>
+				<refItem ref="635770"/>
+				<refItem ref="635850"/>
+				<refItem ref="635888"/>
+				<refItem ref="6359d8"/>
+				<refItem ref="635ab8"/>
+				<refItem ref="635af0"/>
+				<refItem ref="635bd0"/>
+				<metadata/>
+				<refmedia ref="1"/>
+				<refmedia ref="632ea0"/>
+			</view>
+			<view id="view_2" stepid="view_2" changed="0" revst="U" hidden="0">
+				<description>Casing</description>
+				<viewpoint>
+					<refmedia ref="1">
+						<![CDATA[vp_2]]>
+					</refmedia>
+				</viewpoint>
+				<refItem ref="62fb18"/>
+				<refItem ref="6355e8"/>
+				<refItem ref="635620"/>
+				<refItem ref="635738"/>
+				<refItem ref="6359a0"/>
+				<metadata/>
+				<refmedia ref="1"/>
+				<refmedia ref="632ef8"/>
+			</view>
+			<view id="view_3" stepid="view_3" changed="0" revst="U" hidden="0">
+				<description>Drive Shafts</description>
+				<transition id="view_4" stepid="trans_4"/>
+				<viewpoint>
+					<refmedia ref="1">
+						<![CDATA[vp_3]]>
+					</refmedia>
+				</viewpoint>
+				<refItem ref="62fa00"/>
+				<refItem ref="62fae0"/>
+				<refItem ref="62fb50"/>
+				<refItem ref="62fb88"/>
+				<refItem ref="62fbc0"/>
+				<refItem ref="635540"/>
+				<refItem ref="635578"/>
+				<refItem ref="6355b0"/>
+				<refItem ref="635658"/>
+				<refItem ref="635690"/>
+				<refItem ref="6356c8"/>
+				<refItem ref="635700"/>
+				<refItem ref="635738"/>
+				<refItem ref="635818"/>
+				<refItem ref="6358c0"/>
+				<refItem ref="635a10"/>
+				<refItem ref="635a48"/>
+				<refItem ref="635a80"/>
+				<refItem ref="635b28"/>
+				<refItem ref="635b98"/>
+				<refItem ref="635c08"/>
+				<metadata/>
+				<refmedia ref="1"/>
+				<refmedia ref="632f50"/>
+			</view>
+			<view id="view_4" stepid="view_4" changed="0" revst="U" hidden="0">
+				<description>Relief Valve Assy</description>
+				<viewpoint>
+					<refmedia ref="1">
+						<![CDATA[vp_4]]>
+					</refmedia>
+				</viewpoint>
+				<refItem ref="62f920"/>
+				<refItem ref="62f958"/>
+				<refItem ref="62f990"/>
+				<refItem ref="62fa38"/>
+				<refItem ref="62fa70"/>
+				<refItem ref="62faa8"/>
+				<refItem ref="62fb50"/>
+				<refItem ref="62fbf8"/>
+				<refItem ref="635738"/>
+				<refItem ref="6357a8"/>
+				<refItem ref="6357e0"/>
+				<refItem ref="6358f8"/>
+				<refItem ref="635930"/>
+				<refItem ref="635968"/>
+				<refItem ref="635b60"/>
+				<metadata/>
+				<refmedia ref="1"/>
+				<refmedia ref="632fa8"/>
+			</view>
+			<view id="view_5" stepid="view_5" changed="0" revst="U" hidden="0">
+				<description>Sectioned View</description>
+				<viewpoint>
+					<refmedia ref="1">
+						<![CDATA[vp_5]]>
+					</refmedia>
+				</viewpoint>
+				<refItem ref="62f958"/>
+				<refItem ref="62fa00"/>
+				<refItem ref="62fae0"/>
+				<refItem ref="635690"/>
+				<refItem ref="6357a8"/>
+				<refItem ref="635c08"/>
+				<metadata/>
+				<refmedia ref="1"/>
+				<refmedia ref="633000"/>
+			</view>
+		</views>
+	</figure>
+	<parts>
+		<part id="5bcd08">
+			<metadata>
+				<value id="6190d8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005300]]>
+				</value>
+				<value id="619120" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Pump Assy]]>
+				</value>
+				<value id="619168" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="5c32e8">
+			<metadata>
+				<value id="6191b0" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005301]]>
+				</value>
+				<value id="6191f8" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Back Plate Assy]]>
+				</value>
+				<value id="619240" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="5c3360">
+			<metadata>
+				<value id="619288" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[BLT000324]]>
+				</value>
+				<value id="6192d0" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Bolt, Hex Head]]>
+				</value>
+				<value id="619318" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="5c33d8">
+			<metadata>
+				<value id="619360" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005302]]>
+				</value>
+				<value id="6193a8" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Retaining ring]]>
+				</value>
+				<value id="6193f0" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="5c3450">
+			<metadata>
+				<value id="619438" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005303]]>
+				</value>
+				<value id="619480" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Ball Bearing Assy]]>
+				</value>
+				<value id="6194c8" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="5c34c8">
+			<metadata>
+				<value id="619510" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005305]]>
+				</value>
+				<value id="619558" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Ball Bearing]]>
+				</value>
+				<value id="6195a0" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="5c3540">
+			<metadata>
+				<value id="6195e8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005310]]>
+				</value>
+				<value id="619630" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Zerk Fitting]]>
+				</value>
+				<value id="619678" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="5c35b8">
+			<metadata>
+				<value id="6196c0" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005320]]>
+				</value>
+				<value id="619708" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Backplate]]>
+				</value>
+				<value id="619750" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="5c3630">
+			<metadata>
+				<value id="619798" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[DP00356]]>
+				</value>
+				<value id="6197e0" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Dowel Pin]]>
+				</value>
+				<value id="619828" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="5c36a8">
+			<metadata>
+				<value id="619870" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005330]]>
+				</value>
+				<value id="6198b8" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Gasket, Case]]>
+				</value>
+				<value id="619900" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="5c3720">
+			<metadata>
+				<value id="619948" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[BLT000350]]>
+				</value>
+				<value id="619990" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Bolt, Hex Head]]>
+				</value>
+				<value id="6199d8" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="5c3798">
+			<metadata>
+				<value id="619a20" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005340]]>
+				</value>
+				<value id="619a68" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Flange, Straight]]>
+				</value>
+				<value id="619ab0" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="5c3810">
+			<metadata>
+				<value id="619af8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005345]]>
+				</value>
+				<value id="619b40" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Gasket, Flange]]>
+				</value>
+				<value id="619b88" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="5c3888">
+			<metadata>
+				<value id="619bd0" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005350]]>
+				</value>
+				<value id="619c18" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Casing]]>
+				</value>
+				<value id="619c60" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61a850">
+			<metadata>
+				<value id="619ca8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005500]]>
+				</value>
+				<value id="619cf0" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Idler Shaft Assy]]>
+				</value>
+				<value id="619d38" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61a8c8">
+			<metadata>
+				<value id="619d80" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[SH40020]]>
+				</value>
+				<value id="619dc8" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Shaft, Idler]]>
+				</value>
+				<value id="619e10" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61a940">
+			<metadata>
+				<value id="619e58" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[SH40140]]>
+				</value>
+				<value id="619ea0" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Key]]>
+				</value>
+				<value id="619ee8" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61a9b8">
+			<metadata>
+				<value id="619f30" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[SH40500]]>
+				</value>
+				<value id="619f78" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Gear, Right Hand]]>
+				</value>
+				<value id="61b000" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61aa30">
+			<metadata>
+				<value id="61b048" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005510]]>
+				</value>
+				<value id="61b090" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Bushing, Long]]>
+				</value>
+				<value id="61b0d8" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61aaa8">
+			<metadata>
+				<value id="61b120" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005530]]>
+				</value>
+				<value id="61b168" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Washer, Expansion]]>
+				</value>
+				<value id="61b1b0" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61ab20">
+			<metadata>
+				<value id="61b1f8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005501]]>
+				</value>
+				<value id="61b240" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Drive Shaft Assy]]>
+				</value>
+				<value id="61b288" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61ab98">
+			<metadata>
+				<value id="61b2d0" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[SH40120]]>
+				</value>
+				<value id="61b318" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Shaft, Drive - Rev. A]]>
+				</value>
+				<value id="61b360" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61ac10">
+			<metadata>
+				<value id="61b3a8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[SH40040]]>
+				</value>
+				<value id="61b3f0" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Key]]>
+				</value>
+				<value id="61b438" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61ac88">
+			<metadata>
+				<value id="61b480" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[SH40400]]>
+				</value>
+				<value id="61b4c8" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Gear, Left Hand]]>
+				</value>
+				<value id="61b510" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61ad00">
+			<metadata>
+				<value id="61b558" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005520]]>
+				</value>
+				<value id="61b5a0" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Bushing, Short]]>
+				</value>
+				<value id="61b5e8" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61ad78">
+			<metadata>
+				<value id="61b630" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005600]]>
+				</value>
+				<value id="61b678" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Face Plate Assy]]>
+				</value>
+				<value id="61b6c0" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61adf0">
+			<metadata>
+				<value id="61b708" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005400]]>
+				</value>
+				<value id="61b750" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Face Plate Assembly, Relief Valve]]>
+				</value>
+				<value id="61b798" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61ae68">
+			<metadata>
+				<value id="61b7e0" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005410]]>
+				</value>
+				<value id="61b828" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Face Plate]]>
+				</value>
+				<value id="61b870" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61aee0">
+			<metadata>
+				<value id="61b8b8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005420]]>
+				</value>
+				<value id="61b900" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Drive Screw]]>
+				</value>
+				<value id="61b948" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61af58">
+			<metadata>
+				<value id="61b990" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005430]]>
+				</value>
+				<value id="61b9d8" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Name Plate]]>
+				</value>
+				<value id="61ba20" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61c800">
+			<metadata>
+				<value id="61ba68" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005440]]>
+				</value>
+				<value id="61bab0" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Pipe Plug]]>
+				</value>
+				<value id="61baf8" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61c878">
+			<metadata>
+				<value id="61bb40" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005450]]>
+				</value>
+				<value id="61bb88" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Poppet and Spring]]>
+				</value>
+				<value id="61bbd0" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61c8f0">
+			<metadata>
+				<value id="61bc18" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005460]]>
+				</value>
+				<value id="61bc60" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Spring, Standard]]>
+				</value>
+				<value id="61bca8" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61c968">
+			<metadata>
+				<value id="61bcf0" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005470]]>
+				</value>
+				<value id="61bd38" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[O-Ring, Buna]]>
+				</value>
+				<value id="61bd80" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61c9e0">
+			<metadata>
+				<value id="61bdc8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM005480]]>
+				</value>
+				<value id="61be10" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Plug Cap]]>
+				</value>
+				<value id="61be58" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61ca58">
+			<metadata>
+				<value id="61bea0" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[NT3456]]>
+				</value>
+				<value id="61bee8" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Nut]]>
+				</value>
+				<value id="61bf30" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61cad0">
+			<metadata>
+				<value id="61bf78" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[NT4850]]>
+				</value>
+				<value id="61d000" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Nut, Lock and Seal]]>
+				</value>
+				<value id="61d048" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61cb48">
+			<metadata>
+				<value id="61d090" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[BLT005532]]>
+				</value>
+				<value id="61d0d8" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Screw, Adjustment]]>
+				</value>
+				<value id="61d120" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61cbc0">
+			<metadata>
+				<value id="61d168" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[PM5490]]>
+				</value>
+				<value id="61d1b0" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Spring, High Pressure]]>
+				</value>
+				<value id="61d1f8" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61cc38">
+			<metadata>
+				<value id="61d240" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[BLT003345]]>
+				</value>
+				<value id="61d288" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Bolt, Hex Head]]>
+				</value>
+				<value id="61d2d0" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="61ccb0">
+			<metadata>
+				<value id="61d318" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[SH40121]]>
+				</value>
+				<value id="61d360" name="manufacturerCode" decl-id="MFC" changed="0">
+					<![CDATA[10819]]>
+				</value>
+				<value id="61d3a8" name="descrForPart" decl-id="DFP" changed="0" role="2">
+					<![CDATA[Shaft, Drive - Rev. B]]>
+				</value>
+			</metadata>
+		</part>
+	</parts>
+	<reftables>
+		<reftable name="Коммерческий и правительственный код объекта">
+			<value/>
+			<value descr="00624 - EATON AEROQUIP INC., ENGINEERED SYSTEMS DIV., JACKSON">
+				<![CDATA[00624]]>
+			</value>
+			<value descr="00672 - GRIMES AEROSPACE CO., PLYMOUTH">
+				<![CDATA[00672]]>
+			</value>
+			<value descr="00779 - TYCO ELECTRONICS CORP., MIDDLETOWN">
+				<![CDATA[00779]]>
+			</value>
+			<value descr="00922 - MARSHALL STEEL CO., LA GRANGE">
+				<![CDATA[00922]]>
+			</value>
+			<value descr="01673 - AIRDROME PARTS CO., LONG BEACH">
+				<![CDATA[01673]]>
+			</value>
+			<value descr="02101 - PACIFIC SCIENTIFIC, ELECTRO KINETICS DIV., CAPPINTERIA">
+				<![CDATA[02101]]>
+			</value>
+			<value descr="02697 - PARKER-HANNIFIN CORP., O-RING DIV., LEXINGTON">
+				<![CDATA[02697]]>
+			</value>
+			<value descr="02750 - EATON CORP., PRESSURE SENSORS DIV., BETHEL">
+				<![CDATA[02750]]>
+			</value>
+			<value descr="03024 - KETEMA INC., A &amp; E DIV., EL CAJON">
+				<![CDATA[03024]]>
+			</value>
+			<value descr="03350 - GE STRUCTURED SERVICES LP, SUB. OF GENERAL ELECTRIC CO., MOUNT LAUREL">
+				<![CDATA[03350]]>
+			</value>
+			<value descr="03673 - STEIN SEAL CO., KULPSVILLE">
+				<![CDATA[03673]]>
+			</value>
+			<value descr="03818 - REPLACED BY FSCM 83259">
+				<![CDATA[03818]]>
+			</value>
+			<value descr="04171 - MAGNETIC SEAL CORP., WARREN">
+				<![CDATA[04171]]>
+			</value>
+			<value descr="04638 - TRANSDIGM INC., AEROCONTROLEX DIV., CLEVELAND">
+				<![CDATA[04638]]>
+			</value>
+			<value descr="04811 - PRECISION COIL SPRING CO., EL MONTE">
+				<![CDATA[04811]]>
+			</value>
+			<value descr="05167 - PACIFIC SCIENTIFIC CO., HTL/KIN-TECH DIV., DUARTE">
+				<![CDATA[05167]]>
+			</value>
+			<value descr="05228 - PTI TECHNOLOGIES INC., SUB. OF ESCO ELECTRONICS CORP., OXNARD">
+				<![CDATA[05228]]>
+			</value>
+			<value descr="05326 - GENERAL ELECTRIC CO., AVIATION COMPONENT SERVICE CENTER, CINCINNATI">
+				<![CDATA[05326]]>
+			</value>
+			<value descr="05624 - SMITHS AEROSPACE INC., ELECTRONIC SYSTEMS DIV., LOVES PARK">
+				<![CDATA[05624]]>
+			</value>
+			<value descr="05939 - SAINT-GOBAIN PERFORMANCE PLASTICS CORP., GARDEN GROVE">
+				<![CDATA[05939]]>
+			</value>
+			<value descr="06090 - TYCO ELECTRONICS/RAYCHEM, MENLO PARK">
+				<![CDATA[06090]]>
+			</value>
+			<value descr="062W0 - GE ENGINE SERVICES DISTRIBUTION L.L.C., CINCINNATI">
+				<![CDATA[062W0]]>
+			</value>
+			<value descr="06324 - GLENAIR INC., GLENDALE">
+				<![CDATA[06324]]>
+			</value>
+			<value descr="06710 - VALLEY-TODECO INC., SYLMAR">
+				<![CDATA[06710]]>
+			</value>
+			<value descr="06721 - HALDEX BRAKE PRODUCTS CORP., KANSAS CITY">
+				<![CDATA[06721]]>
+			</value>
+			<value descr="06725 - AIR INDUSTRIES CORP., GARDEN GROVE">
+				<![CDATA[06725]]>
+			</value>
+			<value descr="06811 - BEI SENSORS &amp; SYSTEMS CO. INC., CONCORD">
+				<![CDATA[06811]]>
+			</value>
+			<value descr="06848 - HONEYWELL INTL. INC., ENGINES AND SYSTEMS, SOUTH BEND">
+				<![CDATA[06848]]>
+			</value>
+			<value descr="06950 - ALCOA GLOBAL FASTENERS INC., DIV. CITY OF INDUSTRY OPERATIONS, LA PUENTE">
+				<![CDATA[06950]]>
+			</value>
+			<value descr="06970 - TUTHILL CORP., DBA CABLECRAFT DIV., TACOMA">
+				<![CDATA[06970]]>
+			</value>
+			<value descr="07096 - BURKE INDUSTRIES, PUROSIL DIV., SANTA FE SPRINGS">
+				<![CDATA[07096]]>
+			</value>
+			<value descr="07482 - REPLACED BY FSCM 062W0">
+				<![CDATA[07482]]>
+			</value>
+			<value descr="07542 - AMERICAN CYANAMID CO., INDUSTRIAL CHEMICALS &amp; PLASTICS DIV., HAVRE DE GRACE">
+				<![CDATA[07542]]>
+			</value>
+			<value descr="07693 - FCI CANADA INC., SCARBOROUGH M1P 2G9">
+				<![CDATA[07693]]>
+			</value>
+			<value descr="07797 - ROCKER SOLENOID CO., DBA ROCKER INDUSTRIES, HARBOR CITY">
+				<![CDATA[07797]]>
+			</value>
+			<value descr="08199 - SIERRACIN/HARRISON, BURBANK">
+				<![CDATA[08199]]>
+			</value>
+			<value descr="08524 - REPLACED BY FSCM 97928">
+				<![CDATA[08524]]>
+			</value>
+			<value descr="08716 - CARPENTER RIGGING AND SUPPLY CO., CABLECO DIV., SANTA FE SPRINGS">
+				<![CDATA[08716]]>
+			</value>
+			<value descr="08748 - ELDEC CORP., LYNNWOOD">
+				<![CDATA[08748]]>
+			</value>
+			<value descr="08844 - MARATHON POWER TECH CO., DBA NORCO INC., WACO">
+				<![CDATA[08844]]>
+			</value>
+			<value descr="09049 - CUSTOM CONTROL SENSORS INC., CHATSWORTH">
+				<![CDATA[09049]]>
+			</value>
+			<value descr="09177 - AM MULTIGRAPHICS, DIV. OF AM INTL. INC., MOUNT PROSPECT">
+				<![CDATA[09177]]>
+			</value>
+			<value descr="09455 - RBC TRANSPORT DYNAMICS CORP., SANTA ANA">
+				<![CDATA[09455]]>
+			</value>
+			<value descr="09523 - PARKER-HANNIFIN CORP., AEROSPACE GROUP, CLYDE">
+				<![CDATA[09523]]>
+			</value>
+			<value descr="0AFL4 - FEDERAL-MOGUL AVIATION PRODUCTS, LIBERTY">
+				<![CDATA[0AFL4]]>
+			</value>
+			<value descr="0Y7E4 - AEROSPACE INTERNATIONAL MATERIALS INC., CINCINNATI">
+				<![CDATA[0Y7E4]]>
+			</value>
+			<value descr="10009 - RM ENGINEERED PRODUCTS INC., NORTH CHARLESTON">
+				<![CDATA[10009]]>
+			</value>
+			<value descr="10203 - WISCO PRODUCTS INC., DAYTON">
+				<![CDATA[10203]]>
+			</value>
+			<value descr="10819 - REPLACED BY FSCM U1588">
+				<![CDATA[10819]]>
+			</value>
+			<value descr="10825 - REPLACED BY FSCM U1841">
+				<![CDATA[10825]]>
+			</value>
+			<value descr="11328 - REPLACED BY FSCM 00624">
+				<![CDATA[11328]]>
+			</value>
+			<value descr="11346 - REPLACED BY FSCM 04638">
+				<![CDATA[11346]]>
+			</value>
+			<value descr="11583 - REPLACED BY FSCM 0AFL4">
+				<![CDATA[11583]]>
+			</value>
+			<value descr="11599 - GOODRICH PUMP &amp; ENGINE CONTROL SYSTEMS INC., WEST HARTFORD">
+				<![CDATA[11599]]>
+			</value>
+			<value descr="11815 - TEXTRON INC., TEXTRON AEROSPACE FASTENERS DIV., SANTA ANA">
+				<![CDATA[11815]]>
+			</value>
+			<value descr="12179 - REPLACED BY FSCM 50398">
+				<![CDATA[12179]]>
+			</value>
+			<value descr="12536 - HUGHES-TREITLER MFG CORP., GARDEN CITY">
+				<![CDATA[12536]]>
+			</value>
+			<value descr="12599 - SAINT-GOBAIN PERFORMANCE PLASTICS CORP., GARDEN GROVE">
+				<![CDATA[12599]]>
+			</value>
+			<value descr="13068 - REPLACED BY FSCM 58880">
+				<![CDATA[13068]]>
+			</value>
+			<value descr="14140 - REPLACED BY FSCM 58880">
+				<![CDATA[14140]]>
+			</value>
+			<value descr="14283 - AMPHENOL CORP., AMPHENOL AEROSPACE, SAN DIEGO">
+				<![CDATA[14283]]>
+			</value>
+			<value descr="14587 - REPLACED BY FSCM 1Y587">
+				<![CDATA[14587]]>
+			</value>
+			<value descr="14798 - THE DEUTSCH CO., METEL COMPONENTS DIV., GARDENA">
+				<![CDATA[14798]]>
+			</value>
+			<value descr="15284 - PERKINELMER INC., DBA PERKINELMER FLUID SCIENCES, BELTSVILLE">
+				<![CDATA[15284]]>
+			</value>
+			<value descr="15653 - ALCOA GLOBAL FASTENERS INC., KAYNAR DIV., FULLERTON">
+				<![CDATA[15653]]>
+			</value>
+			<value descr="16519 - SENIOR FLEXONICS INC., SHARON">
+				<![CDATA[16519]]>
+			</value>
+			<value descr="16746 - SPECLINE INC., CARSON CITY">
+				<![CDATA[16746]]>
+			</value>
+			<value descr="16780 - PERKINELMER INC., FLUID SCIENCES, PHELPS">
+				<![CDATA[16780]]>
+			</value>
+			<value descr="17446 - HUCK INTL. INC., AEROSPACE FASTENER DIV., CARSON">
+				<![CDATA[17446]]>
+			</value>
+			<value descr="18350 - PALL AEROPOWER CORP, SUB. OF PALL CORP, CLEARWATER">
+				<![CDATA[18350]]>
+			</value>
+			<value descr="19710 - MPC PRODUCTS CORP., SKOKIE">
+				<![CDATA[19710]]>
+			</value>
+			<value descr="1B6R3 - MIDDLE RIVER AIRCRAFT SYSTEMS, BALTIMORE">
+				<![CDATA[1B6R3]]>
+			</value>
+			<value descr="1Y587 - DIVERSE TERMINATION PRODUCTS INC., CARSON CITY">
+				<![CDATA[1Y587]]>
+			</value>
+			<value descr="22175 - J &amp; M PRODUCTS INC., SAN FERNANDO">
+				<![CDATA[22175]]>
+			</value>
+			<value descr="22599 - AMERACE CORP, ESNA DIV., VAN NUYS">
+				<![CDATA[22599]]>
+			</value>
+			<value descr="23977 - REPLACED BY FSCM 06811">
+				<![CDATA[23977]]>
+			</value>
+			<value descr="25640 - INSPECTOLINE INC., CLEVELAND">
+				<![CDATA[25640]]>
+			</value>
+			<value descr="25693 - MEGGITT SAFETY SYSTEMS INC., SIMI VALLEY">
+				<![CDATA[25693]]>
+			</value>
+			<value descr="25704 - PULLYES CUSTOM MFG INC., WEST JORDAN">
+				<![CDATA[25704]]>
+			</value>
+			<value descr="25963 - KIMBALL ELEVATOR CO. LTD, LOS ANGELES">
+				<![CDATA[25963]]>
+			</value>
+			<value descr="26390 - REPLACED BY FSCM 29372">
+				<![CDATA[26390]]>
+			</value>
+			<value descr="27624 - PB FASTENERS, DIV. OF PAUL R. BRILLS INC., GARDENA">
+				<![CDATA[27624]]>
+			</value>
+			<value descr="28505 - SPIROL INTL. CORP., DANIELSON">
+				<![CDATA[28505]]>
+			</value>
+			<value descr="28680 - REPLACED BY FSCM 30463">
+				<![CDATA[28680]]>
+			</value>
+			<value descr="29372 - FAIRCHILD INDUSTRIES INC., FAIRCHILD AEROSPACE FASTENER DIV., TORRANCE">
+				<![CDATA[29372]]>
+			</value>
+			<value descr="29965 - ARVAN INC., GARDENA">
+				<![CDATA[29965]]>
+			</value>
+			<value descr="30463 - DCX-CHOL ENTERPRISE INC., ELECSYS DIV., PEKIN">
+				<![CDATA[30463]]>
+			</value>
+			<value descr="30974 - AEROFIT PRODUCTS INC., BUENA PARK">
+				<![CDATA[30974]]>
+			</value>
+			<value descr="32323 - FAIRFIELD FILTER CORP., CALDWELL">
+				<![CDATA[32323]]>
+			</value>
+			<value descr="32517 - REPLACED BY FSCM 99564">
+				<![CDATA[32517]]>
+			</value>
+			<value descr="33068 - HTD AEROSPACE INC. DEL, EAST LYME">
+				<![CDATA[33068]]>
+			</value>
+			<value descr="34345 - KULITE SEMICONDUCTOR PRODUCTS INC., LEONIA">
+				<![CDATA[34345]]>
+			</value>
+			<value descr="34359 - MINNESOTA MINING &amp; MFG CO., STATIONARY &amp; OFFICE SUPPLY DIV., SAINT PAUL">
+				<![CDATA[34359]]>
+			</value>
+			<value descr="35918 - HORIZON AEROSPACE LLC, VICTOR">
+				<![CDATA[35918]]>
+			</value>
+			<value descr="38443 - MRC BEARINGS, JAMESTOWN">
+				<![CDATA[38443]]>
+			</value>
+			<value descr="38597 - REPLACED BY FSCM 1B6R3">
+				<![CDATA[38597]]>
+			</value>
+			<value descr="3P253 - AIR-PRO INC., MIAMI">
+				<![CDATA[3P253]]>
+			</value>
+			<value descr="40342 - REPLACED BY FSCM 06721">
+				<![CDATA[40342]]>
+			</value>
+			<value descr="41628 - TIGHITCO INC., ATLANTA">
+				<![CDATA[41628]]>
+			</value>
+			<value descr="49367 - AMPHENOL CORP., AMPHENOL AEROSPACE, SIDNEY">
+				<![CDATA[49367]]>
+			</value>
+			<value descr="4A887 - REPLACED BY FSCM 97424">
+				<![CDATA[4A887]]>
+			</value>
+			<value descr="50294 - NEW HAMPSHIRE BALL BEARINGS INC., CHATSWORTH">
+				<![CDATA[50294]]>
+			</value>
+			<value descr="50398 - ENVIROPAK INC., EL SEGUNDO">
+				<![CDATA[50398]]>
+			</value>
+			<value descr="50625 - REPLACED BY FSCM 97424">
+				<![CDATA[50625]]>
+			</value>
+			<value descr="51057 - REPLACED BY FSCM S3960">
+				<![CDATA[51057]]>
+			</value>
+			<value descr="51214 - ASI MARINE &amp; INDUSTRIAL INC., SAN DIEGO">
+				<![CDATA[51214]]>
+			</value>
+			<value descr="51563 - ROHR INC., CHULA VISTA">
+				<![CDATA[51563]]>
+			</value>
+			<value descr="51663 - CRANE CO., LEAR ROMEC DIV., ELYRIA">
+				<![CDATA[51663]]>
+			</value>
+			<value descr="52563 - SHELBY MFG CO., SIDNEY">
+				<![CDATA[52563]]>
+			</value>
+			<value descr="52778 - REPLACED BY FSCM 35918">
+				<![CDATA[52778]]>
+			</value>
+			<value descr="53949 - RCF SEALS &amp; COUPLINGS INC., VIDALIA">
+				<![CDATA[53949]]>
+			</value>
+			<value descr="55104 - TRI-STAR ELECTRONICS INTL INC., EL SEGUNDO">
+				<![CDATA[55104]]>
+			</value>
+			<value descr="56492 - VIBRO-METER CORP., DIAGNOSTIC SYSTEMS DIV., LONG BEACH">
+				<![CDATA[56492]]>
+			</value>
+			<value descr="56878 - SPS TECHNOLOGIES INC., AEROSPACE &amp; INDUSTRIAL PRODUCTS, JENKINTOWN">
+				<![CDATA[56878]]>
+			</value>
+			<value descr="56988 - CENTURY SPRING CO., LOS ANGELES">
+				<![CDATA[56988]]>
+			</value>
+			<value descr="57067 - DIVERSIFIED METALS INC., MONSON">
+				<![CDATA[57067]]>
+			</value>
+			<value descr="57606 - REXNORD CORP., PSI BEARING, SIMI VALLEY">
+				<![CDATA[57606]]>
+			</value>
+			<value descr="58880 - VIBRO-METER INC., MANCHESTER">
+				<![CDATA[58880]]>
+			</value>
+			<value descr="59364 - HONEYWELL INTL. INC., ENGINES AND SYSTEMS, TEMPE">
+				<![CDATA[59364]]>
+			</value>
+			<value descr="59501 - UNISON INDUSTRIES LTD PARTNERSHIP, JACKSONVILLE">
+				<![CDATA[59501]]>
+			</value>
+			<value descr="59875 - ARGO-TECH CORP., AIRCRAFT ACCESSORIES DIV., CLEVELAND">
+				<![CDATA[59875]]>
+			</value>
+			<value descr="59885 - ROSEMOUNT AEROSPACE INC., BURNSVILLE">
+				<![CDATA[59885]]>
+			</value>
+			<value descr="60187 - REPLACED BY FSCM 72914">
+				<![CDATA[60187]]>
+			</value>
+			<value descr="60678 - ROSEMOUNT AEROSPACE INC., 1256 TRAPP RD.EAGAN">
+				<![CDATA[60678]]>
+			</value>
+			<value descr="60971 - WESTPORT INTERNALTIONAL INC., MILFORD">
+				<![CDATA[60971]]>
+			</value>
+			<value descr="61349 - AMETEK INC., US GAUGE DIV., SELLERSVILLE">
+				<![CDATA[61349]]>
+			</value>
+			<value descr="61423 - KIDDE TECHNOLOGIES INC., WALTER KIDDE AEROSPACE DIV., WILSON">
+				<![CDATA[61423]]>
+			</value>
+			<value descr="62983 - EATON AEROSPACE LLC VICKERS FLUID POWER, AEROSPACE-MARINE-DEFENSE, JACKSON">
+				<![CDATA[62983]]>
+			</value>
+			<value descr="63760 - LOCKHEED MARTIN, AIRCRAFT ENGINE ELECTRONICS CONTROLS, FT WAYNE">
+				<![CDATA[63760]]>
+			</value>
+			<value descr="66503 - WOODWARD GOVERNOR CO., ROCKFORD">
+				<![CDATA[66503]]>
+			</value>
+			<value descr="66530 - CLICK BOND, CARSON CITY">
+				<![CDATA[66530]]>
+			</value>
+			<value descr="70210 - HONEYWELL INTL. INC., ENGINES AND SYSTEMS, TORRANCE">
+				<![CDATA[70210]]>
+			</value>
+			<value descr="70628 - ARROWHEAD PRODUCTS CORP., LOS ALAMITOS">
+				<![CDATA[70628]]>
+			</value>
+			<value descr="70847 - BAND-IT-IDEX INC., UNIT OF IDEX CORP., DENVER">
+				<![CDATA[70847]]>
+			</value>
+			<value descr="71286 - ALCOA GLOBAL FASTENERS INC., CAMLOC PRODUCTS DIV., TORRANCE">
+				<![CDATA[71286]]>
+			</value>
+			<value descr="71468 - ITT INDUSTRIES INC., ITT-CANNON MILITARY/AEROSPACE, SANTA ANA">
+				<![CDATA[71468]]>
+			</value>
+			<value descr="72914 - GRIMES AEROSPACE CO., URBANA">
+				<![CDATA[72914]]>
+			</value>
+			<value descr="72962 - HARVARD INDUSTRIES INC., LEBANON">
+				<![CDATA[72962]]>
+			</value>
+			<value descr="73030 - UNITED TECHNOLOGIES CORP., HAMILTON STANDARD DIV., WINDSOR LOCKS">
+				<![CDATA[73030]]>
+			</value>
+			<value descr="73134 - ROLLER BEARING CO. OF AMERICA INC., HEIM BEARINGS DIV., FAIRFIELD">
+				<![CDATA[73134]]>
+			</value>
+			<value descr="73197 - HI-SHEAR CORP., TORRANCE">
+				<![CDATA[73197]]>
+			</value>
+			<value descr="73992 - TUTHILL CORP., HANSEN COUPLING DIV., BEREA">
+				<![CDATA[73992]]>
+			</value>
+			<value descr="75250 - REPLACED BY FSCM 93835">
+				<![CDATA[75250]]>
+			</value>
+			<value descr="75345 - KIRKHILL RUBBER CO., BREA">
+				<![CDATA[75345]]>
+			</value>
+			<value descr="75370 - KAYDON CORP., KAYDON RING &amp; SEAL INC., BALTIMORE">
+				<![CDATA[75370]]>
+			</value>
+			<value descr="76005 - LORD CORP., MECHANICAL PRODUCTS DIV., ERIE">
+				<![CDATA[76005]]>
+			</value>
+			<value descr="77445 - UNITED TECHNOLOGIES CORP., PRATT &amp; WHITNEY, EAST HARTFORD">
+				<![CDATA[77445]]>
+			</value>
+			<value descr="77820 - AMPHENOL CORP., AMPHENOL AEROSPACE, SIDNEY">
+				<![CDATA[77820]]>
+			</value>
+			<value descr="77842 - PERKINELMER FLUID SCIENCES, DBA PERKINELMER CENTURION MECHANICAL, WARWICK">
+				<![CDATA[77842]]>
+			</value>
+			<value descr="78062 - SARGENT CONTROLS &amp; AEROSPACE, TUCSON">
+				<![CDATA[78062]]>
+			</value>
+			<value descr="78570 - TITEFLEX CORP., SUB. OF BUNDY CORP., SPRINGFIELD">
+				<![CDATA[78570]]>
+			</value>
+			<value descr="78710 - TRIUMPH CONTROLS INC., NORTH WALES">
+				<![CDATA[78710]]>
+			</value>
+			<value descr="78943 - PARKER-HANNIFIN CORP., UNITED AIRCRAFT PRODUCTS DIV., FORREST">
+				<![CDATA[78943]]>
+			</value>
+			<value descr="79318 - WHITTAKER CORP., WHITTAKER CONTROLS DIV., HORTH HOLLYWOOD">
+				<![CDATA[79318]]>
+			</value>
+			<value descr="80539 - SPS TECHNOLOGIES INC., AEROSPACE &amp; INDUSTRIAL PRODUCTS, SANTA ANA">
+				<![CDATA[80539]]>
+			</value>
+			<value descr="80756 - SPIROLOX DIV. OF KAYDON CORP., FENTON">
+				<![CDATA[80756]]>
+			</value>
+			<value descr="81205 - THE BOEING COMPANY, BOEING DEFENSE &amp; SAPCE GROUP, SEATTLE">
+				<![CDATA[81205]]>
+			</value>
+			<value descr="81349 - MILITARY SPECIFICATIONS, PROMULGATED BY MILITARY, STANDARDIZATION MANUAL 4120 3M">
+				<![CDATA[81349]]>
+			</value>
+			<value descr="81482 - CO-OPERATIVE INDUSTRIES INC., FORT WORTH">
+				<![CDATA[81482]]>
+			</value>
+			<value descr="81860 - BARRY CONTROLS, A UNIT OF APPLIED POWER INC., BRIGHTON">
+				<![CDATA[81860]]>
+			</value>
+			<value descr="81977 - RAYMARK INDUSTRIES INC., TRUMBULL">
+				<![CDATA[81977]]>
+			</value>
+			<value descr="82389 - SWITCHCRAFT INC., CHICAGO">
+				<![CDATA[82389]]>
+			</value>
+			<value descr="82831 - REPLACED BY FSCM 29372">
+				<![CDATA[82831]]>
+			</value>
+			<value descr="83014 - HARTWELL CORP., PLACENTIA">
+				<![CDATA[83014]]>
+			</value>
+			<value descr="83259 - PARKER-HANNIFIN CORP., O-SEAL DIV., SAN DIEGO">
+				<![CDATA[83259]]>
+			</value>
+			<value descr="83311 - UNISON INDUSTRIES, NORWICH">
+				<![CDATA[83311]]>
+			</value>
+			<value descr="83324 - ALCOA GLOBAL FASTENERS INC., ROSAN/AEROSPACE FASTENERS DIV., TORRANCE">
+				<![CDATA[83324]]>
+			</value>
+			<value descr="83533 - ESSEX INDUSTRIES INC., ESSEX MFG DIV., ST. LOUIS">
+				<![CDATA[83533]]>
+			</value>
+			<value descr="83930 - TRANSDIGM INC., ADEL FASTENERS DIV., LOS ANGLES">
+				<![CDATA[83930]]>
+			</value>
+			<value descr="84256 - AVIBANK MFG INC., NORTH HOLLYWOOD">
+				<![CDATA[84256]]>
+			</value>
+			<value descr="84971 - TA MFG INC., SUB. OF CRITON TECHNOLOGIES, VALENCIA">
+				<![CDATA[84971]]>
+			</value>
+			<value descr="86020 - REPLACED BY FSCM 33068">
+				<![CDATA[86020]]>
+			</value>
+			<value descr="88277 - MCDONNELL DOUGLASS CORP., DOUGLAS AIRCRAFT CO., LONG BEACH">
+				<![CDATA[88277]]>
+			</value>
+			<value descr="89305 - SIMMONDS PRECISION PRODUCTS INC., DBA BFGOODRICH AIRCRAFT INTEGRATED, VERGENNES">
+				<![CDATA[89305]]>
+			</value>
+			<value descr="89513 - REPLACED BY FSCM 72914">
+				<![CDATA[89513]]>
+			</value>
+			<value descr="89954 - REPLACED BY FSCM 63760">
+				<![CDATA[89954]]>
+			</value>
+			<value descr="90005 - PUROLATOR FACET INC., GREENSBORO">
+				<![CDATA[90005]]>
+			</value>
+			<value descr="91209 - GENERAL MOTORS CORP., ACCESSORY &amp; PARTS DIV., DETROIT">
+				<![CDATA[91209]]>
+			</value>
+			<value descr="91577 - REPLACED BY FSCM 71468">
+				<![CDATA[91577]]>
+			</value>
+			<value descr="91587 - REXNORD CORP., SEAL OPN, WHEELING">
+				<![CDATA[91587]]>
+			</value>
+			<value descr="91816 - CIRCLE SEAL CONTROLS INC., A WATTS INDUSTRIES INC. CO., CORONA">
+				<![CDATA[91816]]>
+			</value>
+			<value descr="92003 - PARKER-HANNIFIN CORP., PARKER-BERTEA AEROSPACE GROUP HQ, IRVINE">
+				<![CDATA[92003]]>
+			</value>
+			<value descr="92215 - ALCOA GLOBAL FASTENERS INC., NEW PRODUCT DEVELOPMENT, CARSON">
+				<![CDATA[92215]]>
+			</value>
+			<value descr="93197 - REPLACED BY FSCM 09177">
+				<![CDATA[93197]]>
+			</value>
+			<value descr="93835 - PARKER HANNIFIN GROUP, ABEX NWL DIV., KALAMAZOO">
+				<![CDATA[93835]]>
+			</value>
+			<value descr="94878 - RAYBESTOS-MANHATTAN INC., PACIFIC COAST DIV., FULLERTON">
+				<![CDATA[94878]]>
+			</value>
+			<value descr="95272 - AMERICAN UNITED SEAL INC., STILLMAN SEAL DIV., CARLSBAD">
+				<![CDATA[95272]]>
+			</value>
+			<value descr="95411 - ENDEVCO CORP., SAN JUAN CAPISTRANO">
+				<![CDATA[95411]]>
+			</value>
+			<value descr="96429 - WESTPORT DEVELOPMENT &amp; MFG. CO. INC., ORANGE">
+				<![CDATA[96429]]>
+			</value>
+			<value descr="96487 - VALCOR ENGINEERING CORP., SPRINGFIELD">
+				<![CDATA[96487]]>
+			</value>
+			<value descr="96941 - ELANO CORP., DAYTON">
+				<![CDATA[96941]]>
+			</value>
+			<value descr="97393 - SHUR-LOK CORP., IRVINE">
+				<![CDATA[97393]]>
+			</value>
+			<value descr="97424 - AMETEK INC., WILMINGTON">
+				<![CDATA[97424]]>
+			</value>
+			<value descr="97484 - EATON AEROSPACE LLC, ENGINEERED SENSORS/TEDECO, GLENOLDEN">
+				<![CDATA[97484]]>
+			</value>
+			<value descr="97928 - HUCK INTL INC., LAKEWOOD">
+				<![CDATA[97928]]>
+			</value>
+			<value descr="98087 - ITT CORP., ITT AEROSPACE CONTROLS NEO-DYN, VALENCIA">
+				<![CDATA[98087]]>
+			</value>
+			<value descr="98391 - ARKWIN INDUSTRIES INC., WESTBURY">
+				<![CDATA[98391]]>
+			</value>
+			<value descr="98441 - PARKER HANNIFIN GMBH STRATOFLEX PRODUCTS DIV., FORT WORTH">
+				<![CDATA[98441]]>
+			</value>
+			<value descr="98625 - AEROQUIP CORP., AEROQUIP AEROSPACE DIV., LOS ANGLES">
+				<![CDATA[98625]]>
+			</value>
+			<value descr="98939 - FLUID REGULATORS CORP., PAINESVILLE">
+				<![CDATA[98939]]>
+			</value>
+			<value descr="99167 - SUNDSTRAND AEROSPACE, ROCKFORD">
+				<![CDATA[99167]]>
+			</value>
+			<value descr="99193 - HONEYWELL INTL. INC., PHOENIX">
+				<![CDATA[99193]]>
+			</value>
+			<value descr="99207 - GENERAL ELECTRIC CO., GE AIRCRAFT ENGINE BUSINESS GROUP, LYNN">
+				<![CDATA[99207]]>
+			</value>
+			<value descr="99321 - SHAW AERO DEVICES INC., NAPLES">
+				<![CDATA[99321]]>
+			</value>
+			<value descr="99564 - AMETEK AEROSPACE, DBA AMETEK AEROSPACE GULTON STATHAM, COSTA MESA">
+				<![CDATA[99564]]>
+			</value>
+			<value descr="D0079 - PARKER HANNIFIN GMBH, ZWEIGNIEDERLASSUNG WIESBADEN, MAINZ-KASTEL">
+				<![CDATA[D0079]]>
+			</value>
+			<value descr="F0183 - JICEY-FRANCE SA, 78220 VIROFLAY">
+				<![CDATA[F0183]]>
+			</value>
+			<value descr="F0235 - SHAMBAN IMPERVIA, CONDE SUR NOIREAU F-14110">
+				<![CDATA[F0235]]>
+			</value>
+			<value descr="F1958 - LIEBHERR AEROSPACE TOULOUSE SA, 31200 TOULOUSE">
+				<![CDATA[F1958]]>
+			</value>
+			<value descr="K0405 - WESTON AEROSPACE, FARNBOROUGH HANTS GU14 7PW">
+				<![CDATA[K0405]]>
+			</value>
+			<value descr="K1536 - KIDDE-GRAVINER LTD, MATHISEN WAY POYLE RD., COLNBROOK SLOUGH BERKS SL3 OHB">
+				<![CDATA[K1536]]>
+			</value>
+			<value descr="S3960 - VIBROMETER AG, 1701 FREIBURG">
+				<![CDATA[S3960]]>
+			</value>
+			<value descr="S4096 - SHIMADZU SEISAKUSHO LTD., AIRCRAFT EQUIPMENT DIV., JAPAN">
+				<![CDATA[S4096]]>
+			</value>
+			<value descr="S5250 - NTN TOYO BEARING CO. LTD., KUWANA-SHI MIE-KEN">
+				<![CDATA[S5250]]>
+			</value>
+			<value descr="U1588 - WESTON AEROSPACE LTD, DIV. OF SOLARTRON GROUP, FARNBOROUGH HANTS GU14 7PW UNITED KINGDOM">
+				<![CDATA[U1588]]>
+			</value>
+			<value descr="U1841 - HONEY WELL - SERCK SYSTEMS, SERCK INDUSTRIAL DIV., BIRMINGHAM B11 2QY">
+				<![CDATA[U1841]]>
+			</value>
+			<value descr="U1982 - NICHOLSON'S AIRCRAFT SEAL LTD, HAMSTERLEY NEWCASTLE-UPON TYNE, TYNE AND WEAR NE17 7SX">
+				<![CDATA[U1982]]>
+			</value>
+		</reftable>
+		<reftable name="ISN">
+			<value>
+				<![CDATA[00A]]>
+			</value>
+		</reftable>
+		<reftable name="ОТСТУП">
+			<value descr="">
+				<![CDATA[1]]>
+			</value>
+			<value descr=".">
+				<![CDATA[2]]>
+			</value>
+			<value descr="..">
+				<![CDATA[3]]>
+			</value>
+			<value descr="...">
+				<![CDATA[4]]>
+			</value>
+			<value descr="....">
+				<![CDATA[5]]>
+			</value>
+			<value descr=".....">
+				<![CDATA[6]]>
+			</value>
+			<value descr="......">
+				<![CDATA[7]]>
+			</value>
+			<value descr=".......">
+				<![CDATA[8]]>
+			</value>
+			<value descr="........">
+				<![CDATA[9]]>
+			</value>
+		</reftable>
+		<reftable name="Присоединенная/Хранящаяся/Отгружаемая деталь">
+			<value descr="Присоединенная">
+				<![CDATA[1]]>
+			</value>
+			<value descr="Хранящаяся">
+				<![CDATA[2]]>
+			</value>
+			<value descr="Отгружаемая">
+				<![CDATA[3]]>
+			</value>
+		</reftable>
+		<reftable name="Без иллюстраций">
+			<value descr="">
+				<![CDATA[0]]>
+			</value>
+			<value descr="-">
+				<![CDATA[-1]]>
+			</value>
+		</reftable>
+		<reftable name="Признак необходимости доработки">
+			<value descr="Требуется незначительная подгонка">
+				<![CDATA[Minor fitting required]]>
+			</value>
+			<value descr="Требуется значительная подгонка">
+				<![CDATA[Major fitting required]]>
+			</value>
+		</reftable>
+		<reftable name="SMFI">
+			<value descr="Выбрать подходящий">
+				<![CDATA[fit]]>
+			</value>
+			<value descr="Выбрать по результатам испытаний">
+				<![CDATA[test]]>
+			</value>
+		</reftable>
+		<reftable name="SMFR">
+			<value descr="Подобрать по результатам испытаний из">
+				<![CDATA[Select on test]]>
+			</value>
+			<value descr="Изготовить из">
+				<![CDATA[Manufacture]]>
+			</value>
+			<value descr="Доработать из">
+				<![CDATA[Rework]]>
+			</value>
+			<value descr="Отремонтировать с использованием">
+				<![CDATA[Repair]]>
+			</value>
+		</reftable>
+		<reftable name="ISSUE_TYPE">
+			<value descr="изменено">
+				<![CDATA[changed]]>
+			</value>
+			<value descr="удалено">
+				<![CDATA[deleted]]>
+			</value>
+			<value descr="новый">
+				<![CDATA[new]]>
+			</value>
+			<value descr="исправленный">
+				<![CDATA[revised]]>
+			</value>
+			<value descr="модуль данных восстановлен в прежнее состояние, в него внесены изменения">
+				<![CDATA[rinstate-changed]]>
+			</value>
+			<value descr="модуль данных восстановлен в прежнее состояние и полностью изменен">
+				<![CDATA[rinstate-revised]]>
+			</value>
+			<value descr="модуль данных восстановлен в прежнее состояние, статус изменен ">
+				<![CDATA[rinstate-status]]>
+			</value>
+			<value descr="статус">
+				<![CDATA[status]]>
+			</value>
+		</reftable>
+		<reftable name="RFS">
+			<value descr="Случайное повреждение (страховой случай)">
+				<![CDATA[9]]>
+			</value>
+			<value descr="Коррозия">
+				<![CDATA[5]]>
+			</value>
+			<value descr="Старение">
+				<![CDATA[6]]>
+			</value>
+			<value descr="Предельная температура">
+				<![CDATA[7]]>
+			</value>
+			<value descr="Разрушение">
+				<![CDATA[3]]>
+			</value>
+			<value descr="Повреждение при технологическом обслуживании">
+				<![CDATA[2]]>
+			</value>
+			<value descr="Не рекомендуется в качестве запасной части">
+				<![CDATA[0]]>
+			</value>
+			<value descr="Прочие">
+				<![CDATA[8]]>
+			</value>
+			<value descr="Вибрация">
+				<![CDATA[4]]>
+			</value>
+			<value descr="Износ">
+				<![CDATA[1]]>
+			</value>
+		</reftable>
+		<reftable name="STR">
+			<value descr="не требует особых условий хранения">
+				<![CDATA[0]]>
+			</value>
+			<value descr="требует особых условий хранения">
+				<![CDATA[1]]>
+			</value>
+		</reftable>
+		<reftable name="Гриф секретности">
+			<value descr="Несекретно">
+				<![CDATA[1]]>
+			</value>
+			<value descr="Для служебного пользования">
+				<![CDATA[2]]>
+			</value>
+			<value descr="Конфиденциально">
+				<![CDATA[3]]>
+			</value>
+			<value descr="Секретно">
+				<![CDATA[4]]>
+			</value>
+			<value descr="Совершенно секретно">
+				<![CDATA[5]]>
+			</value>
+			<value descr="Уровень 6">
+				<![CDATA[6]]>
+			</value>
+			<value descr="Уровень 7">
+				<![CDATA[7]]>
+			</value>
+			<value descr="Уровень 8">
+				<![CDATA[8]]>
+			</value>
+			<value descr="Уровень 9">
+				<![CDATA[9]]>
+			</value>
+		</reftable>
+		<reftable name="FID">
+			<value descr="Для всего Объекта">
+				<![CDATA[s]]>
+			</value>
+			<value descr="Для отдельного компонента Объекта">
+				<![CDATA[t]]>
+			</value>
+		</reftable>
+		<reftable name="QA">
+			<value descr="Непроверено">
+				<![CDATA[unverified]]>
+			</value>
+			<value descr="На столе">
+				<![CDATA[tabtop]]>
+			</value>
+			<value descr="На объекте">
+				<![CDATA[onobject]]>
+			</value>
+			<value descr="На столе и на объекте">
+				<![CDATA[ttandoo]]>
+			</value>
+		</reftable>
+		<reftable name="ILC">
+			<value>
+				<![CDATA[A]]>
+			</value>
+			<value>
+				<![CDATA[B]]>
+			</value>
+			<value>
+				<![CDATA[C]]>
+			</value>
+			<value>
+				<![CDATA[D]]>
+			</value>
+			<value>
+				<![CDATA[T]]>
+			</value>
+		</reftable>
+	</reftables>
+</ipc>

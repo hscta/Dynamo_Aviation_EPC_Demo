@@ -1,0 +1,23 @@
+.interactive {}
+body {font-family:tahoma, sans-serif; color:black; background-color:#EEEEEE; font-size:13px; margin:5px 5px 5px 5px;}	
+table {background-color:#EEEEEE;}
+td {font-size:13px;} 
+th {font-size:14px; text-align:left;}
+table.doctable {background-color:white;}
+table.alerttable {border:black 2px solid;background-color:white;}
+th.alert_note {text-decoration:underline;text-align:center;}
+th.alert_caution {text-decoration:underline;text-align:center;color:black;background-color:yellow;border:black 2px solid;}
+th.alert_warning {text-decoration:underline;text-align:center;color:white;background-color:red;border:black 2px solid;}
+input {margin-right:10px;font-family:verdana; font-size:12px; height:24px; width:80px;}
+
+  .step {margin-left:20px; margin-top:10px;}
+  .note {margin-left:20px; margin-top:10px; color:green; font-weight:bold}
+  .warning {margin-left:20px; margin-top:10px; color:red; font-weight:bold;}
+  .caution {margin-left:20px; margin-top:10px; color:FF8000; font-weight:bold}
+  .alerttext {padding-left:20px; padding-top:10px;}
+  .num {font-weight:bold;}
+
+  .genstep {margin:5px 2px 8px 14px;}
+  .comment {margin:5 0 0 15; color:darkgreen; font-size:11px;  padding:0 8 2 8;}
+  .operation {margin:15 0 0 0;}
+  .stepcomment{margin-left:25px; font-size:11px; font-style:italic;}

@@ -1,0 +1,342 @@
+body {
+  font-family:tahoma, sans-serif; 
+  color:white; 
+  background-color:#8080C0; 
+  font-size:13px;
+  padding:0px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
+}
+table {background-color:#8080C0;}
+table.infotable {background-color:#8080C0;}
+
+td {font-size:13px; vertical-align:top;}
+th {font-size:14px; text-align:left;}
+tr {}
+tr.normal {background-color:#8080C0;	}
+tr.anormal {background-color:#7070B0;}
+iframe {
+	height:100%;
+	width:100%;
+  	color:black;
+	background-color:white;
+}
+#tab_container{
+border: 3px solid white;
+background-color:white;
+}
+
+.tab {
+  font-family:verdana; 
+  font-size:11px;
+  background-color:#FFFFFF;
+  color:#555555;
+  padding:0px 10px 9px 10px;
+  margin-left:2px;
+  cursor:pointer;
+  display:inline;
+}
+.htab {
+  font-family:verdana; font-size:11px;
+  font-weight:bold;
+  background-color:#FFFFFF;
+  color:black;
+  padding:0px 10px 11px 10px;
+  margin-left:2px;
+  cursor:default;
+}
+.button{
+  font-family:verdana; font-size:11px;
+}
+.radio{padding:0px 5px 0px 5px;}
+a {
+  color: white; 
+  background-color:#8080C0; 
+  text-decoration:none; 
+}
+a:hover {text-decoration:underline;}
+a:visited {
+  color: white;
+  background-color:#8080C0;
+}
+.cmdbtn {
+  font-family:verdana; font-size:11px;
+  color: black; 
+}
+.hcmdbtn {
+  font-family:verdana; font-size:11px;
+  font-weight:bold;
+  color: red; 
+}
+.bcmdbtn {
+  padding:0px 3px 0px 3px;
+  font-family:verdana; font-size:11px;
+  color: black; 
+}
+a.linkbtn {
+  font-family:verdana; font-size:13px;
+  border-top: white 1px solid; border-left:white 1px solid; border-right:black 1px solid; border-bottom:black 1px solid; 
+  padding:2px 5px 2px 5px;
+  color:#BBBBBB; 
+  background-color:#8080C0; 
+  text-decoration:none; 
+  font-weight:bold;
+  white-space:nowrap;
+}
+a:hover.linkbtn {text-decoration:underline;}
+a:visited.linkbtn {
+  color:#BBBBBB;
+  background-color:#8080C0;
+}
+a.hlinkbtn {
+  font-family:verdana; font-size:13px;
+  border-top: white 1px solid; border-left:white 1px solid; border-right:black 1px solid; border-bottom:black 1px solid; 
+  padding:2px 5px 2px 5px;
+  color:white; 
+  background-color:#8080C0; 
+  text-decoration:none; 
+  font-weight:bold;
+  white-space:nowrap;
+}
+a:hover.hlinkbtn {text-decoration:underline;}
+a:visited.hlinkbtn {
+  color:white;
+  background-color:#8080C0;
+}
+.tooltip {
+  font-size:13px;
+  font-family:tahoma, sans-serif; 
+  color:black;
+  background-color:#FFFFDD; 
+  position:absolute; 
+  height:20px; 
+  z-index:1; 
+  padding:0px 5px 3px 5px;
+  border:1px solid black;
+}
+.doctable {color:black;}
+#act {
+  height:100%;
+  margin-bottom:10px;
+  width:100%;
+  overflow-x:auto; overflow-y:auto;
+  border:white 1px solid;
+}
+#dmsg {
+  margin:auto;
+  height:100%;
+  width:100%;
+  overflow-x:visible; overflow-y:auto;
+  color:black;
+  background-color:#EEEEEE;
+}
+#msg {
+padding:5px;
+}
+.msg_alert {
+  color:#FF4500;
+  font-weight:bold;
+}
+#title {
+  font-family:tahoma, sans-serif; 
+  font-weight:bold;
+  color:yellow; 
+  font-size:15px;  
+  background-color:#8080C0;
+}
+#bar {
+  width:132px;
+  height: 22px;
+  background-color: #CCCCCC;
+  background-image: url(scorebar.gif);
+}
+#pos {
+  position:relative;
+  left:0%;
+  width:1px;
+  height: 16px;
+  border:3px solid yellow;
+  background-color: yellow;
+}
+#div_mode_display {
+  font-family:tahoma, sans-serif; 
+  font-weight:bold;
+  color:black; 
+  background-color:yellow;
+  font-size:13px;  
+  padding:2px 2px 2px 2px;
+  margin:7px 7px 7px 7px;
+  text-align:center;
+  width:100px;
+}
+#opt {
+  color:black;
+  height:100%;
+  width:100%;
+  line-height:30px;
+  overflow-x:auto; overflow-y:auto;
+  background-color:#EEEEEE;
+}
+.act_hlp {
+  color:yellow;
+  font-weight: normal;
+  padding:0px 5px 0px 5px;
+}
+#act_hlp {
+  color:yellow;
+  font-weight: normal;
+  padding:5px 5px 5px 5px;
+}
+#act_txt {
+}
+#act_txt td{
+  color:#FFFFFF;
+  font-weight:bold;
+}
+td.tdal{
+  padding-left:10px;
+}
+#mode_hlp {
+  color:yellow;
+  font-weight: normal;
+  padding:5px 5px 15px 5px;
+}
+#img_logo {
+  margin:5px 0px 0px 5px;
+  background-color:#A0A0C0;
+  display:none;
+}
+#div_options {
+  padding:5px 5px 5px 5px;
+  margin: 10px 10px 10px 10px;
+}
+#statusbar {
+  display:none;
+  background-color:#CCCCCC;
+  color:black;
+}
+.status_info {
+  font-family:verdana; 
+  font-size:11px;
+  width:100%;height:100%;
+  overflow-x:hidden; 
+  overflow-y:hidden;
+}
+.opt_block { 
+  margin-top:5px;
+  background-color:#FFFFFF;
+  color:black;
+  border:1px #AAAAAA solid;
+}
+.cell {
+  margin-bottom:3px;
+  display:block;
+}
+
+.navigationBar{
+	height: 28px;
+	cursor: default;
+	vertical-align:middle;
+	background-color: #D6D3CF; 
+	background-image: url(background.gif);
+}
+
+.navigationButton{
+	background-repeat: no-repeat;
+	margin: 0px;
+	height:22px; width:32px;
+	display:inline-block;
+}
+.imageButton{
+	background-repeat: no-repeat;
+	margin: 0px;
+	height:25px; width:25px;
+	display:inline-block;
+	cursor:pointer;
+	background-color: #C0C0C0;
+}
+.loadingMessage{
+	font: 18px sans-serif;
+	vertical-align:middle;
+	text-align:center;
+}
+#location_caption{
+padding-right:5px;
+vertical-align: bottom;
+}
+.errorMessage{
+	vertical-align:middle;
+}
+.errorMessage a{
+	text-decoration:underline;
+}
+div.meta_container{color:black; background-color:#FFFFE1; border:1px solid black; font-family:tahoma, sans-serif; font-size:10pt;}
+div.meta_container table{color:black; background-color:#FFFFE1; font-family:tahoma, sans-serif; font-size:10pt;}
+div.meta_container span{cursor:pointer;}
+div.meta_container td{font-family:tahoma, sans-serif;font-size:10pt;color:black;background-color:#EEE8AA;vertical-align:top;}
+div.meta_container th{font-family:tahoma, sans-serif;font-size:10pt;color:black;background-color:#EEE8AA;text-align:left;}
+div.meta_container input{font-family:verdana;font-size:9pt;}
+div.meta_container a{padding:2px 5px 2px 5px;font-family:verdana, sans-serif; font-size:8pt; color:black; text-decoration:none; }
+div.meta_container a:hover{text-decoration:underline; color:black;background-color:#DAA520;}
+
+.btnMsg{
+padding-left:10px;
+padding-right:10px;
+font-family:verdana; font-size:12px; height:24px; width:80px;
+}
+
+div.msgDiv{
+  font-family:tahoma, sans-serif; 
+  color:black; 
+  background-color:#EEEEEE; 
+  font-size:13px; 
+}	
+div.msgDiv table#msgCTbl {
+  background-color:#EEEEEE;
+}
+div.msgDiv table#msgCTbl td {
+  font-size:13px;
+  font-family:tahoma, sans-serif; 
+  color:black;
+} 
+div.msgDiv table#msgCTbl th {
+  font-size:14px; 
+  text-align:left;
+  font-family:tahoma, sans-serif; 
+  color:black; 
+}
+div.msgDiv table#msgCTbl head.th {
+  background-color:#FAEBD7;
+}
+
+div.alertDiv{font-family:tahoma, sans-serif; color:black; background-color:#EEEEEE; font-size:13px;}	
+div.alertDiv table {background-color:#EEEEEE;}
+div.alertDiv td {font-size:13px;} 
+div.alertDiv th {font-size:14px; text-align:left;}
+div.alertDiv table.doctable {background-color:white;}
+div.alertDiv table.alerttable {border:black 2px solid;background-color:white;}
+div.alertDiv th.alert_note {text-decoration:underline;text-align:center;}
+div.alertDiv th.alert_caution {text-decoration:underline;text-align:center;color:black;background-color:yellow;border:black 2px solid;}
+div.alertDiv th.alert_warning {text-decoration:underline;text-align:center;color:white;background-color:red;border:black 2px solid;}
+div.alertDiv input {margin-right:10px;font-family:verdana; font-size:12px; height:24px; width:80px;}
+
+div.alertDiv .step {margin-left:20px; margin-top:10px;}
+div.alertDiv .note {margin-left:20px; margin-top:10px; color:green; font-weight:bold}
+div.alertDiv .warning {margin-left:20px; margin-top:10px; color:red; font-weight:bold;}
+div.alertDiv .caution {margin-left:20px; margin-top:10px; color:FF8000; font-weight:bold}
+div.alertDiv .alerttext {padding-left:20px; padding-top:10px;}
+div.alertDiv .num {font-weight:bold;}
+
+div.alertDiv .genstep {margin:5px 2px 8px 14px;}
+div.alertDiv .comment {margin:5 0 0 15; color:darkgreen; font-size:11px;  padding:0 8 2 8;}
+div.alertDiv .operation {margin:15 0 0 0;}
+div.alertDiv .stepcomment{margin-left:25px; font-size:11px; font-style:italic;}
+#msgBackFrm{opacity: 0.7; z-index: 1001; visibility: visible; position: absolute; left: 0; top: 0; WIDTH: 100%; HEIGHT: 100%;}
+#msgContentDiv{display: block; z-index: 1002; visibility: visible; overflow: visible; position: absolute; border:2px solid #737373; WIDTH: 400px; HEIGHT: 250px;}
+
+td#td1btm, td#td2btm{
+	overflow:hidden;
+}
+
+#td50r{
+padding: 4px 4px 5px 2px;
+}

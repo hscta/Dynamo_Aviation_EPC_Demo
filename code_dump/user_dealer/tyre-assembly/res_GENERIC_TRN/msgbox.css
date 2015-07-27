@@ -1,0 +1,27 @@
+body {
+  font-family:tahoma, sans-serif; 
+  color:black; 
+  background-color:#EEEEEE; 
+  font-size:13px; 
+  margin:5px 5px 5px 5px;
+}	
+table {
+  background-color:#EEEEEE;
+}
+td {
+  font-size:13px;
+} 
+th {
+  font-size:14px; 
+  text-align:left;
+}
+input {
+  margin-right:10px;
+  font-family:verdana; 
+  font-size:12px; 
+  height:24px;
+  width:80px;
+}
+head.th {
+  background-color:#FAEBD7;
+}

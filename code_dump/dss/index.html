@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bajaj Dealership Service Standard</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="js/jquery.ui.datepicker.js"></script>
+    <script id="mobile-datepicker" src="js/jquery.mobile.datepicker.js"></script>
+
+</head>
+<body>
+
+<body>
+
+<div data-role="page" id="page1">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+
+	</div>
+
+	<div role="main" class="ui-content">
+		<div class="ui-body ui-body-e ui-corner-all">
+
+		<div class="aCenter loginPageImage">
+			<img src="images/login.png" style="height:100%"/>
+		</div>
+
+			<div class="contact-form">
+
+				<div data-role="fieldcontain" class="text-field">
+					<input type="text" name="txtUsername" value="" placeholder="Username" class="required" id="txtUsername" />
+				</div>
+				<div data-role="fieldcontain" class="text-field">
+					<input type="password" name="txtPassword" value="" placeholder="Password" id="txtPassword" />
+				</div>
+				<div class="send">
+					<a href="javascript:void(0)" data-role="button" data-theme="a" data-iconpos="right" id="login">Login</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+    	<h4>Bajaj Auto. Confidential</h4>
+    </div>
+</div>
+
+<div data-role="page" id="page1a">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+	</div>
+
+	<div role="main" class="ui-content">
+		<div class="ui-body ui-body-e ui-corner-all">
+
+
+			<div data-demo-html="true">
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#page2"><span class="blue"></span>Dealership Service Standard</a></li>
+					<li><a href="#"><span class="red"></span>Free Service Coupon</a></li>
+					<li><a href="#"><span class="green"></span>Electronics Parts Catalog</a></li>
+					<li><a href="#"><span class="purple"></span>Repair Information System</a></li>
+					<li><a href="#"><span class="skyblue"></span>Loyalty</a></li>
+					<li><a href="#"><span class="orange"></span>Failure Complaint Reporting</a></li>
+				</ul>
+			</div><!--/demo-html -->
+
+
+		</div>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+    	<h4>Bajaj Auto. Confidential</h4>
+    </div>
+</div>
+
+
+<div data-role="page" id="page2">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+
+		 <div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="#page1a" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		 </div>
+
+		<div class="miniHeader">Setup</div>
+	</div>
+
+	<div role="main" class="ui-content">
+		
+		<select name="select-v-1a" id="selectDealer">
+			<option value="">Select Dealer Code</option>
+			<option value="10347">10347</option>
+			<option value="10348">10348</option>
+			<option value="10349">10349</option>
+			<option value="10400">10400</option>
+			<option value="10401">10401</option>
+			<option value="10402">10402</option>
+			<option value="10403">10403</option>
+		</select>
+		<input data-role="date" type="text" id="datepicker" Placeholder="Select the Date" readonly>
+		<br/>
+		<br/>
+
+		<div class="def_spacing">
+				<a href="#" class="ui-btn ui-corner-all" id="startTask">Start</a>
+		</div>
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="page3">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="#page1a" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		 </div>
+
+		<div class="miniHeader minitext">Service Reminder - <span class="selDealer"></span></div>
+	</div>
+
+	<div role="main" class="ui-content">
+		
+		<a href="#sheet1" class="ui-btn ui-corner-all btn_serAll btn_ser1">Service Reminder</a>
+		<a href="#" class="ui-btn ui-corner-all btn_serAll btn_ser2">Vehicle Servicing</a>
+		<a href="#" class="ui-btn ui-corner-all btn_serAll btn_ser3">Washing</a>
+		<a href="#" class="ui-btn ui-corner-all btn_serAll btn_ser4">Work Allocation</a>
+
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="sheet1">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="#page1a" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		 </div>
+
+		<div class="miniHeader minitext">Service Reminder - <span class="selDealer"></span>
+			<div class="step">1/5</div>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+		
+
+	<fieldset data-role="controlgroup" data-theme="b" data-type="horizontal" class="aCenter">
+        <legend><span class="bold">Q1.</span> Is there a system/process to identify customers who have not availed service?</legend>
+        <br/><br/>
+        <input name="q1" id="q1a" value="1" type="radio" rel="2" rel="2">
+        <label for="q1a">Yes</label>
+        <input name="q1" id="q1b" value="0" type="radio">
+        <label for="q1b">No</label>
+    </fieldset>
+
+    <br/><br/>
+    <a href="#sheet2" class="ui-corner-all ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right fright">Next</a>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+<div data-role="page" id="sheet2">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="#page1a" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		 </div>
+
+		<div class="miniHeader minitext">Service Reminder - <span class="selDealer"></span>
+			<div class="step">2/5</div>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+		
+
+	<fieldset data-role="controlgroup" data-theme="b" data-type="horizontal" class="aCenter">
+        <legend><span class="bold">Q2.</span> Are all such identified customers  reminded for free service before due date?</legend>
+        <br/><br/>
+        <input name="q2" id="q2a" value="1" type="radio" rel="2">
+        <label for="q2a">Yes</label>
+        <input name="q2" id="q2b" value="0" type="radio">
+        <label for="q2b">No</label>
+    </fieldset>
+
+    <br/><br/>
+    <a href="#sheet1" class="ui-corner-all ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-left fleft">Prev</a>
+    <a href="#sheet3" class="ui-corner-all ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right fright">Next</a>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+<div data-role="page" id="sheet3">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="#page1a" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		 </div>
+
+		<div class="miniHeader minitext">Service Reminder - <span class="selDealer"></span>
+			<div class="step">3/5</div>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+		
+
+	<fieldset data-role="controlgroup" data-theme="b" data-type="horizontal" class="aCenter">
+        <legend><span class="bold">Q3.</span> Are all such identified customers reminded for paid service before due date?</legend>
+        <br/><br/>
+        <input name="q3" id="q3a" value="1" type="radio" rel="2">
+        <label for="q3a">Yes</label>
+        <input name="q3" id="q3b" value="0" type="radio">
+        <label for="q3b">No</label>
+    </fieldset>
+
+    <br/><br/>
+    <a href="#sheet2" class="ui-corner-all ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-left fleft">Prev</a>
+    <a href="#sheet4" class="ui-corner-all ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right fright">Next</a>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="sheet4">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="#page1a" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		 </div>
+
+		<div class="miniHeader minitext">Service Reminder - <span class="selDealer"></span>
+			<div class="step">4/5</div>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+		
+
+	<fieldset data-role="controlgroup" data-theme="b" data-type="horizontal" class="aCenter">
+        <legend><span class="bold">Q4.</span> Are the response from customers recorded for future analysis?</legend>
+        <br/><br/>
+        <input name="q4" id="q4a" value="1" type="radio" rel="2">
+        <label for="q4a">Yes</label>
+        <input name="q4" id="q4b" value="0" type="radio">
+        <label for="q4b">No</label>
+    </fieldset>
+
+    <br/><br/>
+    <a href="#sheet3" class="ui-corner-all ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-left fleft">Prev</a>
+    <a href="#sheet5" class="ui-corner-all ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right fright">Next</a>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="sheet5">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="#page1a" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		 </div>
+
+		<div class="miniHeader minitext">Service Reminder - <span class="selDealer"></span>
+			<div class="step">5/5</div>
+		</div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+		
+
+	<fieldset data-role="controlgroup" data-theme="b" data-type="horizontal" class="aCenter">
+        <legend><span class="bold">Q5.</span> Is there a process to analyze customer's response and take corrective action?</legend>
+        <br/><br/>
+        <input name="q5" id="q5a" value="1" type="radio" rel="2">
+        <label for="q5a">Yes</label>
+        <input name="q5" id="q5b" value="0" type="radio">
+        <label for="q5b">No</label>
+    </fieldset>
+
+    <br/><br/>
+    <a href="#sheet4" class="ui-corner-all ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-left fleft">Prev</a>
+    <a href="#finish" id="finishBtn" class="ui-corner-all ui-btn-b ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right fright">Finish</a>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="finish">
+	<div data-role="header" class="header">
+		<h1>Bajaj OneApp</h1>
+		<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right" style="margin-top:8px;">  
+		     <a href="#page1a" data-role="button" data-icon="home" data-iconpos="notext"  data-mini="true" >Home</a>
+		 </div>
+
+		<div class="miniHeader minitext">Service Reminder - <span class="selDealer"></span></div>
+	</div>
+
+	<div role="main" class="ui-content acenter">
+
+		<center>
+			<table width="90%" border="1" class="aCenterTable">
+				<tr><td colspan="2" class="lineHeight">Scorecard</td></tr>
+				<tr><td width="60%">Adherence</td><td>80%</td></tr>
+				<tr><td>Score</td><td>8</td></tr>
+			</table>
+		</cemter>
+
+    <br/><br/>
+    <a href="#sheet5" class="ui-corner-all ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-icon-left fleft">Prev</a>
+    <a href="#page3" id="submitBtn" class="ui-corner-all ui-btn-b ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right fright">Submit</a>
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Bajaj Auto. Confidential</h4>
+	</div>
+</div>
+
+
+
+<script language="javascript" type="text/javascript">
+    $(function() {
+        $('#datepicker').date({ dateFormat: 'd M, y' }).val()
+    });
+
+    $("#startTask").click(function(){
+    	$(".selDealer").html($("#selectDealer").val())
+    	localStorage.setItem("selDealer", $("#selectDealer").val());
+    	
+    	if($("#selectDealer").val()==""){
+    		alert("Please select Dealer");
+    		return false;
+    	}
+
+    	if($("#selectDealer").val()==""){
+    		alert("Please select Dealer");
+    		return false;
+    	}
+
+    	$.mobile.navigate( "#page3" );
+
+    });
+
+	$(document).delegate('.ui-page', 'pageshow', function () {
+	    $(".selDealer").html(localStorage.getItem("selDealer"))
+	});
+
+	$("#finishBtn").click(function(){
+
+	});
+
+	$("#login").click(function(){
+		if($("#txtUsername").val()=="asm@bajajauto.co.in" && $("#txtPassword").val()=="nimda"){
+			$.mobile.navigate( "#page1a" );
+		}
+		else{
+			alert("Incorrect username or password");
+			return false;
+		}
+	})
+</script>
+
+
+</body>
+
+</html>

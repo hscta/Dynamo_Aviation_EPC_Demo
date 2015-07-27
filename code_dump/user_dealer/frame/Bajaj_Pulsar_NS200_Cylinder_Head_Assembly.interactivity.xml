@@ -1,0 +1,1456 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ipc>
+	<figure>
+		<metadata/>
+		<media id="1" type="vm/vrml" src="Bajaj_Pulsar_NS200_Cylinder_Head_Assembly.wrl">
+			<value name="IllustrationType">0</value>
+			<value name="3DBackgroundColor">#FFFFFF</value>
+			<value name="3DSelectedColor">#FFFF00</value>
+			<value name="TableBackgroundColor">#FFFFFF</value>
+			<value name="TableTextColor">#000000</value>
+			<value name="TableBackgroundColorSel">#EEEE00</value>
+			<value name="TableBackgroundColorHL">#C8E2E2</value>
+			<value name="TableBackgroundColorHLNotIll">#FFE4E1</value>
+			<value name="TableInactiveTextColor">#808080</value>
+			<value name="2DSelectedColor">#FFFF00</value>
+			<value name="2DHighLightColor">#00FF00</value>
+			<value name="ContextMenuBackgroundColor">#FFFFFF</value>
+			<value name="RemoveSpace">No</value>
+			<value name="SimplifyFloats">No</value>
+			<value name="CoordinateResolution">0</value>
+			<value name="TooltipFormat">Item:%[ITEM]</value>
+			<value name="Viewer2DType">1</value>
+			<value name="UrlTarget">_blank</value>
+			<value name="DITATopic">No</value>
+			<value name="ForceDirectX">Yes</value>
+			<value name="PublisherVersion">7.1.3.324</value>
+			<value name="SpecID">GENERIC_IPC</value>
+			<value name="SpecVersion">1.14</value>
+		</media>
+		<media id="1ecba10" type="image/cgm" src="Bajaj_Pulsar_NS200_Cylinder_Header_Assembly.cgm">
+			<value name="Name">
+				<![CDATA[Bajaj_Pulsar_NS200_Cylinder_Header_Assembly]]>
+			</value>
+			<value name="Description"/>
+		</media>
+		<dplist>
+			<item id="1ecc948" refPart="1e60f48">
+				<metadata>
+					<value id="1eccf98" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[0]]>
+					</value>
+					<value id="1eccfe0" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd028" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd070" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd0b8" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:1]]>
+				</tooltip>
+				<commands>
+					<command id="39f798" type="DFP" changed="0">
+						<value refMeta="1ecd028" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1e88090" name="Description For Part">
+							<![CDATA[PLATE STOPPER ROCKER ARM]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JF511207/03;1-PLATE_STOPPER_ROCKER_ARM_(Design)_35</refmedia>
+			</item>
+			<item id="1ecc9f0" refPart="1e8c708">
+				<metadata>
+					<value id="1ecd100" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd148" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[2]]>
+					</value>
+					<value id="1ecd190" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd1d8" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd220" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:2]]>
+				</tooltip>
+				<commands>
+					<command id="1e8dcb0" type="DFP" changed="0">
+						<value refMeta="1ecd190" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1e88120" name="Description For Part">
+							<![CDATA[VALVE SPRING]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JF511217_02-VALVE_SPRING_12285_10</refmedia>
+			</item>
+			<item id="1eccb08" refPart="1e8c5a0">
+				<metadata>
+					<value id="1ecd268" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[2]]>
+					</value>
+					<value id="1ecd2b0" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[3]]>
+					</value>
+					<value id="1ecd2f8" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd340" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd388" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:3]]>
+				</tooltip>
+				<commands>
+					<command id="1e8e6b0" type="DFP" changed="0">
+						<value refMeta="1ecd2f8" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1e881b0" name="Description For Part">
+							<![CDATA[ROCKER ARM SHAFT]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JL511205_04-ROCKER__ARM_SHAFT_1886_34</refmedia>
+			</item>
+			<item id="1ecc788" refPart="1e8c618">
+				<metadata>
+					<value id="1ecd3d0" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[3]]>
+					</value>
+					<value id="1ecd418" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[4]]>
+					</value>
+					<value id="1ecd460" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd4a8" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd4f0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:4]]>
+				</tooltip>
+				<commands>
+					<command id="1e8e570" type="DFP" changed="0">
+						<value refMeta="1ecd460" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1e88240" name="Description For Part">
+							<![CDATA[VALVE SPRING]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JF511217_02-VALVE_SPRING_8462_8</refmedia>
+			</item>
+			<item id="1ecc830" refPart="1e8ca50">
+				<metadata>
+					<value id="1ecd538" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[4]]>
+					</value>
+					<value id="1ecd580" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[5]]>
+					</value>
+					<value id="1ecd5c8" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd610" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd658" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:5]]>
+				</tooltip>
+				<commands>
+					<command id="1e8e430" type="DFP" changed="0">
+						<value refMeta="1ecd5c8" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1e882d0" name="Description For Part">
+							<![CDATA[VALVE SPRING]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JF511217_02-VALVE_SPRING_4846_9</refmedia>
+			</item>
+			<item id="1ecca60" refPart="1e8cac8">
+				<metadata>
+					<value id="1ecd6a0" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[6]]>
+					</value>
+					<value id="1ecd6e8" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[6]]>
+					</value>
+					<value id="1ecd730" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd778" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[2]]>
+					</value>
+					<value id="1ecd7c0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:6]]>
+				</tooltip>
+				<commands>
+					<command id="1ed5378" type="DFP" changed="0">
+						<value refMeta="1ecd730" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1e88360" name="Description For Part">
+							<![CDATA[BUSH INNER ROCKER]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JF511203/00;1-BUSH_INNER_ROCKER_(1)_20</refmedia>
+				<refmedia ref="1">JF511203/00;1-BUSH_INNER_ROCKER_(2)_31</refmedia>
+			</item>
+			<item id="1eccbe8" refPart="1e9dbc8">
+				<metadata>
+					<value id="1ecd808" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[7]]>
+					</value>
+					<value id="1ecd850" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[7]]>
+					</value>
+					<value id="1ecd898" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd8e0" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecd928" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:7]]>
+				</tooltip>
+				<commands>
+					<command id="1ed54b8" type="DFP" changed="0">
+						<value refMeta="1ecd898" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1ebc180" name="Description For Part">
+							<![CDATA[ROCKER ARM INTAKE]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JL511202/07;1-ROCKER_ARM_INTAKE_15</refmedia>
+			</item>
+			<item id="1eccbb0" refPart="1e8cb40">
+				<metadata>
+					<value id="1ecd970" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[8]]>
+					</value>
+					<value id="1ecd9b8" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[8]]>
+					</value>
+					<value id="1ecda00" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecda48" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[2]]>
+					</value>
+					<value id="1ecda90" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:8]]>
+				</tooltip>
+				<commands>
+					<command id="1ed55f8" type="DFP" changed="0">
+						<value refMeta="1ecda00" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1ebbe20" name="Description For Part">
+							<![CDATA[ROLLER ASSEMBLY 1]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JF511202_00-ROLLER_ASSEMBLY_1711_(1)_18</refmedia>
+				<refmedia ref="1">JF511202_00-ROLLER_ASSEMBLY_1711_(2)_29</refmedia>
+			</item>
+			<item id="1ecc9b8" refPart="1e8cbb8">
+				<metadata>
+					<value id="1ecdad8" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[9]]>
+					</value>
+					<value id="1ecdb20" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[9]]>
+					</value>
+					<value id="1ecdb68" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecdbb0" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecdbf8" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:9]]>
+				</tooltip>
+				<commands>
+					<command id="1ed5738" type="DFP" changed="0">
+						<value refMeta="1ecdb68" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1ebbeb0" name="Description For Part">
+							<![CDATA[BOLT FLANGED]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">LAE00016/00;2-BOLT_FLANGED_M5X0_8X6L-PRECOATED_(Design)_36</refmedia>
+			</item>
+			<item id="1ecc8a0" refPart="1e8cc30">
+				<metadata>
+					<value id="1ecdc40" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[10]]>
+					</value>
+					<value id="1ecdc88" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[10]]>
+					</value>
+					<value id="1ecdcd0" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecdd18" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecdd60" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:10]]>
+				</tooltip>
+				<commands>
+					<command id="1ed5a38" type="DFP" changed="0">
+						<value refMeta="1ecdcd0" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1ebbf40" name="Description For Part">
+							<![CDATA[SEAT VALVE SPRING]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JF511215/00;1-SEAT_VALVE_SPRING_(Design)_6</refmedia>
+			</item>
+			<item id="1eccb78" refPart="1e8cca8">
+				<metadata>
+					<value id="1ecdda8" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[11]]>
+					</value>
+					<value id="1ecddf0" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[11]]>
+					</value>
+					<value id="1ecde38" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ecde80" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[2]]>
+					</value>
+					<value id="1ecdec8" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:11]]>
+				</tooltip>
+				<commands>
+					<command id="1ed5b78" type="DFP" changed="0">
+						<value refMeta="1ecde38" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1ebbfd0" name="Description For Part">
+							<![CDATA[SCREW TAPPET ADJUSTING]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">DF101055/01;1-SCREW_TAPPET_ADJUSTING_(1)_21</refmedia>
+				<refmedia ref="1">DF101055/01;1-SCREW_TAPPET_ADJUSTING_(2)_32</refmedia>
+			</item>
+			<item id="1ecc980" refPart="1e8cd20">
+				<metadata>
+					<value id="1ed9278" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[12]]>
+					</value>
+					<value id="1ed92c0" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[12]]>
+					</value>
+					<value id="1ed9308" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed9350" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed9398" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:12]]>
+				</tooltip>
+				<commands>
+					<command id="1ed5cb8" type="DFP" changed="0">
+						<value refMeta="1ed9308" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1ebc060" name="Description For Part">
+							<![CDATA[RETAINER VALVE SPRING]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JF511214/00;1-RETAINER_VALVE_SPRING_(Design)_12</refmedia>
+			</item>
+			<item id="1eccb40" refPart="1e9db50">
+				<metadata>
+					<value id="1ed93e0" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[13]]>
+					</value>
+					<value id="1ed9428" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[13]]>
+					</value>
+					<value id="1ed9470" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed94b8" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[2]]>
+					</value>
+					<value id="1ed9500" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:13]]>
+				</tooltip>
+				<commands>
+					<command id="1ed5df8" type="DFP" changed="0">
+						<value refMeta="1ed9470" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1ebc0f0" name="Description For Part">
+							<![CDATA[ROLLER ASSEMBLY 2]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JF511202_00-ROLLER_ASSEMBLY_1590_(1)_19</refmedia>
+				<refmedia ref="1">JF511202_00-ROLLER_ASSEMBLY_1590_(2)_30</refmedia>
+			</item>
+			<item id="1ecca28" refPart="1e96eb8">
+				<metadata>
+					<value id="1ed9548" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[14]]>
+					</value>
+					<value id="1ed9590" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[14]]>
+					</value>
+					<value id="1ed95d8" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed9620" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed9668" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:14]]>
+				</tooltip>
+				<commands>
+					<command id="1ed5978" type="DFP" changed="0">
+						<value refMeta="1ed95d8" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1ebc210" name="Description For Part">
+							<![CDATA[COTTER VALVE]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">DG101029/01;1-COTTER_VALVE_(Design)_13</refmedia>
+			</item>
+			<item id="1ecc910" refPart="1e96f30">
+				<metadata>
+					<value id="1ed96b0" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[15]]>
+					</value>
+					<value id="1ed96f8" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[15]]>
+					</value>
+					<value id="1ed9740" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed9788" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed97d0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:15]]>
+				</tooltip>
+				<commands>
+					<command id="1ed5838" type="DFP" changed="0">
+						<value refMeta="1ed9740" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1ebc2a0" name="Description For Part">
+							<![CDATA[VALVE SPRING]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JF511217_02-VALVE_SPRING_4856_11</refmedia>
+			</item>
+			<item id="1ecca98" refPart="1e96fa8">
+				<metadata>
+					<value id="1ed9818" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[16]]>
+					</value>
+					<value id="1ed9860" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[16]]>
+					</value>
+					<value id="1ed98a8" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed98f0" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed9938" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:16]]>
+				</tooltip>
+				<commands>
+					<command id="1ed5ff8" type="DFP" changed="0">
+						<value refMeta="1ed98a8" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1ebc330" name="Description For Part">
+							<![CDATA[VALVE SYSTEM]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">_9201719/00;1-SEAL_VALVE_STEM_(Design)_2</refmedia>
+			</item>
+			<item id="1ecc8d8" refPart="1e97020">
+				<metadata>
+					<value id="1ed9980" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[17]]>
+					</value>
+					<value id="1ed99c8" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[17]]>
+					</value>
+					<value id="1ed9a10" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed9a58" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed9aa0" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:17]]>
+				</tooltip>
+				<commands>
+					<command id="1ed6138" type="DFP" changed="0">
+						<value refMeta="1ed9a10" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1ebc3c0" name="Description For Part">
+							<![CDATA[ROCKER ARM EXHAUST]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JL511204/07;1-ROCKER_ARM_EXHAUST_23</refmedia>
+			</item>
+			<item id="1ecc868" refPart="1e97098">
+				<metadata>
+					<value id="1ed9ae8" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[18]]>
+					</value>
+					<value id="1ed9b30" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[18]]>
+					</value>
+					<value id="1ed9b78" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed9bc0" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed9c08" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:18]]>
+				</tooltip>
+				<commands>
+					<command id="1edf040" type="DFP" changed="0">
+						<value refMeta="1ed9b78" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1ebc450" name="Description For Part">
+							<![CDATA[VALVE EXHAUST]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JL511011_03-VALVE_EXHAUST_915779_5</refmedia>
+			</item>
+			<item id="1eccad0" refPart="1e97110">
+				<metadata>
+					<value id="1ed9c50" name="$SEQ#" decl-id="_C16977B4B8DF4DBE9C02FC6040391B0E" changed="0">
+						<![CDATA[19]]>
+					</value>
+					<value id="1ed9c98" name="ITEM" decl-id="ITEM" changed="0" role="3">
+						<![CDATA[19]]>
+					</value>
+					<value id="1ed9ce0" name="Indent" decl-id="IND" changed="0" role="5">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed9d28" name="Quantity" decl-id="QNA" changed="0" role="6">
+						<![CDATA[1]]>
+					</value>
+					<value id="1ed9d70" name="URL" decl-id="_B479653540A9423B8170B31E38783811" changed="0"/>
+				</metadata>
+				<tooltip>
+					<![CDATA[Item:19]]>
+				</tooltip>
+				<commands>
+					<command id="1edf180" type="DFP" changed="0">
+						<value refMeta="1ed9ce0" name="Indent">
+							<![CDATA[1]]>
+						</value>
+						<value refMeta="1ebc4e0" name="Description For Part">
+							<![CDATA[VALVE INTAKE]]>
+						</value>
+					</command>
+				</commands>
+				<refmedia ref="1">JL511010/01;1-VALVE_INTAKE_3</refmedia>
+			</item>
+		</dplist>
+		<ipc-table>
+			<table>
+				<thead>
+					<row>
+						<entry/>
+						<entry column-id="ITEM" width="4">
+							<para>
+								<![CDATA[ITEM]]>
+							</para>
+						</entry>
+						<entry column-id="DESCR" width="30">
+							<para>
+								<![CDATA[DESCRIPTION]]>
+							</para>
+						</entry>
+						<entry column-id="PARTNUMBER" width="20">
+							<para>
+								<![CDATA[PART NO.]]>
+							</para>
+						</entry>
+						<entry column-id="QTY" width="3">
+							<para>
+								<![CDATA[QTY]]>
+							</para>
+						</entry>
+						<entry column-id="INFO" width="12">
+							<para>
+								<![CDATA[INFO]]>
+							</para>
+						</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row refItem="1ecc948">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="39f798">
+								<![CDATA[PLATE STOPPER ROCKER ARM]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511207]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1ecc9f0">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[2]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1e8dcb0">
+								<![CDATA[VALVE SPRING]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511217_12285]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1eccb08">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[3]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1e8e6b0">
+								<![CDATA[ROCKER ARM SHAFT]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511205]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1ecc788">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[4]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1e8e570">
+								<![CDATA[VALVE SPRING]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511217_8462]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1ecc830">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[5]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1e8e430">
+								<![CDATA[VALVE SPRING]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511217_4846]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1ecca60">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[6]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1ed5378">
+								<![CDATA[BUSH INNER ROCKER]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511203]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[2]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1eccbe8">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[7]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1ed54b8">
+								<![CDATA[ROCKER ARM INTAKE]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511202]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1eccbb0">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[8]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1ed55f8">
+								<![CDATA[ROLLER ASSEMBLY 1]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511202_1711]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[2]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1ecc9b8">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[9]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1ed5738">
+								<![CDATA[BOLT FLANGED]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[LAE00016]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1ecc8a0">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[10]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1ed5a38">
+								<![CDATA[SEAT VALVE SPRING]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511215]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1eccb78">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[11]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1ed5b78">
+								<![CDATA[SCREW TAPPET ADJUSTING]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[DF101055]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[2]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1ecc980">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[12]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1ed5cb8">
+								<![CDATA[RETAINER VALVE SPRING]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511214]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1eccb40">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[13]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1ed5df8">
+								<![CDATA[ROLLER ASSEMBLY 2]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511202_1590]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[2]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1ecca28">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[14]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1ed5978">
+								<![CDATA[COTTER VALVE]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[DG101029]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1ecc910">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[15]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1ed5838">
+								<![CDATA[VALVE SPRING]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511217_4856]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1ecca98">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[16]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1ed5ff8">
+								<![CDATA[VALVE SYSTEM]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[39201719]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1ecc8d8">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[17]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1ed6138">
+								<![CDATA[ROCKER ARM EXHAUST]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511204]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1ecc868">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[18]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1edf040">
+								<![CDATA[VALVE EXHAUST]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511010_01]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+					<row refItem="1eccad0">
+						<entry>
+							<para/>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[19]]>
+							</para>
+						</entry>
+						<entry>
+							<cmdtext refCmd="1edf180">
+								<![CDATA[VALVE INTAKE]]>
+							</cmdtext>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[JF511010_03]]>
+							</para>
+						</entry>
+						<entry>
+							<para>
+								<![CDATA[1]]>
+							</para>
+						</entry>
+						<entry>
+							<para/>
+						</entry>
+					</row>
+				</tbody>
+			</table>
+		</ipc-table>
+		<bgmedia/>
+		<views>
+			<view id="view_0" stepid="view_0" changed="0" revst="U" hidden="0">
+				<description>Pulsar_NS200_Cylinder_Head_Assembly</description>
+				<viewpoint>
+					<refmedia ref="1">
+						<![CDATA[vp_0]]>
+					</refmedia>
+				</viewpoint>
+				<refItem ref="1ecc788"/>
+				<refItem ref="1ecc830"/>
+				<refItem ref="1ecc868"/>
+				<refItem ref="1ecc8a0"/>
+				<refItem ref="1ecc8d8"/>
+				<refItem ref="1ecc910"/>
+				<refItem ref="1ecc948"/>
+				<refItem ref="1ecc980"/>
+				<refItem ref="1ecc9b8"/>
+				<refItem ref="1ecc9f0"/>
+				<refItem ref="1ecca28"/>
+				<refItem ref="1ecca60"/>
+				<refItem ref="1ecca98"/>
+				<refItem ref="1eccad0"/>
+				<refItem ref="1eccb08"/>
+				<refItem ref="1eccb40"/>
+				<refItem ref="1eccb78"/>
+				<refItem ref="1eccbb0"/>
+				<refItem ref="1eccbe8"/>
+				<metadata/>
+				<refmedia ref="1"/>
+				<refmedia ref="1ecba10"/>
+			</view>
+		</views>
+	</figure>
+	<parts>
+		<part id="1e60f48">
+			<metadata>
+				<value id="1e87dc0" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511207]]>
+				</value>
+				<value id="1e88090" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[PLATE STOPPER ROCKER ARM]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e8c708">
+			<metadata>
+				<value id="1e880d8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511217_12285]]>
+				</value>
+				<value id="1e88120" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[VALVE SPRING]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e8c5a0">
+			<metadata>
+				<value id="1e88168" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511205]]>
+				</value>
+				<value id="1e881b0" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[ROCKER ARM SHAFT]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e8c618">
+			<metadata>
+				<value id="1e881f8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511217_8462]]>
+				</value>
+				<value id="1e88240" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[VALVE SPRING]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e8ca50">
+			<metadata>
+				<value id="1e88288" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511217_4846]]>
+				</value>
+				<value id="1e882d0" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[VALVE SPRING]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e8cac8">
+			<metadata>
+				<value id="1e88318" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511203]]>
+				</value>
+				<value id="1e88360" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[BUSH INNER ROCKER]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e8cb40">
+			<metadata>
+				<value id="1e883a8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511202_1711]]>
+				</value>
+				<value id="1ebbe20" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[ROLLER ASSEMBLY 1]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e8cbb8">
+			<metadata>
+				<value id="1ebbe68" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[LAE00016]]>
+				</value>
+				<value id="1ebbeb0" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[BOLT FLANGED]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e8cc30">
+			<metadata>
+				<value id="1ebbef8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511215]]>
+				</value>
+				<value id="1ebbf40" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[SEAT VALVE SPRING]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e8cca8">
+			<metadata>
+				<value id="1ebbf88" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[DF101055]]>
+				</value>
+				<value id="1ebbfd0" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[SCREW TAPPET ADJUSTING]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e8cd20">
+			<metadata>
+				<value id="1ebc018" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511214]]>
+				</value>
+				<value id="1ebc060" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[RETAINER VALVE SPRING]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e9db50">
+			<metadata>
+				<value id="1ebc0a8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511202_1590]]>
+				</value>
+				<value id="1ebc0f0" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[ROLLER ASSEMBLY 2]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e9dbc8">
+			<metadata>
+				<value id="1ebc138" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511202]]>
+				</value>
+				<value id="1ebc180" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[ROCKER ARM INTAKE]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e96eb8">
+			<metadata>
+				<value id="1ebc1c8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[DG101029]]>
+				</value>
+				<value id="1ebc210" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[COTTER VALVE]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e96f30">
+			<metadata>
+				<value id="1ebc258" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511217_4856]]>
+				</value>
+				<value id="1ebc2a0" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[VALVE SPRING]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e96fa8">
+			<metadata>
+				<value id="1ebc2e8" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[39201719]]>
+				</value>
+				<value id="1ebc330" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[VALVE SYSTEM]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e97020">
+			<metadata>
+				<value id="1ebc378" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511204]]>
+				</value>
+				<value id="1ebc3c0" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[ROCKER ARM EXHAUST]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e97098">
+			<metadata>
+				<value id="1ebc408" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511010_01]]>
+				</value>
+				<value id="1ebc450" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[VALVE EXHAUST]]>
+				</value>
+			</metadata>
+		</part>
+		<part id="1e97110">
+			<metadata>
+				<value id="1ebc498" name="PARTNUMBER" decl-id="PNR" changed="0" role="1">
+					<![CDATA[JF511010_03]]>
+				</value>
+				<value id="1ebc4e0" name="Description" decl-id="DFP" changed="0" role="2">
+					<![CDATA[VALVE INTAKE]]>
+				</value>
+			</metadata>
+		</part>
+	</parts>
+	<reftables>
+		<reftable name="INDENT">
+			<value descr="">
+				<![CDATA[1]]>
+			</value>
+			<value descr=".">
+				<![CDATA[2]]>
+			</value>
+			<value descr="..">
+				<![CDATA[3]]>
+			</value>
+			<value descr="...">
+				<![CDATA[4]]>
+			</value>
+			<value descr="....">
+				<![CDATA[5]]>
+			</value>
+			<value descr=".....">
+				<![CDATA[6]]>
+			</value>
+			<value descr="......">
+				<![CDATA[7]]>
+			</value>
+			<value descr=".......">
+				<![CDATA[8]]>
+			</value>
+			<value descr="........">
+				<![CDATA[9]]>
+			</value>
+		</reftable>
+	</reftables>
+</ipc>
